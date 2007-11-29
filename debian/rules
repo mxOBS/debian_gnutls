@@ -1,0 +1,65 @@
+#! /usr/bin/make -f
+# Build the gnutls package for Debian.
+
+ifeq ($(DEB_BUILD_ARCH),hppa)
+  CFLAGS += -fno-gcse
+endif
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/class/autotools.mk
+include /usr/share/cdbs/1/rules/simple-patchsys.mk
+
+DEB_CONFIGURE_EXTRA_FLAGS = --with-mcrypt=no --enable-ld-version-script --disable-cxx --enable-guile --with-guile-site-dir=/usr/share/guile/site
+DEB_MAKE_CHECK_TARGET = check
+DEB_DH_STRIP_ARGS = --dbg-package=libgnutls26-dbg
+#DEB_DH_MAKESHLIBS_ARGS_libgnutls26 := -V 'libgnutls26 (>=2.1.6-0)'
+DEB_DH_MAKESHLIBS_ARGS_guile-gnutls := -Xusr/lib/libguile-gnutls-
+DEB_COMPRESS_EXCLUDE := gnutls.pdf
+
+#build/libgnutls-doc::
+#	$(DEB_MAKE_INVOKE) -C libextra/openpgp pgp-api.tex
+#	$(DEB_MAKE_INVOKE) -C doc/tex gnutls.ps
+#	$(DEB_MAKE_INVOKE) -C doc/tex
+#
+#install/libgnutls-doc::
+#	$(DEB_MAKE_INVOKE) -C doc/tex $(DEB_MAKE_INSTALL_TARGET)
+
+
+post-patches::
+	cd $(DEB_SRCDIR) && chmod +x doc/scripts/sort2.pl doc/scripts/gdoc
+
+# pre-clean rule: save gnutls.pdf since it is expensive to regenerate.
+# See README.source_and_patches
+cleanbuilddir/gnutls-doc::
+	if [ -e doc/gnutls.pdf ] ; then mv doc/gnutls.pdf doc/gnutls.pdf.debbackup ; fi
+
+
+# additional commands for clean
+clean::
+	mkdir -p m4
+
+	-rm -rf autom4te.cache
+
+	-rm -f tests/stamp-tests
+	# stupid conflicts
+	-rm -f libextra/lzoconf.h libextra/lzodefs.h
+	-rm -f doc/*.info*
+	# restore gnutls.pdf
+	if [ -e doc/gnutls.pdf.debbackup ] && [ ! -e doc/gnutls.pdf ] ; then mv doc/gnutls.pdf.debbackup doc/gnutls.pdf ; fi
+
+# additional comands for build rule
+build/gnutls-doc::
+	$(MAKE) html
+
+# add post deb preparation (including debhelper stuff) actions
+# generate symlinks manually and use dh_link to make them policy-conform.
+binary-install/gnutls-doc::
+	cd debian/gnutls-doc && \
+	for i in usr/share/doc/gnutls-doc/html/gnutls*.png ; do \
+		i=`basename "$$i"` ; \
+		ln -s "/usr/share/doc/gnutls-doc/html/$$i" \
+			usr/share/info/ ; \
+	done && \
+	cd ../.. && \
+	dh_link -pgnutls-doc
+
