@@ -3,6 +3,8 @@ gnutls26 (2.1.7-1) unstable; urgency=low
   * New upstream version.
     - Another soname bump. Packages renamed.
   * Stop shipping a repacked orig.tar.gz, use upstream's tar.bz2.
+  * Add Build-Conflicts: libgnutls-dev to stop libtool from linking
+    libgnutls-extra against libgnutls.so in /usr/lib/. Closes: #453035
 
  -- Andreas Metzler <ametzler@debian.org>  Thu, 29 Nov 2007 19:51:31 +0100
 
