@@ -1,4 +1,4 @@
-gnutls26 (2.1.7-1) unstable; urgency=low
+gnutls26 (2.1.7-1) experimental; urgency=low
 
   * New upstream version.
     - Another soname bump. Packages renamed.
