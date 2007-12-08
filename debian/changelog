@@ -1,6 +1,7 @@
 gnutls26 (2.1.7-2) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * Standards-Version: 3.7.3. ${binary:Version} instead of ${Source-Version}.
 
  -- Andreas Metzler <ametzler@debian.org>  Sat,  1 Dec 2007 10:54:56 +0100
 
