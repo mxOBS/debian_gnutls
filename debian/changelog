@@ -4,6 +4,8 @@ gnutls26 (2.2.0-1) experimental; urgency=low
     License change! Main library stays LGPLv2.1+ but libgnutls-extra,
     libgnutls-openssl and the binaries are GPLv3+ now. debian/copyright is
     updated.
+  * Stop linking agains liblzo2. Version 2.02 of this library if GPLv2 (older
+    versions were GPLv2+) and this license is not compatible with GPLv3+.
   * Non packaged 2.1.8 introduced new symbol
     gnutls_x509_crt_get_subject_alt_name2(), bump shlibs.
   * Standards-Version: 3.7.3. ${binary:Version} instead of ${Source-Version}.
