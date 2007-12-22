@@ -1,6 +1,8 @@
 gnutls26 (2.2.0-2) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * guile-1.8 does not build on ia64. Stop trying to build the gnutls wrapper
+    there.
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 16 Dec 2007 17:12:21 +0100
 

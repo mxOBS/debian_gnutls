@@ -2,19 +2,33 @@
 # Build the gnutls package for Debian.
 
 ifeq ($(DEB_BUILD_ARCH),hppa)
-  CFLAGS += -fno-gcse
+	CFLAGS += -fno-gcse
+endif
+
+include /usr/share/cdbs/1/rules/buildvars.mk
+
+# No guile on ia64; do not build gnutls wrapper there.
+ifeq ($(DEB_BUILD_ARCH),ia64)
+	DEB_ARCH_PACKAGES := $(subst guile-gnutls,,$(DEB_ARCH_PACKAGES))
 endif
 
 include /usr/share/cdbs/1/rules/debhelper.mk
 include /usr/share/cdbs/1/class/autotools.mk
 include /usr/share/cdbs/1/rules/simple-patchsys.mk
 
-DEB_CONFIGURE_EXTRA_FLAGS = --with-mcrypt=no --enable-ld-version-script --disable-cxx --enable-guile --with-guile-site-dir=/usr/share/guile/site --without-lzo
+DEB_CONFIGURE_EXTRA_FLAGS = --with-mcrypt=no --enable-ld-version-script --disable-cxx --without-lzo
 DEB_MAKE_CHECK_TARGET = check
 DEB_DH_STRIP_ARGS = --dbg-package=libgnutls26-dbg
 DEB_DH_MAKESHLIBS_ARGS_libgnutls26 := -V 'libgnutls26 (>=2.2.0-0)'
 DEB_DH_MAKESHLIBS_ARGS_guile-gnutls := -Xusr/lib/libguile-gnutls-
 DEB_COMPRESS_EXCLUDE := gnutls.pdf
+
+# No guile on ia64; do not build gnutls wrapper there.
+ifeq ($(DEB_BUILD_ARCH),ia64)
+	DEB_CONFIGURE_EXTRA_FLAGS += --disable-guile
+else
+	DEB_CONFIGURE_EXTRA_FLAGS += --enable-guile --with-guile-site-dir=/usr/share/guile/site
+endif
 
 #build/libgnutls-doc::
 #	$(DEB_MAKE_INVOKE) -C libextra/openpgp pgp-api.tex
