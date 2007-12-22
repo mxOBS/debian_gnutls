@@ -5,13 +5,6 @@ ifeq ($(DEB_BUILD_ARCH),hppa)
 	CFLAGS += -fno-gcse
 endif
 
-include /usr/share/cdbs/1/rules/buildvars.mk
-
-# No guile on ia64; do not build gnutls wrapper there.
-ifeq ($(DEB_BUILD_ARCH),ia64)
-	DEB_ARCH_PACKAGES := $(subst guile-gnutls,,$(DEB_ARCH_PACKAGES))
-endif
-
 include /usr/share/cdbs/1/rules/debhelper.mk
 include /usr/share/cdbs/1/class/autotools.mk
 include /usr/share/cdbs/1/rules/simple-patchsys.mk

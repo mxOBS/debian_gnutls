@@ -96,7 +96,7 @@ Description: the GNU TLS library - documentation and examples
 
 Package: guile-gnutls
 Priority: optional
-Architecture: any
+Architecture: alpha amd64 arm armel hppa i386 kfreebsd-amd64 kfreebsd-i386 m68k mips mipsel powerpc s390 sparc
 Section: libs
 Depends: ${misc:Depends},${shlibs:Depends}, guile-1.8
 Description: the GNU TLS library - GNU Guile bindings
