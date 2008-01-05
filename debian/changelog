@@ -3,6 +3,8 @@ gnutls26 (2.2.0-2) UNRELEASED; urgency=low
   * NOT RELEASED YET
   * guile-1.8 does not build on ia64. Stop trying to build the gnutls wrapper
     there.
+  * libgnutls26-dbg needs to conflict with libgnutls13-dbg, since both
+    packages contain gnutls-bin debugging symbols. Closes: #459295.
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 16 Dec 2007 17:12:21 +0100
 
