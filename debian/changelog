@@ -1,8 +1,9 @@
-gnutls26 (2.2.1-3) UNRELEASED; urgency=low
+gnutls26 (2.2.1-3) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * Resurrect accidentally reverted fix for ftbfs on ia64. Do not try to build
+    gnutls guile wrapper on ia64.
 
- -- Andreas Metzler <ametzler@debian.org>  Sun, 03 Feb 2008 18:41:45 +0100
+ -- Andreas Metzler <ametzler@debian.org>  Mon, 04 Feb 2008 19:14:03 +0100
 
 gnutls26 (2.2.1-2) unstable; urgency=low
 
