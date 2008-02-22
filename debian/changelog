@@ -1,16 +1,13 @@
-gnutls26 (2.2.1-4) UNRELEASED; urgency=low
+gnutls26 (2.2.2-1) unstable; urgency=low
 
-  * NOT RELEASED YET
-  * Pulled from upstream:
-    + debian/patches/20_nulltermfix_465197.diff
-      debian/patches/21_nulltermfix_465197_part2.diff
-      Corrected the behaviour of gnutls_x509_crt_get_subject_alt_name()
-      and gnutls_x509_crt_get_subject_alt_name() to not null terminate binary
-      strings and return the proper size.
-      corrected string handling in parse_general_name.
-      Closes: #465197
+  * New upstream version.
+    Corrected the behaviour of gnutls_x509_crt_get_subject_alt_name()
+    and gnutls_x509_crt_get_subject_alt_name() to not null terminate binary
+    strings and return the proper size.
+    corrected string handling in parse_general_name.
+    Closes: #465197
 
- -- Andreas Metzler <ametzler@debian.org>  Mon, 04 Feb 2008 19:56:59 +0100
+ -- Andreas Metzler <ametzler@debian.org>  Fri, 22 Feb 2008 19:08:36 +0100
 
 gnutls26 (2.2.1-3) unstable; urgency=low
 
