@@ -2,6 +2,7 @@ gnutls26 (2.2.3~rc-1) unstable; urgency=low
 
   * New upstream version. Release candidate for 2.2.3.
     + Increase default handshake packet size limit to 48kb. Closes: #478191
+  * remove unsupported .l command from debian/libgnutls-config.1
 
  -- Andreas Metzler <ametzler@debian.org>  Thu, 01 May 2008 13:09:49 +0200
 
