@@ -7,6 +7,7 @@ gnutls26 (2.2.2-1) unstable; urgency=low
     corrected string handling in parse_general_name.
     Closes: #465197
   * Point watchfile to ftp.gnutls.org.
+  * Downgrade libtasn build-dep from 0.3.4-1 to 0.3.4-0.
 
  -- Andreas Metzler <ametzler@debian.org>  Fri, 22 Feb 2008 19:08:36 +0100
 
