@@ -1,3 +1,9 @@
+gnutls26 (2.2.3~rc-2) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Andreas Metzler <ametzler@debian.org>  Thu, 01 May 2008 14:15:06 +0200
+
 gnutls26 (2.2.3~rc-1) unstable; urgency=low
 
   * New upstream version. Release candidate for 2.2.3.
