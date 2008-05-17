@@ -1,6 +1,7 @@
 #! /usr/bin/make -f
 # Build the gnutls package for Debian.
 
+CFLAGS += -D_REENTRANT
 ifeq ($(DEB_BUILD_ARCH),hppa)
 	CFLAGS += -fno-gcse
 endif
