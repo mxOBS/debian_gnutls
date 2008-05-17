@@ -4,6 +4,9 @@ gnutls26 (2.3.9-1) experimental; urgency=low
     - Requires usage of included OpenCDK version, external library will not be
       maintained anymore. Drop respective (build-)depends.
     - API extended, bump shlibs.
+    - certtool asks for password confirmation. Closes: #364287
+    - performance enhancements for gnutls_certificate_set_x509_trust_file.
+      Closes: #400448
 
  -- Andreas Metzler <ametzler@debian.org>  Sat, 17 May 2008 16:56:04 +0200
 
