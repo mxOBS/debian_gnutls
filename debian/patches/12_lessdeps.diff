@@ -1,0 +1,11 @@
+--- gnutls13-1.4.0.orig/libextra/libgnutls-extra-config.in
++++ gnutls13-1.4.0/libextra/libgnutls-extra-config.in
+@@ -4,7 +4,7 @@
+ exec_prefix=@exec_prefix@
+ exec_prefix_set=no
+ 
+-gnutls_libs="@LIBGNUTLS_EXTRA_LIBS@"
++gnutls_libs=-lgnutls-extra
+ gnutls_cflags="@LIBGNUTLS_EXTRA_CFLAGS@"
+ gnutls_la_file="@libdir@/libgnutls-extra.la"
+ 
