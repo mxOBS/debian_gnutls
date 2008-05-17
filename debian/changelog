@@ -3,6 +3,7 @@ gnutls26 (2.3.9-1) experimental; urgency=low
   * New upstream development version.
     - Requires usage of included OpenCDK version, external library will not be
       maintained anymore. Drop respective (build-)depends.
+    - API extended, bump shlibs.
 
  -- Andreas Metzler <ametzler@debian.org>  Sat, 17 May 2008 16:56:04 +0200
 
