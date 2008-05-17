@@ -1,8 +1,10 @@
-gnutls26 (2.2.3-2) UNRELEASED; urgency=low
+gnutls26 (2.3.9-1) experimental; urgency=low
 
-  * NOT RELEASED YET
+  * New upstream development version.
+    - Requires usage of included OpenCDK version, external library will not be
+      maintained anymore. Drop respective (build-)depends.
 
- -- Andreas Metzler <ametzler@debian.org>  Mon, 12 May 2008 19:08:35 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 17 May 2008 16:56:04 +0200
 
 gnutls26 (2.2.3-1) unstable; urgency=low
 
