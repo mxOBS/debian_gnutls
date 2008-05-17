@@ -10,9 +10,10 @@ gnutls26 (2.3.9-1) experimental; urgency=low
     - certtool asks for password confirmation. Closes: #364287
     - performance enhancements for gnutls_certificate_set_x509_trust_file.
       Closes: #400448
-    - For paranoia sake build with -D_REENTRANT even if upstream has stopped
-      doing so.
-    - [debian/copyright] : update, and stop including a GFDL copy.
+  * For paranoia sake build with -D_REENTRANT even if upstream has stopped
+    doing so.
+  * [debian/copyright] : update, and stop including a GFDL copy.
+  * Point watchfile to development versions.
 
  -- Andreas Metzler <ametzler@debian.org>  Sat, 17 May 2008 16:56:04 +0200
 
