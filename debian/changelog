@@ -22,6 +22,8 @@ gnutls26 (2.3.9-1) experimental; urgency=low
     - certtool asks for password confirmation. Closes: #364287
     - performance enhancements for gnutls_certificate_set_x509_trust_file.
       Closes: #400448
+    - gnutls-cli: exits when hostname doesn't match certificate.
+      Use --insecure to avoid hostname comparison.
   * For paranoia sake build with -D_REENTRANT even if upstream has stopped
     doing so.
   * [debian/copyright] : update, and stop including a GFDL copy.
