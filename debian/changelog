@@ -2,6 +2,8 @@ gnutls26 (2.3.11-2) experimental; urgency=low
 
   * unreleased
   * Ship doc/certtool.cfg in /usr/share/doc/gnutls-bin/examples. Closes: #483798
+  * Add 15_gnutls-pgpself.diff (Pulled from upstream GIT), fixing testsuite
+    failure on sparc.
 
  -- Andreas Metzler <ametzler@debian.org>  Sat, 24 May 2008 09:36:33 +0200
 

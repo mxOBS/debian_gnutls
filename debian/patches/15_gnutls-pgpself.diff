@@ -1,0 +1,50 @@
+commit 12376a5162ad880bd500438f479167054678b366
+Author: Nikos Mavrogiannopoulos <nmav@crystal.(none)>
+Date:   Wed Jun 4 19:52:46 2008 +0300
+
+    safer copying of keyid type.
+
+diff --git a/lib/openpgp/pgp.c b/lib/openpgp/pgp.c
+index 8df59f3..02834f7 100644
+--- a/lib/openpgp/pgp.c
++++ b/lib/openpgp/pgp.c
+@@ -1461,7 +1461,7 @@ gnutls_openpgp_crt_get_preferred_key_id (gnutls_openpgp_crt_t key,
+       return GNUTLS_E_INVALID_REQUEST;
+     }
+
+-  memcpy( keyid, key->preferred_keyid, sizeof(keyid));
++  memcpy( keyid, key->preferred_keyid, sizeof(gnutls_openpgp_keyid_t));
+
+   return 0;
+ }
+@@ -1497,7 +1497,7 @@ int ret;
+     }
+
+   key->preferred_set = 1;
+-  memcpy( key->preferred_keyid, keyid, sizeof(keyid));
++  memcpy( key->preferred_keyid, keyid, sizeof(gnutls_openpgp_keyid_t));
+
+   return 0;
+ }
+diff --git a/lib/openpgp/privkey.c b/lib/openpgp/privkey.c
+index 012ce15..5a7e2d5 100644
+--- a/lib/openpgp/privkey.c
++++ b/lib/openpgp/privkey.c
+@@ -1059,7 +1059,7 @@ gnutls_openpgp_privkey_get_preferred_key_id (gnutls_openpgp_privkey_t key,
+       return GNUTLS_E_INVALID_REQUEST;
+     }
+
+-  memcpy( keyid, key->preferred_keyid, sizeof(keyid));
++  memcpy( keyid, key->preferred_keyid, sizeof(gnutls_openpgp_keyid_t));
+
+   return 0;
+ }
+@@ -1096,7 +1096,7 @@ gnutls_openpgp_privkey_set_preferred_key_id (gnutls_openpgp_privkey_t key,
+     }
+
+   key->preferred_set = 1;
+-  memcpy( key->preferred_keyid, keyid, sizeof(keyid));
++  memcpy( key->preferred_keyid, keyid, sizeof(gnutls_openpgp_keyid_t));
+
+   return 0;
+ }
