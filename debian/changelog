@@ -1,3 +1,9 @@
+gnutls26 (2.3.12-2) experimental; urgency=low
+
+  * unreleased
+
+ -- Andreas Metzler <ametzler@debian.org>  Thu, 05 Jun 2008 19:59:00 +0200
+
 gnutls26 (2.3.12-1) experimental; urgency=low
 
   * New upstream version. Bump shlibs.
