@@ -1,11 +1,11 @@
-gnutls26 (2.3.11-2) experimental; urgency=low
+gnutls26 (2.3.12-1) experimental; urgency=low
 
-  * unreleased
+  * New upstream version. Bump shlibs.
   * Ship doc/certtool.cfg in /usr/share/doc/gnutls-bin/examples. Closes: #483798
   * Add 15_gnutls-pgpself.diff (Pulled from upstream GIT), fixing testsuite
     failure on sparc.
 
- -- Andreas Metzler <ametzler@debian.org>  Sat, 24 May 2008 09:36:33 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Thu, 05 Jun 2008 19:08:29 +0200
 
 gnutls26 (2.3.11-1) experimental; urgency=low
 
