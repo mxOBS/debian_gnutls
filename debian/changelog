@@ -1,8 +1,9 @@
-gnutls26 (2.3.12-2) experimental; urgency=low
+gnutls26 (2.3.13-1) experimental; urgency=low
 
-  * unreleased
+  * New upstream version. 2nd rc for 2.4.0.
+  * Drop debian/patches/15_gnutls-pgpself.diff, included upstream.
 
- -- Andreas Metzler <ametzler@debian.org>  Thu, 05 Jun 2008 19:59:00 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Sun, 08 Jun 2008 18:00:51 +0200
 
 gnutls26 (2.3.12-1) experimental; urgency=low
 
