@@ -1,8 +1,9 @@
-gnutls26 (2.3.14-2) experimental; urgency=low
+gnutls26 (2.3.15-1) experimental; urgency=low
 
-  * unreleased
+  * New upstream version. (rc4)
+    Disables 'openpgp-certs' tests. Closes: #486269
 
- -- Andreas Metzler <ametzler@debian.org>  Wed, 11 Jun 2008 19:41:59 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Mon, 16 Jun 2008 19:08:24 +0200
 
 gnutls26 (2.3.14-1) experimental; urgency=low
 
