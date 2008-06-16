@@ -1,3 +1,9 @@
+gnutls26 (2.3.15-2) experimental; urgency=low
+
+  * unreleased
+
+ -- Andreas Metzler <ametzler@debian.org>  Mon, 16 Jun 2008 19:43:32 +0200
+
 gnutls26 (2.3.15-1) experimental; urgency=low
 
   * New upstream version. (rc4)
