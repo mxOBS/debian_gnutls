@@ -1,8 +1,9 @@
-gnutls26 (2.3.15-2) experimental; urgency=low
+gnutls26 (2.4.0-1) experimental; urgency=low
 
-  * unreleased
+  * New upstream stable release.
+  * New APIs to retrieve fingerprint from OpenPGP subkeys. Bump shlibs.
 
- -- Andreas Metzler <ametzler@debian.org>  Mon, 16 Jun 2008 19:43:32 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Wed, 18 Jun 2008 19:40:38 +0200
 
 gnutls26 (2.3.15-1) experimental; urgency=low
 

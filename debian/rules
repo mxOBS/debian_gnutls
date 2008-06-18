@@ -13,7 +13,7 @@ include /usr/share/cdbs/1/rules/simple-patchsys.mk
 DEB_CONFIGURE_EXTRA_FLAGS = --with-mcrypt=no --enable-ld-version-script --disable-cxx --without-lzo
 DEB_MAKE_CHECK_TARGET = check
 DEB_DH_STRIP_ARGS = --dbg-package=libgnutls26-dbg
-DEB_DH_MAKESHLIBS_ARGS_libgnutls26 := -V 'libgnutls26 (>=2.3.12-0)'
+DEB_DH_MAKESHLIBS_ARGS_libgnutls26 := -V 'libgnutls26 (>=2.4.0-0)'
 DEB_DH_MAKESHLIBS_ARGS_guile-gnutls := -Xusr/lib/libguile-gnutls-
 DEB_COMPRESS_EXCLUDE := gnutls.pdf
 
