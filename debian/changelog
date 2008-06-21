@@ -1,6 +1,7 @@
 gnutls26 (2.4.0-2) experimental; urgency=low
 
   * unreleased
+  * Standards version 3.8.0. Rename README.source_and_patches to README.source.
 
  -- Andreas Metzler <ametzler@debian.org>  Wed, 18 Jun 2008 20:06:06 +0200
 

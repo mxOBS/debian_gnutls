@@ -5,7 +5,7 @@ Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
 Uploaders: Andreas Metzler <ametzler@debian.org>, Eric Dorland <eric@debian.org>, James Westby <jw+debian@jameswestby.net>
 Build-Depends: debhelper (>= 5.0.0), libgcrypt11-dev (>= 1.3.2), zlib1g-dev, cdbs, gtk-doc-tools, texinfo (>= 4.8), libtasn1-3-dev (>= 0.3.4-0), autotools-dev, guile-1.8-dev [!ia64]
 Build-Conflicts: libgnutls-dev
-Standards-Version: 3.7.3
+Standards-Version: 3.8.0
 Vcs-Svn: svn://svn.debian.org/svn/pkg-gnutls/packages/gnutls26/trunk
 Vcs-Browser: http://svn.debian.org/wsvn/pkg-gnutls/packages/gnutls26/trunk/
 Homepage: http://www.gnutls.org/
