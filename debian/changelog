@@ -2,6 +2,7 @@ gnutls26 (2.4.0-2) unstable; urgency=low
 
   * Standards version 3.8.0. Rename README.source_and_patches to README.source.
   * Upload to unstable.
+  * Point watchfile to stable releases again.
 
  -- Andreas Metzler <ametzler@debian.org>  Tue, 24 Jun 2008 19:13:25 +0200
 
