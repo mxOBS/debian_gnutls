@@ -1,9 +1,9 @@
-gnutls26 (2.4.0-2) experimental; urgency=low
+gnutls26 (2.4.0-2) unstable; urgency=low
 
-  * unreleased
   * Standards version 3.8.0. Rename README.source_and_patches to README.source.
+  * Upload to unstable.
 
- -- Andreas Metzler <ametzler@debian.org>  Wed, 18 Jun 2008 20:06:06 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Tue, 24 Jun 2008 19:13:25 +0200
 
 gnutls26 (2.4.0-1) experimental; urgency=low
 
