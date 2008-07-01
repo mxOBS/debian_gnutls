@@ -1,6 +1,7 @@
-gnutls26 (2.4.0-3) unstable; urgency=low
+gnutls26 (2.4.1-1) unstable; urgency=medium
 
-  * unreleased
+  * New upstream version, fixing a local denial of service vulnerability only
+    present in >= 2.3.5. GNUTLS-SA-2008-2  CVE-2008-2377
 
  -- Andreas Metzler <ametzler@debian.org>  Tue, 01 Jul 2008 19:35:51 +0200
 
