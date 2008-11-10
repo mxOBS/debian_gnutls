@@ -1,3 +1,9 @@
+gnutls26 (2.4.2-3) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Andreas Metzler <ametzler@debian.org>  Mon, 10 Nov 2008 20:09:16 +0100
+
 gnutls26 (2.4.2-2) unstable; urgency=medium
 
   * [CVE-2008-4989.diff] Fix man in the middle attack for certificate
