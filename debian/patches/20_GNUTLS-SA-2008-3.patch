@@ -1,37 +1,6 @@
-From 5c27c1a50cabe9db19afd114a56416bb78923fd3 Mon Sep 17 00:00:00 2001
-From: Martin von Gagern <Martin.vGagern@gmx.net>
-Date: Mon, 3 Nov 2008 13:35:13 +0100
-Subject: [PATCH] Drop self signed certificate from certificate chain before validating
- certificates. This avoids the penultimate certificate to get incorrectly
- trusted.
-
----
- lib/x509/verify.c |   22 +++++++++++-----------
- 1 files changed, 11 insertions(+), 11 deletions(-)
-
-diff --git a/lib/x509/verify.c b/lib/x509/verify.c
-index 041a450..8fa90dc 100644
---- a/lib/x509/verify.c
-+++ b/lib/x509/verify.c
-@@ -374,6 +374,17 @@ _gnutls_x509_verify_certificate (const gnutls_x509_crt_t * certificate_list,
-   int i = 0, ret;
-   unsigned int status = 0, output;
- 
-+  /* Check if the last certificate in the path is self signed.
-+   * In that case ignore it (a certificate is trusted only if it
-+   * leads to a trusted party by us, not the server's).
-+   */
-+  if (gnutls_x509_crt_check_issuer (certificate_list[clist_size - 1],
-+				    certificate_list[clist_size - 1]) > 0
-+      && clist_size > 0)
-+    {
-+      clist_size--;
-+    }
-+
-   /* Verify the last certificate in the certificate path
-    * against the trusted CA certificate list.
-    *
-@@ -412,17 +423,6 @@ _gnutls_x509_verify_certificate (const gnutls_x509_crt_t * certificate_list,
+--- lib/x509/verify.c.origal	2008-11-11 18:46:43.000000000 +0000
++++ lib/x509/verify.c	2008-11-11 18:48:08.000000000 +0000
+@@ -414,17 +414,6 @@
      }
  #endif
  
@@ -49,6 +18,3 @@ index 041a450..8fa90dc 100644
    /* Verify the certificate path (chain) 
     */
    for (i = clist_size - 1; i > 0; i--)
--- 
-1.6.0.3
-
