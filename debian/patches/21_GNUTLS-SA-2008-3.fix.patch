@@ -1,0 +1,101 @@
+From gnutls-devel-bouncesg@gnu.org Fri Dec  5 20:02:04 2008
+Message-ID: <49397A6C.4030709@gnutls.org>
+Date: Fri, 05 Dec 2008 21:01:00 +0200
+From: Nikos Mavrogiannopoulos <nmav@gnutls.org>
+MIME-Version: 1.0
+To: gnutls-devel@gnu.org
+References: <20081203071342.13532.21316.reportbug@hal>	<20081203181956.GA3376@downhill.g.la>
+	<4937817E.8070500@gnutls.org> <87prk8e2qh.fsf@mocca.josefsson.org>
+In-Reply-To: <87prk8e2qh.fsf@mocca.josefsson.org>
+OpenPGP: id=96865171
+Content-Type: multipart/mixed; boundary="------------080007080009040301020505"
+Subject: Re: Bug#507633: libgnutls26: GnuTLS does not know VeriSign any more
+List-Id: GnuTLS development discussions <gnutls-devel.gnu.org>
+Status: RO
+Content-Length: 2767
+Lines: 83
+
+This is a multi-part message in MIME format.
+--------------080007080009040301020505
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Simon Josefsson wrote:
+
+>>> gnutls-cli  -p 443 hbci-pintan-rp.s-hbci.de --x509cafile \
+>>> /etc/ssl/certs/ca-certificates.crt
+>> It seems to me that MD2 is missing from newer gnutls and this is the
+>> reason why it fails. libgcrypt has the MD2 enumeration but not the
+>> actual implementation and this tricked me into removing the included
+>> md2. I will try to revert the old behavior of using an included version
+>> of md2.
+> 
+> I don't think MD2 should be required here: chain verification should not
+> need to verify the RSA-MD2 self-signature in the CA cert, because that
+> cert is marked as trusted.
+> 
+> If there were other MD2 signatures involved, verification should
+> definitely fail, but that doesn't seem to be the case with this chain.
+> 
+> It seems this problem is caused by the chain validation algorithm now
+> also look at the CA cert, but it didn't before the GNUTLS-SA-2008-3
+> patch.
+
+I've added again the GNUTLS-SA-2008-3 patch this time with some checks
+to avoid the crashes.
+
+regards,
+Nikos
+
+--------------080007080009040301020505
+Content-Type: text/plain;
+ name="patch.txt"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline;
+ filename="patch.txt"
+
+diff --git a/lib/x509/verify.c b/lib/x509/verify.c
+index 92ef722..00e2422 100644
+--- a/lib/x509/verify.c
++++ b/lib/x509/verify.c
+@@ -374,6 +374,24 @@ _gnutls_x509_verify_certificate (const gnutls_x509_crt_t * certificate_list,
+   int i = 0, ret;
+   unsigned int status = 0, output;
+ 
++  if (clist_size > 1) 
++    {
++      /* Check if the last certificate in the path is self signed.
++       * In that case ignore it (a certificate is trusted only if it
++       * leads to a trusted party by us, not the server's).
++       *
++       * This in addition prevents from verifying self signed certificates
++       * against themselves. This although not bad caused verification
++       * failures on some root self signed certificates that use the MD2
++       * algorithm.
++       */
++      if (gnutls_x509_crt_check_issuer (certificate_list[clist_size - 1],
++  				    certificate_list[clist_size - 1]) > 0)
++        {
++          clist_size--;
++        }
++    }
++
+   /* Verify the last certificate in the certificate path
+    * against the trusted CA certificate list.
+    *
+
+--------------080007080009040301020505
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+_______________________________________________
+Gnutls-devel mailing list
+Gnutls-devel@gnu.org
+http://lists.gnu.org/mailman/listinfo/gnutls-devel
+
+--------------080007080009040301020505--
+
+
+
