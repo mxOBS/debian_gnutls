@@ -1,3 +1,9 @@
+gnutls26 (2.4.2-5) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 06 Dec 2008 12:23:37 +0100
+
 gnutls26 (2.4.2-4) unstable; urgency=medium
 
   * Add Simon Josefsson to uploaders.
