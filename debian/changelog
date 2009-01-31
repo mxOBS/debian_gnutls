@@ -1,4 +1,4 @@
-gnutls26 (2.4.2-5) UNRELEASED; urgency=low
+gnutls26 (2.4.2-5) unstable; urgency=low
 
   * Pull two patches from upstream stable branch to make gnutls behavior
     match documentation:
@@ -8,9 +8,8 @@ gnutls26 (2.4.2-5) UNRELEASED; urgency=low
    + 22_deprecate_md2_md5_x509_validation.diff: Verifying untrusted X.509
      certificates signed with RSA-MD2 or RSA-MD5 will now fail with a
      GNUTLS_CERT_INSECURE_ALGORITHM verification output.
-    
 
- -- Andreas Metzler <ametzler@debian.org>  Sat, 31 Jan 2009 15:35:01 +0100
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 31 Jan 2009 16:26:52 +0100
 
 gnutls26 (2.4.2-4) unstable; urgency=medium
 
