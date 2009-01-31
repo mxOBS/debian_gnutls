@@ -1,9 +1,14 @@
 gnutls26 (2.4.2-5) UNRELEASED; urgency=low
 
-  * New patch 23_permit_v1_CA.diff pulled from upstream. Make gnutls behave
-    as documented, accepting v1 x509 CA certs if
-    GNUTLS_VERIFY_ALLOW_ANY_X509_V1_CA_CRT and/or
-    GNUTLS_VERIFY_ALLOW_X509_V1_CA_CRT were supplied. Closes: #509593
+  * Pull two patches from upstream stable branch to make gnutls behavior
+    match documentation:
+   + patch 23_permit_v1_CA.diff:Accept v1 x509 CA
+     certs if GNUTLS_VERIFY_ALLOW_ANY_X509_V1_CA_CRT and/or
+     GNUTLS_VERIFY_ALLOW_X509_V1_CA_CRT were supplied. Closes: #509593
+   + 22_deprecate_md2_md5_x509_validation.diff: Verifying untrusted X.509
+     certificates signed with RSA-MD2 or RSA-MD5 will now fail with a
+     GNUTLS_CERT_INSECURE_ALGORITHM verification output.
+    
 
  -- Andreas Metzler <ametzler@debian.org>  Sat, 31 Jan 2009 15:35:01 +0100
 
