@@ -1,3 +1,9 @@
+gnutls26 (2.4.2-6) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 31 Jan 2009 18:10:25 +0100
+
 gnutls26 (2.4.2-5) unstable; urgency=low
 
   * Pull two patches from upstream stable branch to make gnutls behavior
