@@ -1,6 +1,13 @@
 gnutls26 (2.4.2-6) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * To new patches, making this 2.4.3 in disguise:
+    + 24_intermedcertificate.patch If a non-root certificate ist trusted
+      gnutls certificateificate verification stops there instead of checking
+      to up to the root of the certificate chain.
+    + 25_1_bufferoverrun.patch. Fix buffer overrun bug in
+      gnutls_x509_crt_list_import.
+      http://news.gmane.org/find-root.php?message_id=%3c000001c91d6e%2463059c90%242910d5b0%24%40com%3e
 
  -- Andreas Metzler <ametzler@debian.org>  Sat, 31 Jan 2009 18:10:25 +0100
 
