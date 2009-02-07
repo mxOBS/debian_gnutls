@@ -1,3 +1,9 @@
+gnutls26 (2.4.2-7) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 07 Feb 2009 13:25:05 +0100
+
 gnutls26 (2.4.2-6) unstable; urgency=medium
 
   * New patches, syncing with 2.4.3 upstream oldstable release:
