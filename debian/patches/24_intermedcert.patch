@@ -18,12 +18,18 @@ The signature on trusted certificates are not checked, so the chain
 has a chance to validate correctly.  Reported by "Douglas E. Engert"
 <deengert@anl.gov> in
 <http://thread.gmane.org/gmane.comp.encryption.gpg.gnutls.devel/3351>.
+
+
+Subject: Move down revocation check to revert code to how it looked before.
+
+The idea is that if you have marked a cert as trusted, you may want to trust
+it even though some authority has revoked it.  This changes back how
+this code used to work.
  
-diff --git a/lib/x509/verify.c b/lib/x509/verify.c
-index ffc7704..ee66060 100644
---- a/lib/x509/verify.c
+diff -u b/lib/x509/verify.c b/lib/x509/verify.c
+--- b/lib/x509/verify.c
 +++ b/lib/x509/verify.c
-@@ -51,6 +51,38 @@ static int _gnutls_verify_crl2 (gnutls_x509_crl_t crl,
+@@ -51,6 +51,38 @@
  				int tcas_size, unsigned int flags,
  				unsigned int *output);
  
@@ -62,7 +68,7 @@ index ffc7704..ee66060 100644
  
  /* Checks if the issuer of a certificate is a
   * Certificate Authority, or if the certificate is the same
-@@ -365,16 +397,12 @@ gnutls_x509_crt_check_issuer (gnutls_x509_crt_t cert,
+@@ -365,16 +397,12 @@
  }
  
  
@@ -82,29 +88,7 @@ index ffc7704..ee66060 100644
   */
  static unsigned int
  _gnutls_x509_verify_certificate (const gnutls_x509_crt_t * certificate_list,
-@@ -387,34 +415,72 @@ _gnutls_x509_verify_certificate (const gnutls_x509_crt_t * certificate_list,
-   int i = 0, ret;
-   unsigned int status = 0, output;
- 
-+  /* Check for revoked certificates in the chain
-+   */
-+#ifdef ENABLE_PKI
-+  for (i = 0; i < clist_size; i++)
-+    {
-+      ret = gnutls_x509_crt_check_revocation (certificate_list[i],
-+					      CRLs, crls_size);
-+      if (ret == 1)
-+	{			/* revoked */
-+	  status |= GNUTLS_CERT_REVOKED;
-+	  status |= GNUTLS_CERT_INVALID;
-+	  return status;
-+	}
-+    }
-+#endif
-+
-   if (clist_size > 1)
-     {
-       /* Check if the last certificate in the path is self signed.
+@@ -393,28 +421,50 @@
         * In that case ignore it (a certificate is trusted only if it
         * leads to a trusted party by us, not the server's).
         *
@@ -164,30 +148,12 @@ index ffc7704..ee66060 100644
    if (ret == 0)
      {
        /* if the last certificate in the certificate
-@@ -427,23 +493,7 @@ _gnutls_x509_verify_certificate (const gnutls_x509_crt_t * certificate_list,
-       return status;
+@@ -443,7 +493,7 @@
      }
+ #endif
  
--  /* Check for revoked certificates in the chain
--   */
--#ifdef ENABLE_PKI
--  for (i = 0; i < clist_size; i++)
--    {
--      ret = gnutls_x509_crt_check_revocation (certificate_list[i],
--					      CRLs, crls_size);
--      if (ret == 1)
--	{			/* revoked */
--	  status |= GNUTLS_CERT_REVOKED;
--	  status |= GNUTLS_CERT_INVALID;
--	  return status;
--	}
--    }
--#endif
--
 -  /* Verify the certificate path (chain) 
 +  /* Verify the certificate path (chain)
     */
    for (i = clist_size - 1; i > 0; i--)
      {
---
-cgit v0.8.2
