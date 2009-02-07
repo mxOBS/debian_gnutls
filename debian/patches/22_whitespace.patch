@@ -1,0 +1,36 @@
+From bfdfe47993b050b3bee490f239a05d6d4b98f3b3 Mon Sep 17 00:00:00 2001
+From: Simon Josefsson <simon@josefsson.org>
+Date: Fri, 12 Dec 2008 18:47:20 +0000
+Subject: Fix whitespace.
+
+---
+diff --git a/lib/x509/verify.c b/lib/x509/verify.c
+index 00e2422..be01b5f 100644
+--- a/lib/x509/verify.c
++++ b/lib/x509/verify.c
+@@ -374,7 +374,7 @@ _gnutls_x509_verify_certificate (const gnutls_x509_crt_t * certificate_list,
+   int i = 0, ret;
+   unsigned int status = 0, output;
+ 
+-  if (clist_size > 1) 
++  if (clist_size > 1)
+     {
+       /* Check if the last certificate in the path is self signed.
+        * In that case ignore it (a certificate is trusted only if it
+@@ -386,10 +386,10 @@ _gnutls_x509_verify_certificate (const gnutls_x509_crt_t * certificate_list,
+        * algorithm.
+        */
+       if (gnutls_x509_crt_check_issuer (certificate_list[clist_size - 1],
+-  				    certificate_list[clist_size - 1]) > 0)
+-        {
+-          clist_size--;
+-        }
++					certificate_list[clist_size - 1]) > 0)
++	{
++	  clist_size--;
++	}
+     }
+ 
+   /* Verify the last certificate in the certificate path
+--
+cgit v0.8.2

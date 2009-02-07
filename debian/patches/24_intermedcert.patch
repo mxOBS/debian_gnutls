@@ -1,5 +1,12 @@
+From 8770b1cf409811decc278f63f3cf634d0f30027a Mon Sep 17 00:00:00 2001
+From: Simon Josefsson <simon@josefsson.org>
+Date: Mon, 02 Feb 2009 16:38:53 +0000
+Subject: Make it possible to trust intermediary certificates.
 
-** libgnutls: Accept chains where intermediary certs are trusted.
+Based on tiny patch from "Douglas E. Engert" <deengert@anl.gov>
+in <http://thread.gmane.org/gmane.comp.encryption.gpg.gnutls.devel/3351/focus=3376>.
+ 
+Accept chains where intermediary certs are trusted.
 Before GnuTLS needed to validate the entire chain back to a
 self-signed certificate.  GnuTLS will now stop looking when it has
 found an intermediary trusted certificate.  The new behaviour is
@@ -11,10 +18,12 @@ The signature on trusted certificates are not checked, so the chain
 has a chance to validate correctly.  Reported by "Douglas E. Engert"
 <deengert@anl.gov> in
 <http://thread.gmane.org/gmane.comp.encryption.gpg.gnutls.devel/3351>.
-
---- x/lib/verify.c	2009-02-04 19:52:19.000000000 +0100
-+++ x/lib/x509/verify.c	2009-02-04 20:06:24.000000000 +0100
-@@ -53,6 +53,38 @@
+ 
+diff --git a/lib/x509/verify.c b/lib/x509/verify.c
+index ffc7704..ee66060 100644
+--- a/lib/x509/verify.c
++++ b/lib/x509/verify.c
+@@ -51,6 +51,38 @@ static int _gnutls_verify_crl2 (gnutls_x509_crl_t crl,
  				int tcas_size, unsigned int flags,
  				unsigned int *output);
  
@@ -53,7 +62,7 @@ has a chance to validate correctly.  Reported by "Douglas E. Engert"
  
  /* Checks if the issuer of a certificate is a
   * Certificate Authority, or if the certificate is the same
-@@ -367,16 +399,12 @@
+@@ -365,16 +397,12 @@ gnutls_x509_crt_check_issuer (gnutls_x509_crt_t cert,
  }
  
  
@@ -73,7 +82,7 @@ has a chance to validate correctly.  Reported by "Douglas E. Engert"
   */
  static unsigned int
  _gnutls_x509_verify_certificate (const gnutls_x509_crt_t * certificate_list,
-@@ -389,16 +417,32 @@
+@@ -387,34 +415,72 @@ _gnutls_x509_verify_certificate (const gnutls_x509_crt_t * certificate_list,
    int i = 0, ret;
    unsigned int status = 0, output;
  
@@ -93,7 +102,7 @@ has a chance to validate correctly.  Reported by "Douglas E. Engert"
 +    }
 +#endif
 +
-   if (clist_size > 1) 
+   if (clist_size > 1)
      {
        /* Check if the last certificate in the path is self signed.
         * In that case ignore it (a certificate is trusted only if it
@@ -109,9 +118,11 @@ has a chance to validate correctly.  Reported by "Douglas E. Engert"
 +       * MD2 algorithm.
         */
        if (gnutls_x509_crt_check_issuer (certificate_list[clist_size - 1],
-   				    certificate_list[clist_size - 1]) > 0)
-@@ -407,6 +451,30 @@
-         }
+-					certificate_list[clist_size - 1]) > 0)
++				    certificate_list[clist_size - 1]) > 0)
+ 	{
+ 	  clist_size--;
+ 	}
      }
  
 +  /* We want to shorten the chain by removing the cert that matches
@@ -141,7 +152,19 @@ has a chance to validate correctly.  Reported by "Douglas E. Engert"
    /* Verify the last certificate in the certificate path
     * against the trusted CA certificate list.
     *
-@@ -429,22 +497,6 @@
+    * If no CAs are present returns CERT_INVALID. Thus works
+    * in self signed etc certificates.
+    */
+-  ret =
+-    _gnutls_verify_certificate2 (certificate_list[clist_size - 1],
+-				 trusted_cas, tcas_size, flags, &output);
+-
++  ret = _gnutls_verify_certificate2 (certificate_list[clist_size - 1],
++				     trusted_cas, tcas_size, flags, &output);
+   if (ret == 0)
+     {
+       /* if the last certificate in the certificate
+@@ -427,23 +493,7 @@ _gnutls_x509_verify_certificate (const gnutls_x509_crt_t * certificate_list,
        return status;
      }
  
@@ -161,6 +184,10 @@ has a chance to validate correctly.  Reported by "Douglas E. Engert"
 -    }
 -#endif
 -
-   /* Verify the certificate path (chain) 
+-  /* Verify the certificate path (chain) 
++  /* Verify the certificate path (chain)
     */
    for (i = clist_size - 1; i > 0; i--)
+     {
+--
+cgit v0.8.2
