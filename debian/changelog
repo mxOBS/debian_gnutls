@@ -1,8 +1,58 @@
-gnutls26 (2.4.2-7) UNRELEASED; urgency=low
+gnutls26 (2.6.4-2) experimental; urgency=low
 
   * NOT RELEASED YET
 
  -- Andreas Metzler <ametzler@debian.org>  Sat, 07 Feb 2009 13:25:05 +0100
+
+gnutls26 (2.6.4-1) experimental; urgency=low
+
+  * New upstream version.
+
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 07 Feb 2009 14:32:57 +0100
+
+gnutls26 (2.6.3-1) experimental; urgency=low
+
+  * New upstream version.
+    + Corrects bug gnutls-cli which caused a rehandshake request
+      to be ignored. Closes: #396867
+  * Drop debian/patches/21_GNUTLS-SA-2008-3.fix.patch (included upstream)
+
+ -- Andreas Metzler <ametzler@debian.org>  Sun, 21 Dec 2008 10:46:38 +0100
+
+gnutls26 (2.6.2-2) experimental; urgency=low
+ 
+  * 21_GNUTLS-SA-2008-3.fix.patch Another fix for the verification fix. Some
+    correct certificate chains were not recognized as verified.
+    Closes: #507633
+  * [lintian] Add ${misc:Depends} to multiple dendency lines.
+
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 06 Dec 2008 13:31:58 +0100
+
+gnutls26 (2.6.2-1) experimental; urgency=low
+
+  * New upstream version.
+    + Fixes certification verifaction error CVE-2008-4989. Closes: #505360
+    + Drop 20_fix_501077.diff.
+  * ia64 has guile-1.8 nowadays, let's try building the guile-gnutls wrappper
+    there.
+  * Add Simon Josefsson to uploaders.
+
+ -- Andreas Metzler <ametzler@debian.org>  Thu, 13 Nov 2008 19:30:06 +0100
+
+gnutls26 (2.6.0-1) experimental; urgency=low
+
+  * New upstream stable release.
+  * Add debian/patches/20_fix_501077.diff to fix an out of bound access in
+    gnutls-openssl. (Thanks, Thomas Viehmann). Closes: #501077
+
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 25 Oct 2008 09:59:03 +0200
+
+gnutls26 (2.5.9-1) experimental; urgency=low
+
+  * New upstream development version.
+  * Bump shlibs.
+
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 04 Oct 2008 12:40:01 +0200
 
 gnutls26 (2.4.2-6) unstable; urgency=medium
 
