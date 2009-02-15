@@ -1,6 +1,6 @@
-gnutls26 (2.6.4-2) experimental; urgency=low
+gnutls26 (2.6.4-2) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * Upload to unstable.
 
  -- Andreas Metzler <ametzler@debian.org>  Sat, 07 Feb 2009 13:25:05 +0100
 
