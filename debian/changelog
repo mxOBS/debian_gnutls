@@ -1,8 +1,9 @@
 gnutls26 (2.6.4-2) unstable; urgency=low
 
   * Upload to unstable.
+  * Merge changelog entries from unstable and experimental.
 
- -- Andreas Metzler <ametzler@debian.org>  Sat, 07 Feb 2009 13:25:05 +0100
+ -- Andreas Metzler <ametzler@debian.org>  Mon, 16 Feb 2009 16:43:37 +0100
 
 gnutls26 (2.6.4-1) experimental; urgency=low
 
