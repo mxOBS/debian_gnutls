@@ -56,7 +56,7 @@ Description: the GNU TLS library - runtime library
 Package: libgnutls26-dbg
 Priority: extra
 Architecture: any
-Section: devel
+Section: debug
 Depends: libgnutls26 (= ${binary:Version}), ${misc:Depends}
 Conflicts: libgnutls13-dbg
 Description: GNU TLS library - debugger symbols
@@ -100,7 +100,7 @@ Description: the GNU TLS library - documentation and examples
 Package: guile-gnutls
 Priority: optional
 Architecture: any
-Section: libs
+Section: lisp
 Depends: ${misc:Depends},${shlibs:Depends}, guile-1.8
 Description: the GNU TLS library - GNU Guile bindings
  gnutls is a portable library which implements the Transport Layer
