@@ -1,3 +1,9 @@
+gnutls26 (2.6.5-2) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Andreas Metzler <ametzler@debian.org>  Tue, 14 Apr 2009 18:27:22 +0200
+
 gnutls26 (2.6.5-1) unstable; urgency=low
 
   * Sync sections in debian/control with override file. libgnutls26-dbg is
