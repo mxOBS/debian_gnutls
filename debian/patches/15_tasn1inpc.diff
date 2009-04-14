@@ -5,7 +5,7 @@
  Version: @VERSION@
  Libs: -L${libdir} -lgnutls
 -Libs.private: @LIBGNUTLS_LIBS@ 
-+Libs.private: @LIBGNUTLS_LIBS@ @LIBTASN1@
++Libs.private: @LIBGNUTLS_LIBS@ @LTLIBTASN1@
  Cflags: -I${includedir}
 --- gnutls26-2.6.5.orig/libextra/gnutls-extra.pc.in
 +++ gnutls26-2.6.5/libextra/gnutls-extra.pc.in
@@ -14,5 +14,5 @@
  Version: @VERSION@
  Libs: -L${libdir} -lgnutls-extra
 -Libs.private: @LIBGNUTLS_EXTRA_LIBS@
-+Libs.private: @LIBGNUTLS_EXTRA_LIBS@ @LIBTASN1@
++Libs.private: @LIBGNUTLS_EXTRA_LIBS@ @LTLIBTASN1@
  Cflags: -I${includedir}
