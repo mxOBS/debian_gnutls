@@ -1,10 +1,12 @@
-gnutls26 (2.6.4-3) UNRELEASED; urgency=low
+gnutls26 (2.6.5-1) unstable; urgency=low
 
-  * NOT RELEASED YET
   * Sync sections in debian/control with override file. libgnutls26-dbg is
     section debug, guile-gnutls is section lisp.
+  * New upstream version. (Needed for Libtasn1-3 2.0)
+  * New patch 15_tasn1inpc.diff. Make sure libtasn1 is listed in Libs.private.
+  * Standards-Version: 3.8.1, no changes required.
 
- -- Andreas Metzler <ametzler@debian.org>  Mon, 16 Feb 2009 17:51:08 +0100
+ -- Andreas Metzler <ametzler@debian.org>  Tue, 14 Apr 2009 14:23:19 +0200
 
 gnutls26 (2.6.4-2) unstable; urgency=low
 

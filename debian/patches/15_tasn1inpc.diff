@@ -1,0 +1,18 @@
+--- gnutls26-2.6.5.orig/lib/gnutls.pc.in
++++ gnutls26-2.6.5/lib/gnutls.pc.in
+@@ -19,5 +19,5 @@
+ Description: Transport Security Layer implementation for the GNU system
+ Version: @VERSION@
+ Libs: -L${libdir} -lgnutls
+-Libs.private: @LIBGNUTLS_LIBS@ 
++Libs.private: @LIBGNUTLS_LIBS@ @LIBTASN1@
+ Cflags: -I${includedir}
+--- gnutls26-2.6.5.orig/libextra/gnutls-extra.pc.in
++++ gnutls26-2.6.5/libextra/gnutls-extra.pc.in
+@@ -20,5 +20,5 @@
+ Requires: gnutls
+ Version: @VERSION@
+ Libs: -L${libdir} -lgnutls-extra
+-Libs.private: @LIBGNUTLS_EXTRA_LIBS@
++Libs.private: @LIBGNUTLS_EXTRA_LIBS@ @LIBTASN1@
+ Cflags: -I${includedir}
