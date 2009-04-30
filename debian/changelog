@@ -1,10 +1,22 @@
-gnutls26 (2.6.5-2) UNRELEASED; urgency=low
+gnutls26 (2.6.6-1) unstable; urgency=high
 
-  * NOT RELEASED YET
   * use @LTLIBTASN1@ instead of @LIBTASN1@ in Libs.private of *.pc.in. This
     way lib-link.m4 gives us -ltasn1 instead of /usr/lib/libtasn1.so.
+  * New upstream security release.
+    + libgnutls: Corrected double free on signature verification failure.
+      GNUTLS-SA-2009-1 CVE-2009-1415
+    + libgnutls: Fix DSA key generation. Noticed when investigating the
+      previous GNUTLS-SA-2009-1 problem. All DSA keys generated using GnuTLS
+      2.6.x are corrupt.  See the advisory for more details.
+      GNUTLS-SA-2009-2 CVE-2009-1416
+    + libgnutls: Check expiration/activation time on untrusted certificates.
+      Before the library did not check activation/expiration times on
+      certificates, and was documented as not doing so.
+      GNUTLS-SA-2009-3 CVE-2009-1417
+   * The former two issues only apply to gnutls 2.6.x. The latter is a
+     brehavior change, add a NEWS.Debian file to document it.
 
- -- Andreas Metzler <ametzler@debian.org>  Tue, 14 Apr 2009 18:27:22 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Thu, 30 Apr 2009 19:00:21 +0200
 
 gnutls26 (2.6.5-1) unstable; urgency=low
 
