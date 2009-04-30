@@ -1,3 +1,9 @@
+gnutls26 (2.6.6-2) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Andreas Metzler <ametzler@debian.org>  Thu, 30 Apr 2009 19:46:09 +0200
+
 gnutls26 (2.6.6-1) unstable; urgency=high
 
   * use @LTLIBTASN1@ instead of @LIBTASN1@ in Libs.private of *.pc.in. This
