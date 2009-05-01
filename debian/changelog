@@ -1,6 +1,7 @@
 gnutls26 (2.6.6-2) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * Fix typo in changelog. Closes: #526427
 
  -- Andreas Metzler <ametzler@debian.org>  Thu, 30 Apr 2009 19:46:09 +0200
 
@@ -20,7 +21,7 @@ gnutls26 (2.6.6-1) unstable; urgency=high
       certificates, and was documented as not doing so.
       GNUTLS-SA-2009-3 CVE-2009-1417
    * The former two issues only apply to gnutls 2.6.x. The latter is a
-     brehavior change, add a NEWS.Debian file to document it.
+     behavior change, add a NEWS.Debian file to document it.
 
  -- Andreas Metzler <ametzler@debian.org>  Thu, 30 Apr 2009 19:00:21 +0200
 
