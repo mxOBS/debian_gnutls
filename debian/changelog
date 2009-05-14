@@ -1,9 +1,14 @@
-gnutls26 (2.6.6-2) UNRELEASED; urgency=low
+gnutls26 (2.7.10-1) experimental; urgency=low
 
-  * NOT RELEASED YET
   * Fix typo in changelog. Closes: #526427
+  * New upstream release.
+    + Does not ship the scripts libgnutls-extra-config and libgnutls-config
+      and the .m4 snippet to use it anymore. Please switch to pkg-config or
+      standard autoconf test. Drop manpages and
+      both patches/13_lessdeps_gnutls-config.diff and
+      patches/13_lessdeps_gnutls-config.diff from the debian diff.
 
- -- Andreas Metzler <ametzler@debian.org>  Thu, 30 Apr 2009 19:46:09 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Thu, 14 May 2009 19:16:06 +0200
 
 gnutls26 (2.6.6-1) unstable; urgency=high
 
