@@ -1,0 +1,12 @@
+--- gnutls-2.7.11.orig/tests/crq_key_id.c	2009-05-11 18:15:43.000000000 +0200
++++ gnutls-2.7.11/tests/crq_key_id.c	2009-05-19 19:44:58.000000000 +0200
+@@ -55,6 +55,9 @@
+ 
+   int ret;
+ 
++  /* initialize gcrypt explicitely */
++  gcry_check_version (NULL);
++
+   gcry_control (GCRYCTL_ENABLE_QUICK_RANDOM, 0);
+ 
+   ret = gnutls_global_init ();

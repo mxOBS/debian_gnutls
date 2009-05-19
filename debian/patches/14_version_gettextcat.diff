@@ -1,9 +1,6 @@
-Ship the gettext translations as /usr/share/locales/*/gnutls13.mo instead of
-/usr/share/locales/*/gnutls.mo to not break co-installability of 
-multiple libgnutls packages.
-
---- gnutls13-1.6.1/po/Makevars.orig	2006-03-03 16:16:16.000000000 +0000
-+++ gnutls13-1.6.1/po/Makevars	2007-02-11 10:22:01.000000000 +0000
+diff -NurbB gnutls-2.7.10.orig/lib/po/Makevars gnutls-2.7.10/lib/po/Makevars
+--- gnutls-2.7.10.orig/lib/po/Makevars	2009-05-11 18:15:43.000000000 +0200
++++ gnutls-2.7.10/lib/po/Makevars	2009-05-14 19:29:24.000000000 +0200
 @@ -1,7 +1,7 @@
  # Makefile variables for PO directory in any package using GNU gettext.
  
