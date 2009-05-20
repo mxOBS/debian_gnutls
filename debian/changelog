@@ -1,4 +1,4 @@
-gnutls26 (2.7.11-1) experimental; urgency=low
+gnutls26 (2.7.12-1) experimental; urgency=low
 
   * Fix typo in changelog. Closes: #526427
   * New upstream release.
@@ -9,8 +9,6 @@ gnutls26 (2.7.11-1) experimental; urgency=low
       patches/13_lessdeps_gnutls-config.diff from the debian diff.
     + Update remaining patches.
     + Bump shlibs, no symbols added.
-  * [patches/16_test_initgcrypt.diff] Initialize gcrypt before enabling
-    gcrypt's QUICK_RANDOM mode in crq_key_id test. 
 
  -- Andreas Metzler <ametzler@debian.org>  Thu, 14 May 2009 19:16:06 +0200
 
