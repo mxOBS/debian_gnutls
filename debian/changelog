@@ -1,3 +1,9 @@
+gnutls26 (2.7.12-2) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Andreas Metzler <ametzler@debian.org>  Thu, 21 May 2009 11:35:43 +0200
+
 gnutls26 (2.7.12-1) experimental; urgency=low
 
   * Fix typo in changelog. Closes: #526427
