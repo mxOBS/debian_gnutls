@@ -8,7 +8,13 @@ gnutls26 (2.7.12-1) experimental; urgency=low
       both patches/13_lessdeps_gnutls-config.diff and
       patches/13_lessdeps_gnutls-config.diff from the debian diff.
     + Update remaining patches.
-    + Bump shlibs, no symbols added.
+    + Bump shlibs, new symbols added.
+  * [patches/16_symbolversioning_fix.diff] Since gnutls_x509_crq_set_key was
+    already present in 2.6.x it needs to be versioned GNUTLS_1_4 instead of
+    GNUTLS_2_8.
+  * New upstream uses separate ./configure scripts for the different
+    libraries. Invoke the main ./configure script with
+    --cache-file=$(CURDIR)/config.cache to speed things up.
 
  -- Andreas Metzler <ametzler@debian.org>  Thu, 14 May 2009 19:16:06 +0200
 
