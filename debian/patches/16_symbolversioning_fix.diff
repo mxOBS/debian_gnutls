@@ -1,0 +1,18 @@
+--- gnutls-2.7.12/lib/libgnutls.map.orig	2009-05-20 20:53:15.000000000 +0200
++++ gnutls-2.7.12/lib/libgnutls.map	2009-05-20 20:54:14.000000000 +0200
+@@ -414,6 +414,7 @@
+     gnutls_x509_crq_set_basic_constraints;
+     gnutls_x509_crq_set_challenge_password;
+     gnutls_x509_crq_set_dn_by_oid;
++    gnutls_x509_crq_set_key;
+     gnutls_x509_crq_set_key_rsa_raw;
+     gnutls_x509_crq_set_key_usage;
+     gnutls_x509_crq_set_version;
+@@ -564,7 +565,6 @@
+     gnutls_x509_crq_get_subject_alt_othername_oid;
+     gnutls_x509_crq_get_extension_by_oid;
+     gnutls_x509_crq_set_subject_alt_name;
+-    gnutls_x509_crq_set_key;
+     gnutls_x509_crq_get_key_purpose_oid;
+     gnutls_x509_crq_set_key_purpose_oid;
+     gnutls_x509_crq_print;

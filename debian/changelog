@@ -16,7 +16,7 @@ gnutls26 (2.7.12-1) experimental; urgency=low
     libraries. Invoke the main ./configure script with
     --cache-file=$(CURDIR)/config.cache to speed things up.
 
- -- Andreas Metzler <ametzler@debian.org>  Thu, 14 May 2009 19:16:06 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Thu, 21 May 2009 11:18:35 +0200
 
 gnutls26 (2.6.6-1) unstable; urgency=high
 
