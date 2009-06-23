@@ -10,29 +10,15 @@ include /usr/share/cdbs/1/rules/debhelper.mk
 include /usr/share/cdbs/1/class/autotools.mk
 include /usr/share/cdbs/1/rules/simple-patchsys.mk
 
-DEB_CONFIGURE_EXTRA_FLAGS = --with-mcrypt=no --enable-ld-version-script --disable-cxx --without-lzo --enable-guile --with-guile-site-dir=/usr/share/guile/site --cache-file=$(CURDIR)/config.cache
+DEB_CONFIGURE_EXTRA_FLAGS = --enable-ld-version-script --disable-cxx --without-lzo --enable-guile --with-guile-site-dir=/usr/share/guile/site --cache-file=$(CURDIR)/config.cache
 DEB_MAKE_CHECK_TARGET = check
 DEB_DH_STRIP_ARGS = --dbg-package=libgnutls26-dbg
 DEB_DH_MAKESHLIBS_ARGS_libgnutls26 := -V 'libgnutls26 (>=2.7.14-0)'
 DEB_DH_MAKESHLIBS_ARGS_guile-gnutls := -Xusr/lib/libguile-gnutls-
 DEB_COMPRESS_EXCLUDE := gnutls.pdf
 
-
-
-#build/libgnutls-doc::
-#	$(DEB_MAKE_INVOKE) -C libextra/openpgp pgp-api.tex
-#	$(DEB_MAKE_INVOKE) -C doc/tex gnutls.ps
-#	$(DEB_MAKE_INVOKE) -C doc/tex
-#
-#install/libgnutls-doc::
-#	$(DEB_MAKE_INVOKE) -C doc/tex $(DEB_MAKE_INSTALL_TARGET)
-
-
-post-patches::
-	cd $(DEB_SRCDIR) && chmod +x doc/scripts/sort2.pl doc/scripts/gdoc
-
 # pre-clean rule: save gnutls.pdf since it is expensive to regenerate.
-# See README.source_and_patches
+# See README.source
 cleanbuilddir/gnutls-doc::
 	if [ -e doc/gnutls.pdf ] ; then mv doc/gnutls.pdf doc/gnutls.pdf.debbackup ; fi
 
@@ -45,7 +31,6 @@ clean::
 
 	-rm -f tests/stamp-tests
 	# stupid conflicts
-	-rm -f libextra/lzoconf.h libextra/lzodefs.h
 	-rm -f doc/*.info* lib/po/libgnutls26.pot
 	# restore gnutls.pdf
 	if [ -e doc/gnutls.pdf.debbackup ] && [ ! -e doc/gnutls.pdf ] ; then mv doc/gnutls.pdf.debbackup doc/gnutls.pdf ; fi
