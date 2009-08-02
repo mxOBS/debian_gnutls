@@ -22,3 +22,24 @@ gnutls26 (2.6.6-1) unstable; urgency=high
     http://www.gnu.org/software/gnutls/security.html
 
  -- Andreas Metzler <ametzler@debian.org>  Thu, 30 Apr 2009 19:00:21 +0200
+
+gnutls26 (2.4.2-5) unstable; urgency=medium
+
+  * The gnutls certificate verification code has been changed to stop
+    trusting some weak algoritms. Verifying untrusted X.509 certificates
+    signed with RSA-MD2 or RSA-MD5 will now fail with a
+    GNUTLS_CERT_INSECURE_ALGORITHM verification output.
+
+    See <http://www.win.tue.nl/hashclash/rogue-ca/>,
+    <http://bugs.debian.org/514578> and
+    <http://www.gnu.org/software/gnutls/manual/gnutls.html#Digital-signatures>
+
+    "certtool -i < signature.pem" will inform about the algoritm used for
+    signing (Search for "Signature Algorithm" in its output.). The proper
+    fix is to re-issue the certificates with a more secure algoritm. As a
+    hotfix the respective certicate itself can be added to the list of
+    trusted certificates. Obviously this should only be done after
+    verifying the certificate by different means than relying on the weak
+    signature.
+
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 07 Feb 2009 12:58:51 +0100
