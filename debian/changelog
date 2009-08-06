@@ -1,16 +1,17 @@
-gnutls26 (2.8.1-2) UNRELEASED; urgency=low
-
-  * NOT RELEASED YET
+gnutls26 (2.8.1-2) unstable; urgency=low
 
   [ Simon Josefsson ]
   * Remove cruft in rules file.
   * Remove patches/15_tasn1inpc.diff, not needed.
 
   [ Andreas Metzler ]
-  * Finally add a entry to the NEWS.Debian file concerning the deprecation of
+  * Finally add an entry to the NEWS.Debian file concerning the deprecation of
     RSA-MD2 and RSA-MD5 for signature verification. Closes: #514578
+  * Upload to unstable.
+  * 15_chainverify_expiredcert.diff: New patch, pulled from upstream GIT.
+    Fix testsuite error caused by expired certificate.
 
- -- Andreas Metzler <ametzler@debian.org>  Thu, 11 Jun 2009 09:36:57 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Thu, 06 Aug 2009 19:12:51 +0200
 
 gnutls26 (2.8.1-1) experimental; urgency=low
 
