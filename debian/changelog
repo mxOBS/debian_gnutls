@@ -1,8 +1,15 @@
-gnutls26 (2.8.1-3) UNRELEASED; urgency=low
+gnutls26 (2.8.3-1) unstable; urgency=high
 
-  * NOT RELEASED YET
+  * New upstream version.
+    + Stops hardcoding a hard dependency on the versions of gcrypt and tasn it
+      was built against. Closes: #540449
+    + Fixes CVE-2009-2730, a vulnerability related to NUL bytes in X.509
+      certificate name fields. Closes: #541439        GNUTLS-SA-2009-4
+      http://lists.gnu.org/archive/html/help-gnutls/2009-08/msg00011.html
+  * Drop 15_chainverify_expiredcert.diff, included upstream.
+  * Urgency high, since 541439 applies to testing, too.
 
- -- Andreas Metzler <ametzler@debian.org>  Thu, 06 Aug 2009 20:15:16 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Fri, 14 Aug 2009 19:14:29 +0200
 
 gnutls26 (2.8.1-2) unstable; urgency=low
 
