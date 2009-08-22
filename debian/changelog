@@ -1,3 +1,9 @@
+gnutls26 (2.8.3-3) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 22 Aug 2009 14:38:31 +0200
+
 gnutls26 (2.8.3-2) unstable; urgency=low
 
   * [ debian/patches/15_openpgp.diff ] The CVE-2009-2730 patch broke
