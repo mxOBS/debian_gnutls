@@ -1,0 +1,23 @@
+From 9eed44b4ef9538117cc134956b32bc8fd39534fd Mon Sep 17 00:00:00 2001
+From: Simon Josefsson <simon@josefsson.org>
+Date: Thu, 20 Aug 2009 10:21:09 +0000
+Subject: Fix OpenPGP hostname comparison.
+
+---
+diff --git a/lib/openpgp/pgp.c b/lib/openpgp/pgp.c
+index 8018ced..aa2a235 100644
+--- a/lib/openpgp/pgp.c
++++ b/lib/openpgp/pgp.c
+@@ -589,6 +589,10 @@ gnutls_openpgp_crt_check_hostname (gnutls_openpgp_crt_t key,
+ 
+       if (ret == 0)
+ 	{
++	  /* Length returned by gnutls_openpgp_crt_get_name includes
++	     the terminating zero. */
++	  dnsnamesize--;
++
+ 	  if (_gnutls_hostname_compare (dnsname, dnsnamesize, hostname))
+ 	    return 1;
+ 	}
+--
+cgit v0.8.2.1

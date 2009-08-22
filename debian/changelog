@@ -1,6 +1,8 @@
 gnutls26 (2.8.3-2) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * [ debian/patches/15_openpgp.diff ] The CVE-2009-2730 broke openpgp
+    connections.
 
  -- Andreas Metzler <ametzler@debian.org>  Fri, 14 Aug 2009 20:07:06 +0200
 
