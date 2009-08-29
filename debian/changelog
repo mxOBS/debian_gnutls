@@ -1,6 +1,7 @@
 gnutls26 (2.8.3-3) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * Empty dependency_libs in la-files. (Squeeze release goal.)
 
  -- Andreas Metzler <ametzler@debian.org>  Sat, 22 Aug 2009 14:38:31 +0200
 
