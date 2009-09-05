@@ -1,6 +1,8 @@
 gnutls26 (2.8.3-4) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * Sync priorities with override file, libgnutls26 has been bumped from
+    important to standard.
 
  -- Andreas Metzler <ametzler@debian.org>  Sat, 05 Sep 2009 09:21:23 +0200
 

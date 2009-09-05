@@ -33,7 +33,7 @@ Description: the GNU TLS library - development files
  This package contains the gnutls development files.
 
 Package: libgnutls26
-Priority: important
+Priority: standard
 Architecture: any
 Section: libs
 Depends: ${shlibs:Depends}, ${misc:Depends}
