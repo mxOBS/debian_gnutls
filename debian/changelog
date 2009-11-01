@@ -1,3 +1,9 @@
+gnutls26 (2.8.4-3) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Andreas Metzler <ametzler@debian.org>  Sun, 01 Nov 2009 13:37:08 +0100
+
 gnutls26 (2.8.4-2) unstable; urgency=high
 
   * [20_fixtimebomb.diff] Fix testsuite error. Closes: #552920
