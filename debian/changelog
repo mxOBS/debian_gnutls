@@ -1,3 +1,9 @@
+gnutls26 (2.8.4-2) unstable; urgency=high
+
+  * [20_fixtimebomb.diff] Fix testsuite error. Closes: #552920
+
+ -- Andreas Metzler <ametzler@debian.org>  Sun, 01 Nov 2009 13:21:27 +0100
+
 gnutls26 (2.8.4-1) unstable; urgency=low
 
   * New upstream version.
