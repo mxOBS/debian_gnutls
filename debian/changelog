@@ -2,6 +2,8 @@ gnutls26 (2.8.4-3) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
   * Add datefudge to build-depends. (Only needed for the pkcs1-pad test.)
+  * Switch to '3.0 (quilt)' source format, allowing us to use upstreams
+    orig.tar.bz2 without repacking it to gz.
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 01 Nov 2009 13:37:08 +0100
 
