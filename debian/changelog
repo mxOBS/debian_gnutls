@@ -1,3 +1,9 @@
+gnutls26 (2.8.5-2) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Andreas Metzler <ametzler@debian.org>  Fri, 13 Nov 2009 19:52:54 +0100
+
 gnutls26 (2.8.5-1) unstable; urgency=low
 
   * Add datefudge to build-depends. (Only needed for the pkcs1-pad test.)
