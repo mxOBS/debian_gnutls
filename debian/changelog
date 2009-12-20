@@ -1,3 +1,9 @@
+gnutls26 (2.8.5-3) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Andreas Metzler <ametzler@debian.org>  Sun, 20 Dec 2009 11:30:25 +0100
+
 gnutls26 (2.8.5-2) unstable; urgency=low
 
   * Add a huge bunch of lintian overrides for the guile stuff to make dak
