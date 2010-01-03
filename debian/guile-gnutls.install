@@ -1,3 +1,2 @@
 debian/tmp/usr/lib/libguile-gnutls*.so* usr/lib
 debian/tmp/usr/share/guile/site usr/share/guile
-debian/lintian/overrides/guile-gnutls usr/share/lintian/overrides

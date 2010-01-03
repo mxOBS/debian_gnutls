@@ -1,6 +1,7 @@
 gnutls26 (2.8.5-3) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * Use dh_lintian.
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 20 Dec 2009 11:30:25 +0100
 
