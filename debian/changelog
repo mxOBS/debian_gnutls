@@ -9,6 +9,7 @@ gnutls26 (2.8.6-1) UNRELEASED; urgency=low
     However the shared objects /usr/lib/libguile-gnutls*so* are still not
     designed to be used as libraries (linking) but are dlopened. guile-1.10
     will address this issue by keeping this stuff in a private directory.
+  * hotfix pkg-config files (proper fix to be included upstream).
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 20 Dec 2009 11:30:25 +0100
 
