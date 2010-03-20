@@ -13,7 +13,7 @@ DEB_CONFIGURE_EXTRA_FLAGS = --enable-ld-version-script --disable-cxx --without-l
 DEB_MAKE_CHECK_TARGET = check
 DEB_DH_STRIP_ARGS = --dbg-package=libgnutls26-dbg
 DEB_DH_MAKESHLIBS_ARGS_libgnutls26 := -V 'libgnutls26 (>=2.7.14-0)'
-DEB_DH_MAKESHLIBS_ARGS_guile-gnutls := -Xusr/lib/libguile-gnutls-
+DEB_DH_MAKESHLIBS_ARGS_guile-gnutls := -V 'guile-gnutls (>=2.7.14-0)'
 DEB_COMPRESS_EXCLUDE := gnutls.pdf
 
 # pre-clean rule: save gnutls.pdf since it is expensive to regenerate.

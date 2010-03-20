@@ -1,4 +1,2 @@
 guile-gnutls: non-dev-pkg-with-shlib-symlink
-guile-gnutls: no-shlibs-control-file
-guile-gnutls: postinst-must-call-ldconfig
 guile-gnutls: package-name-doesnt-match-sonames
