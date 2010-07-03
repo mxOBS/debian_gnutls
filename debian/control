@@ -39,6 +39,8 @@ Section: libs
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Replaces: gnutls0, gnutls3, gnutls0.4
 Conflicts: gnutls0, gnutls0.4
+# Bug 587755. - This could be removed after a libgnutls soname bump.
+Breaks: libsoup2.4-1 (<= 2.30.1-1), libsoup2.4-1 (= 2.31.2-1)
 Suggests: gnutls-bin
 Description: the GNU TLS library - runtime library
  gnutls is a portable library which implements the Transport Layer
