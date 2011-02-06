@@ -23,7 +23,7 @@ Description: the GNU TLS library - development files
  GnuTLS is a portable library which implements the Transport Layer
  Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 protocols.
  .
- GnuTLS features suppport for:
+ GnuTLS features support for:
   - TLS extensions: server name indication, max record size, opaque PRF
     input, etc.
   - authentication using the SRP protocol.
@@ -32,8 +32,8 @@ Description: the GNU TLS library - development files
   - Inner Application (TLS/IA) extension.
   - X.509 and OpenPGP certificate handling.
   - X.509 Proxy Certificates (RFC 3820).
-  - all the strong encryption algorithms (including SHA-256/384/512),
-    including Camellia (RFC 4132)
+  - all the strong encryption algorithms (including SHA-256/384/512 and
+    Camellia (RFC 4132)).
  .
  This package contains the GnuTLS development files.
 
@@ -51,7 +51,7 @@ Description: the GNU TLS library - runtime library
  GnuTLS is a portable library which implements the Transport Layer
  Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 protocols.
  .
- GnuTLS features suppport for:
+ GnuTLS features support for:
   - TLS extensions: server name indication, max record size, opaque PRF
     input, etc.
   - authentication using the SRP protocol.
@@ -60,8 +60,8 @@ Description: the GNU TLS library - runtime library
   - Inner Application (TLS/IA) extension.
   - X.509 and OpenPGP certificate handling.
   - X.509 Proxy Certificates (RFC 3820).
-  - all the strong encryption algorithms (including SHA-256/384/512),
-    including Camellia (RFC 4132)
+  - all the strong encryption algorithms (including SHA-256/384/512 and
+    Camellia (RFC 4132)).
  .
  This package contains the runtime libraries.
 
@@ -88,7 +88,7 @@ Description: the GNU TLS library - commandline utilities
  GnuTLS is a portable library which implements the Transport Layer
  Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 protocols.
  .
- GnuTLS features suppport for:
+ GnuTLS features support for:
   - TLS extensions: server name indication, max record size, opaque PRF
     input, etc.
   - authentication using the SRP protocol.
@@ -97,8 +97,8 @@ Description: the GNU TLS library - commandline utilities
   - Inner Application (TLS/IA) extension.
   - X.509 and OpenPGP certificate handling.
   - X.509 Proxy Certificates (RFC 3820).
-  - all the strong encryption algorithms (including SHA-256/384/512),
-    including Camellia (RFC 4132)
+  - all the strong encryption algorithms (including SHA-256/384/512 and
+    Camellia (RFC 4132)).
  .
  This package contains a commandline interface to the GNU TLS library, which
  can be used to set up secure connections from e.g. shell scripts, debugging
@@ -113,7 +113,7 @@ Description: the GNU TLS library - documentation and examples
  GnuTLS is a portable library which implements the Transport Layer
  Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 protocols.
  .
- GnuTLS features suppport for:
+ GnuTLS features support for:
   - TLS extensions: server name indication, max record size, opaque PRF
     input, etc.
   - authentication using the SRP protocol.
@@ -122,8 +122,8 @@ Description: the GNU TLS library - documentation and examples
   - Inner Application (TLS/IA) extension.
   - X.509 and OpenPGP certificate handling.
   - X.509 Proxy Certificates (RFC 3820).
-  - all the strong encryption algorithms (including SHA-256/384/512),
-    including Camellia (RFC 4132)
+  - all the strong encryption algorithms (including SHA-256/384/512 and
+    Camellia (RFC 4132)).
  .
  This package contains all the GnuTLS documentation.
 
@@ -136,7 +136,7 @@ Description: the GNU TLS library - GNU Guile bindings
  GnuTLS is a portable library which implements the Transport Layer
  Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 protocols.
  .
- GnuTLS features suppport for:
+ GnuTLS features support for:
   - TLS extensions: server name indication, max record size, opaque PRF
     input, etc.
   - authentication using the SRP protocol.
@@ -145,8 +145,8 @@ Description: the GNU TLS library - GNU Guile bindings
   - Inner Application (TLS/IA) extension.
   - X.509 and OpenPGP certificate handling.
   - X.509 Proxy Certificates (RFC 3820).
-  - all the strong encryption algorithms (including SHA-256/384/512),
-    including Camellia (RFC 4132)
+  - all the strong encryption algorithms (including SHA-256/384/512 and
+    Camellia (RFC 4132)).
  .
  This package contains the GNU Guile 1.8 modules.
 
@@ -159,7 +159,7 @@ Description: the GNU TLS library - C++ runtime library
  GnuTLS is a portable library which implements the Transport Layer
  Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 protocols.
  .
- GnuTLS features suppport for:
+ GnuTLS features support for:
   - TLS extensions: server name indication, max record size, opaque PRF
     input, etc.
   - authentication using the SRP protocol.
@@ -168,7 +168,7 @@ Description: the GNU TLS library - C++ runtime library
   - Inner Application (TLS/IA) extension.
   - X.509 and OpenPGP certificate handling.
   - X.509 Proxy Certificates (RFC 3820).
-  - all the strong encryption algorithms (including SHA-256/384/512),
-    including Camellia (RFC 4132)
+  - all the strong encryption algorithms (including SHA-256/384/512 and
+    Camellia (RFC 4132)).
  .
  This package contains the C++ runtime libraries.
