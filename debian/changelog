@@ -1,10 +1,9 @@
-gnutls26 (2.10.0-1) UNRELEASED; urgency=low
+gnutls26 (2.10.0-1) experimental; urgency=low
 
-  * NOT RELEASED YET
   * New upstream stable release.
   * Point watchfile to stable releases.
 
- -- Andreas Metzler <ametzler@debian.org>  Sat, 19 Jun 2010 15:07:31 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 26 Jun 2010 14:48:40 +0200
 
 gnutls26 (2.9.12-2) experimental; urgency=low
 
