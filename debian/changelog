@@ -1,6 +1,7 @@
 gnutls26 (2.10.4-2) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * Use debhelper compatibility level 7.
 
  -- Andreas Metzler <ametzler@debian.org>  Mon, 06 Dec 2010 19:32:28 +0100
 
