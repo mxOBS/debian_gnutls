@@ -1,8 +1,8 @@
-gnutls26 (2.8.6-2) UNRELEASED; urgency=low
+gnutls26 (2.9.9-1) experimental; urgency=low
 
-  * NOT RELEASED YET
+  * Package upstream developnment branch for experimental.
 
- -- Andreas Metzler <ametzler@debian.org>  Sat, 20 Mar 2010 16:28:55 +0100
+ -- Andreas Metzler <ametzler@debian.org>  Sun, 20 Dec 2009 11:31:33 +0100
 
 gnutls26 (2.8.6-1) unstable; urgency=low
 
