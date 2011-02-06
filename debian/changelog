@@ -13,6 +13,7 @@ gnutls26 (2.10.4-2) UNRELEASED; urgency=low
       will address this issue by keeping this stuff in a private directory.
     + hotfix pkg-config files (proper fix to be included upstream).
     + Stop unneeeded linkage against libgpg-error. 16_unnecessarydep.diff
+      Closes: #405239
 
  -- Andreas Metzler <ametzler@debian.org>  Mon, 06 Dec 2010 19:32:28 +0100
 
