@@ -1,11 +1,10 @@
-gnutls26 (2.10.4-2) UNRELEASED; urgency=low
+gnutls26 (2.10.4-2) unstable; urgency=low
 
-  * NOT RELEASED YET
   * Use debhelper compatibility level 7.
   * Merge in changes from 2.8.6-1:
     + Use dh_lintian.
     + Use dh_makeshlibs for the guile stuff, too. This gets us 
-      a) ldconfig in postinst.
+      a) ldconfig in postinst. Closes: #553109
       and
       b) a shlibs file.
       However the shared objects /usr/lib/libguile-gnutls*so* are still not
@@ -14,8 +13,9 @@ gnutls26 (2.10.4-2) UNRELEASED; urgency=low
     + hotfix pkg-config files (proper fix to be included upstream).
     + Stop unneeeded linkage against libgpg-error. 16_unnecessarydep.diff
       Closes: #405239
+   * Upload to unstable.
 
- -- Andreas Metzler <ametzler@debian.org>  Mon, 06 Dec 2010 19:32:28 +0100
+ -- Andreas Metzler <ametzler@debian.org>  Sun, 06 Feb 2011 16:44:09 +0100
 
 gnutls26 (2.10.4-1) experimental; urgency=low
 
