@@ -12,7 +12,7 @@ include /usr/share/cdbs/1/class/autotools.mk
 DEB_CONFIGURE_EXTRA_FLAGS = --enable-ld-version-script --enable-cxx --without-lzo --enable-guile --with-guile-site-dir=/usr/share/guile/site --cache-file=$(CURDIR)/config.cache
 DEB_MAKE_CHECK_TARGET = check
 DEB_DH_STRIP_ARGS = --dbg-package=libgnutls26-dbg
-DEB_DH_MAKESHLIBS_ARGS_libgnutls26 := -V 'libgnutls26 (>=2.7.14-0)'
+DEB_DH_MAKESHLIBS_ARGS_libgnutls26 := -V 'libgnutls26 (>=2.9.9-0)'
 DEB_DH_MAKESHLIBS_ARGS_guile-gnutls := -V 'guile-gnutls (>=2.7.14-0)'
 DEB_COMPRESS_EXCLUDE := gnutls.pdf
 
