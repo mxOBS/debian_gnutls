@@ -1,13 +1,12 @@
-gnutls26 (2.9.12-2) UNRELEASED; urgency=low
+gnutls26 (2.9.12-2) experimental; urgency=low
 
-  * NOT RELEASED YET
   * Work around gcc-4.4 bug <http://bugs.debian.org/519006> by building
     without -g on mips/mipsel. (As a side effect this makes libgnutls26-dbg a
     useless and almost empty package on these archs.)
   * Drop ancient workaround for gcc bug on hppa.
     http://bugs.debian.org/128036
 
- -- Andreas Metzler <ametzler@debian.org>  Thu, 17 Jun 2010 19:35:27 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 19 Jun 2010 14:38:22 +0200
 
 gnutls26 (2.9.12-1) experimental; urgency=low
 
