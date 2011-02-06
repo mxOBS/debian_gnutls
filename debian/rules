@@ -4,14 +4,6 @@
 include /usr/share/cdbs/1/rules/debhelper.mk
 include /usr/share/cdbs/1/class/autotools.mk
 
-# work around gcc-4.4 bug <http://bugs.debian.org/519006> by building without -g
-ifeq ($(DEB_BUILD_ARCH),mips)
-	export CFLAGS := -O2 -Wall -D_REENTRANT
-endif
-ifeq ($(DEB_BUILD_ARCH),mipsel)
-	export CFLAGS := -O2 -Wall -D_REENTRANT
-endif
-
 DEB_CONFIGURE_EXTRA_FLAGS = --enable-ld-version-script --enable-cxx --without-lzo --enable-guile --with-guile-site-dir=/usr/share/guile/site --cache-file=$(CURDIR)/config.cache
 DEB_MAKE_CHECK_TARGET = check
 DEB_DH_MAKESHLIBS_ARGS_libgnutls26 := -V 'libgnutls26 (>=2.9.11-0)'
