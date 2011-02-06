@@ -4,8 +4,6 @@
 include /usr/share/cdbs/1/rules/debhelper.mk
 include /usr/share/cdbs/1/class/autotools.mk
 
-CFLAGS += -D_REENTRANT
-
 # work around gcc-4.4 bug <http://bugs.debian.org/519006> by building without -g
 ifeq ($(DEB_BUILD_ARCH),mips)
 	export CFLAGS := -O2 -Wall -D_REENTRANT
