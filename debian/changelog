@@ -1,3 +1,9 @@
+gnutls26 (2.10.3-2) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Andreas Metzler <ametzler@debian.org>  Fri, 19 Nov 2010 19:52:26 +0100
+
 gnutls26 (2.10.3-1) experimental; urgency=low
 
   * Drop workaround for 519006, binutils is fixed even in squeeze.
