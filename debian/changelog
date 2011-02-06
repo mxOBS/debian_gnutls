@@ -1,6 +1,7 @@
 gnutls26 (2.10.0-3) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * Strip down and update package descriptions. Closes: #588067
 
  -- Andreas Metzler <ametzler@debian.org>  Sat, 03 Jul 2010 09:05:43 +0200
 
