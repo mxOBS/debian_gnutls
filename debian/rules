@@ -5,9 +5,6 @@ include /usr/share/cdbs/1/rules/debhelper.mk
 include /usr/share/cdbs/1/class/autotools.mk
 
 CFLAGS += -D_REENTRANT
-ifeq ($(DEB_BUILD_ARCH),hppa)
-	CFLAGS += -fno-gcse
-endif
 
 # work around gcc-4.4 bug <http://bugs.debian.org/519006> by building without -g
 ifeq ($(DEB_BUILD_ARCH),mips)
