@@ -1,6 +1,6 @@
 gnutls26 (2.9.9-1) experimental; urgency=low
 
-  * Package upstream developnment branch for experimental.
+  * Package upstream development branch for experimental.
   * Track development versions in watchfile.
   * Package C++ wrapper again. Closes: #548637
 
