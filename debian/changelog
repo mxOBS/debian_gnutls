@@ -1,6 +1,7 @@
-gnutls26 (2.9.12-3) UNRELEASED; urgency=low
+gnutls26 (2.10.0-1) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * New upstream stable release.
 
  -- Andreas Metzler <ametzler@debian.org>  Sat, 19 Jun 2010 15:07:31 +0200
 
