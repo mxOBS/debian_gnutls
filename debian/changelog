@@ -2,6 +2,17 @@ gnutls26 (2.10.4-2) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
   * Use debhelper compatibility level 7.
+  * Merge in changes from 2.8.6-1:
+    + Use dh_lintian.
+    + Use dh_makeshlibs for the guile stuff, too. This gets us 
+      a) ldconfig in postinst.
+      and
+      b) a shlibs file.
+      However the shared objects /usr/lib/libguile-gnutls*so* are still not
+      designed to be used as libraries (linking) but are dlopened. guile-1.10
+      will address this issue by keeping this stuff in a private directory.
+    + hotfix pkg-config files (proper fix to be included upstream).
+    + Stop unneeeded linkage against libgpg-error. 16_unnecessarydep.diff
 
  -- Andreas Metzler <ametzler@debian.org>  Mon, 06 Dec 2010 19:32:28 +0100
 
