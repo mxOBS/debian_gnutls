@@ -1,8 +1,10 @@
-gnutls26 (2.9.10-2) UNRELEASED; urgency=low
+gnutls26 (2.9.10-2) experimental; urgency=low
 
-  * NOT RELEASED YET
+  * [15_gnutlspriority.diff] Restore compatibility with programs using 
+    gnutls_*_set_priority() instead of gnutls_priority_*(), e.g. exim.
+    Closes: #579831
 
- -- Andreas Metzler <ametzler@debian.org>  Thu, 22 Apr 2010 20:15:26 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Thu, 27 May 2010 18:40:53 +0200
 
 gnutls26 (2.9.10-1) experimental; urgency=low
 
