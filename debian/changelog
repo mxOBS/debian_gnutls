@@ -4,6 +4,7 @@ gnutls26 (2.11.6-1) UNRELEASED; urgency=low
   * Development release.
   * Continue building against libgcrypt, run configure with --with-libgcrypt.
   * Refresh patches/15_fixgnutlspc.diff.
+  * Set --with-packager* options.
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 06 Feb 2011 17:39:05 +0100
 
