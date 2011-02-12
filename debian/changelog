@@ -6,6 +6,7 @@ gnutls26 (2.11.6-1) UNRELEASED; urgency=low
   * Refresh patches/15_fixgnutlspc.diff.
   * Set --with-packager* options.
   * Install newly available p11tool binary.
+  * Bump libgcrypt11-dev Build-Depends.
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 06 Feb 2011 17:39:05 +0100
 
