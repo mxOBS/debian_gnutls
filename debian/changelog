@@ -2,6 +2,7 @@ gnutls26 (2.11.6-1) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
   * Development release.
+  * Continue building against libgcrypt, run configure with --with-libgcrypt.
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 06 Feb 2011 17:39:05 +0100
 
