@@ -23,6 +23,11 @@ Upstream Authors:
   Joe Orton <jorton@redhat.com>
   Daniel Kahn Gillmor <dkg-debian.org@fifthhorseman.net>
   David Marín Carreño <davefx@gmail.com>
+  Daiki Ueno <ueno@unixuser.org>
+  Brad Hards <bradh@frogmouth.net>
+  Boyan Kasarov <bkasarov@gmail.com>
+  Steve Dispensa <dispensa@phonefactor.com>
+  Jonathan Bastien-Filiatrault <joe@x2a.org>
 
 
 License: The main library is licensed under GNU Lesser General Public
@@ -34,7 +39,8 @@ i.e. LGPLv2.1+ for the main library and GPLv3+ for Gnutls extra.
 
 Copyright:
 --------------------
- * Copyright (C) 2000, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009 Free Software Foundation
+ * Copyright (C) 2000, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009
+ * 2010 Free Software Foundation
  *
  * Author: Nikos Mavrogiannopoulos
  *
@@ -56,32 +62,33 @@ Copyright:
  * USA
 --------------------
 /*
- * Copyright (C) 2001, 2004, 2005, 2007, 2008, 2009 Free Software Foundation
+ * Copyright (C) 2002, 2003, 2004, 2005, 2007, 2008, 2009, 2010 Free
+ * Software Foundation, Inc.
  *
  * Author: Nikos Mavrogiannopoulos
  *
- * This file is part of GNUTLS-EXTRA.
+ * This file is part of GnuTLS-EXTRA.
  *
- * GNUTLS-EXTRA is free software: you can redistribute it and/or
+ * GnuTLS-extra is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as
- * published by the Free Software Foundation, either version 3 of the
+ * published by the Free Software Foundation; either version 3 of the
  * License, or (at your option) any later version.
  *
- * GNUTLS-EXTRA is distributed in the hope that it will be useful, but
+ * GnuTLS-extra is distributed in the hope that it will be useful, but
  * WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
  * General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see
- * <http://www.gnu.org/licenses/>.
- */
+ * along with GnuTLS-EXTRA; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+ * 02110-1301, USA.
 --------------------
 
 The documentation is distributed under the terms of the GNU Free
 Documentation License (FDL):
 --------------------
-Copyright @copyright{} 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
+Copyright @copyright{} 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010 Free Software Foundation, Inc.
 
 @quotation
 Permission is granted to copy, distribute and/or modify this document
@@ -123,3 +130,49 @@ the gnutls-extra library is under the GPL. The gnutls-extra library
 contains the code for "GnuTLS Inner Application" support and the
 OpenSSL compatibility layer.  The gnutls library is located in the
 lib/ directory, while the gnutls-extra library is at libextra/.
+
+=========== Foreign code included in tarball ==================
+
+/lib/pakchois/ includes a modified copy of the PaKChoiS library.
+The original library was downloaded from
+http://www.manyfish.co.uk/pakchois/ and is also licensed under 
+LGPLv2.1+.
+
+Copyright:
+/*
+   pakchois PKCS#11 interface -- error mapping
+   Copyright (C) 2008, Joe Orton <joe@manyfish.co.uk>
+
+   This library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU Library General Public
+   License as published by the Free Software Foundation; either
+   version 2 of the License, or (at your option) any later version.
+
+   This library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+   Library General Public License for more details.
+
+   You should have received a copy of the GNU Library General Public
+   License along with this library; if not, write to the Free
+   Software Foundation, Inc., 59 Temple Place - Suite 330, Boston,
+   MA 02111-1307, USA
+*/
+
+/*
+  This code is directly derived from the scute.org PKCS#11 cryptoki
+  interface, which is:
+
+   Copyright 2006, 2007 g10 Code GmbH
+   Copyright 2006 Andreas Jellinghaus
+
+   This file is free software; as a special exception the author gives
+   unlimited permission to copy and/or distribute it, with or without
+   modifications, as long as this notice is preserved.
+
+   This file is distributed in the hope that it will be useful, but
+   WITHOUT ANY WARRANTY, to the extent permitted by law; without even
+   the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+   PURPOSE.
+*/
+

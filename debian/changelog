@@ -9,6 +9,7 @@ gnutls26 (2.11.6-1) UNRELEASED; urgency=low
   * Bump libgcrypt11-dev Build-Depends.
   * C++ wrapper soname bump, change package name accordingly.
   * Bump shlibs.
+  * Update debian/copyright.
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 06 Feb 2011 17:39:05 +0100
 
