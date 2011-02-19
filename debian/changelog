@@ -1,6 +1,5 @@
-gnutls26 (2.11.6-1) UNRELEASED; urgency=low
+gnutls26 (2.11.6-1) experimental; urgency=low
 
-  * NOT RELEASED YET
   * Development release.
   * Continue building against libgcrypt, run configure with --with-libgcrypt.
   * Refresh patches/15_fixgnutlspc.diff.
@@ -13,7 +12,7 @@ gnutls26 (2.11.6-1) UNRELEASED; urgency=low
   * Set CFLAGS += -Wall, the latest combination of cdbs + dpkg-dev does not
     seem to set it by default.
 
- -- Andreas Metzler <ametzler@debian.org>  Sun, 06 Feb 2011 17:39:05 +0100
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 19 Feb 2011 15:29:43 +0100
 
 gnutls26 (2.10.4-2) unstable; urgency=low
 
