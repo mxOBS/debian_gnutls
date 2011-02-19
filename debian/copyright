@@ -32,10 +32,11 @@ Upstream Authors:
 
 License: The main library is licensed under GNU Lesser General Public
 License (LGPL) version 2.1+, Gnutls Extra (i.e. openssl wrapper library,
-and library for code for "GnuTLS Inner Application" support) and commandline
- utilities are licenced under the GNU General Public License version 3+. The
- Guile bindings use the same license as the respective underlying library, 
-i.e. LGPLv2.1+ for the main library and GPLv3+ for Gnutls extra.
+and library for code for "GnuTLS Inner Application" support) build system,
+testsuite and commandline utilities are licenced under the GNU General
+Public License version 3+. The Guile bindings use the same license as the
+respective underlying library, i.e. LGPLv2.1+ for the main library and
+GPLv3+ for Gnutls extra.
 
 Copyright:
 --------------------
