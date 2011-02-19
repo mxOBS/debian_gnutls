@@ -10,6 +10,8 @@ gnutls26 (2.11.6-1) UNRELEASED; urgency=low
   * C++ wrapper soname bump, change package name accordingly.
   * Bump shlibs.
   * Update debian/copyright.
+  * Set CFLAGS += -Wall, the latest combination of cdbs + dpkg-dev does not
+    seem to set it by default.
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 06 Feb 2011 17:39:05 +0100
 
