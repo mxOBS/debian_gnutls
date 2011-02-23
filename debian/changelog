@@ -1,8 +1,9 @@
-gnutls26 (2.11.6-2) UNRELEASED; urgency=low
+gnutls26 (2.11.6-2) experimental; urgency=low
 
-  * NOT RELEASED YET
+  * 17_endian.diff - Pulled from upstream. Fix testsuite error (./tests/resume)
+    on big endian architectures.
 
- -- Andreas Metzler <ametzler@debian.org>  Sat, 19 Feb 2011 15:40:42 +0100
+ -- Andreas Metzler <ametzler@debian.org>  Wed, 23 Feb 2011 19:20:40 +0100
 
 gnutls26 (2.11.6-1) experimental; urgency=low
 
