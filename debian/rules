@@ -10,6 +10,9 @@ DEB_DH_MAKESHLIBS_ARGS_libgnutls26 := -V 'libgnutls26 (>=2.9.11-0)'
 DEB_DH_MAKESHLIBS_ARGS_guile-gnutls := -V 'guile-gnutls (>=2.9.11-0)'
 DEB_COMPRESS_EXCLUDE := gnutls.pdf
 
+CFLAGS += -Wall
+CXXFLAGS += -Wall
+
 # pre-clean rule: save gnutls.pdf since it is expensive to regenerate.
 # See README.source
 cleanbuilddir/gnutls-doc::

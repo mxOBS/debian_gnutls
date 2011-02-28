@@ -2,6 +2,8 @@ gnutls26 (2.10.5-1) unstable; urgency=low
 
   * New upstream bugfix release.
     + Drop 15_fixgnutlspc.diff, included upstream.
+  * Set C(XX)FLAGS += -Wall, the latest combination of cdbs + dpkg-dev does not
+    seem to set it by default.
 
  -- Andreas Metzler <ametzler@debian.org>  Mon, 28 Feb 2011 18:52:57 +0100
 
