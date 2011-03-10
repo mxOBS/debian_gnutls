@@ -6,8 +6,8 @@ include /usr/share/cdbs/1/class/autotools.mk
 
 DEB_CONFIGURE_EXTRA_FLAGS = --enable-ld-version-script --enable-cxx --without-lzo --enable-guile --with-guile-site-dir=/usr/share/guile/site --cache-file=$(CURDIR)/config.cache --with-libgcrypt --with-packager=Debian --with-packager-bug-reports=http://bugs.debian.org.org/ --with-packager-version="$(DEB_VERSION)"
 DEB_MAKE_CHECK_TARGET = check
-DEB_DH_MAKESHLIBS_ARGS_libgnutls26 := -V 'libgnutls26 (>= 2.11.5-0)'
-DEB_DH_MAKESHLIBS_ARGS_guile-gnutls := -V 'guile-gnutls (>= 2.11.5-0)'
+DEB_DH_MAKESHLIBS_ARGS_libgnutls26 := -V 'libgnutls26 (>= 2.11.7-0)'
+DEB_DH_MAKESHLIBS_ARGS_guile-gnutls := -V 'guile-gnutls (>= 2.11.7-0)'
 DEB_COMPRESS_EXCLUDE := gnutls.pdf
 
 CFLAGS += -Wall

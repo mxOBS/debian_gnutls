@@ -1,10 +1,10 @@
-gnutls26 (2.11.7-1) UNRELEASED; urgency=low
+gnutls26 (2.11.7-1) experimental; urgency=low
 
-  * NOT RELEASED YET
   * New upstream version (rc for 2.12)
     + Drop superfluous patches (15_fixgnutlspc.diff 17_endian.diff)
+    + Bump shlibs.
 
- -- Andreas Metzler <ametzler@debian.org>  Wed, 23 Feb 2011 19:32:59 +0100
+ -- Andreas Metzler <ametzler@debian.org>  Thu, 10 Mar 2011 11:00:21 +0100
 
 gnutls26 (2.11.6-2) experimental; urgency=low
 
