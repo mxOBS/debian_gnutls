@@ -3,8 +3,9 @@ gnutls26 (2.11.7-1) experimental; urgency=low
   * New upstream version (rc for 2.12)
     + Drop superfluous patches (15_fixgnutlspc.diff 17_endian.diff)
     + Bump shlibs.
+  * debian/patches/17_goldhotfix.patch Link gnutls-extra gainst gcrypt.
 
- -- Andreas Metzler <ametzler@debian.org>  Thu, 10 Mar 2011 11:00:21 +0100
+ -- Andreas Metzler <ametzler@debian.org>  Thu, 10 Mar 2011 12:12:01 +0100
 
 gnutls26 (2.11.6-2) experimental; urgency=low
 
