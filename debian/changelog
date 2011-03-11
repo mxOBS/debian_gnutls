@@ -1,6 +1,8 @@
 gnutls26 (2.11.7-2) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * 18_libgnutls-openssl_soname.diff. Bump libgnutls-openssl soname (libtool
+    versioning: 27:0:0).
 
  -- Andreas Metzler <ametzler@debian.org>  Thu, 10 Mar 2011 13:27:18 +0100
 
