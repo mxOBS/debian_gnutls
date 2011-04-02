@@ -1,6 +1,5 @@
-gnutls26 (2.12.1-1) UNRELEASED; urgency=low
+gnutls26 (2.12.1-1) experimental; urgency=low
 
-  * NOT RELEASED YET
   * New upstream version.
     + certtool: Generated certificate request with stricter permissions.
       Closes: #619746
@@ -10,7 +9,7 @@ gnutls26 (2.12.1-1) UNRELEASED; urgency=low
   * Add Breaks for all packages using the GnuTLS OpenSSL wrapper. They will
     need a binNMU when gnutls 2.12.x uploaded to unstable.
 
- -- Andreas Metzler <ametzler@debian.org>  Sun, 27 Mar 2011 10:38:02 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 02 Apr 2011 15:22:46 +0200
 
 gnutls26 (2.12.0-1) experimental; urgency=low
 
