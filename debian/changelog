@@ -2,6 +2,7 @@ gnutls26 (2.12.2-1) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
   * New upstream version.
+  * [lintian] Drop article from short package descriptions.
 
  -- Andreas Metzler <ametzler@debian.org>  Sat, 02 Apr 2011 15:39:03 +0200
 
