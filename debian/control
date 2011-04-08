@@ -10,7 +10,7 @@ Build-Depends: debhelper (>= 7.0.14), libgcrypt11-dev (>= 1.4.0), zlib1g-dev,
  cdbs (>= 0.4.53), gtk-doc-tools, texinfo (>= 4.8),
  libtasn1-3-dev (>= 0.3.4-0), autotools-dev, guile-1.8-dev, datefudge
 Build-Conflicts: libgnutls-dev
-Standards-Version: 3.9.1
+Standards-Version: 3.9.2
 Vcs-Svn: svn://svn.debian.org/svn/pkg-gnutls/packages/gnutls26/trunk
 Vcs-Browser: http://svn.debian.org/wsvn/pkg-gnutls/packages/gnutls26/trunk/
 Homepage: http://www.gnutls.org/
