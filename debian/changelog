@@ -1,8 +1,9 @@
-gnutls26 (2.12.2-2) UNRELEASED; urgency=low
+gnutls26 (2.12.2-2) experimental; urgency=low
 
-  * NOT RELEASED YET
+  * [18_restoreHMAC-MD5.diff], pulled from upstream git, restore HMAC-MD5
+    for compatibility. Closes: #623001
 
- -- Andreas Metzler <ametzler@debian.org>  Fri, 08 Apr 2011 19:46:23 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Sun, 17 Apr 2011 15:44:30 +0200
 
 gnutls26 (2.12.2-1) experimental; urgency=low
 
