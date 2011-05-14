@@ -1,3 +1,9 @@
+gnutls26 (2.12.5-2) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 14 May 2011 13:37:37 +0200
+
 gnutls26 (2.12.5-1) experimental; urgency=low
 
   * New upstream version.
