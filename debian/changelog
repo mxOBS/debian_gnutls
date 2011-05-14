@@ -1,8 +1,9 @@
-gnutls26 (2.12.4-2) UNRELEASED; urgency=low
+gnutls26 (2.12.5-1) experimental; urgency=low
 
-  * NOT RELEASED YET
+  * New upstream version.
+  * Bump shlibs, gnutls_x509_crq_verify() was added.
 
- -- Andreas Metzler <ametzler@debian.org>  Sun, 08 May 2011 15:25:04 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 14 May 2011 13:21:12 +0200
 
 gnutls26 (2.12.4-1) experimental; urgency=low
 
