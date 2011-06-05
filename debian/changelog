@@ -2,6 +2,7 @@ gnutls26 (2.12.6.1-1) experimental; urgency=low
 
   * New upstream version.
   * Bump shlibs, global_set_time_function() was added.
+  * Stop setting CFLAGS += -Wall, it is set by default again.
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 05 Jun 2011 13:18:50 +0200
 
