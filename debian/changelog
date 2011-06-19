@@ -2,6 +2,8 @@ gnutls26 (2.12.7-1) experimental; urgency=low
 
   * New upstream version.
   * Update 17_ignoretestsuitteerrors.diff.
+  * A new version of pokerth has been uploaded to sid, update libgnutls26
+    Breaks accordingly.
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 19 Jun 2011 08:49:01 +0200
 
