@@ -47,7 +47,3 @@ binary-install/gnutls-doc::
 	cd ../.. && \
 	dh_link -pgnutls-doc
 
-install/libgnutls-dev::
-	find debian/tmp/usr/lib -name "*.la" -exec \
-		sed -i -e "s,^dependency_libs=.*,dependency_libs=''," {} +
-

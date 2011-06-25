@@ -1,8 +1,8 @@
-gnutls26 (2.10.5-2) UNRELEASED; urgency=low
+gnutls26 (2.10.5-2) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * Stop shipping libtool la files.
 
- -- Andreas Metzler <ametzler@debian.org>  Mon, 28 Feb 2011 19:37:02 +0100
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 25 Jun 2011 18:13:38 +0200
 
 gnutls26 (2.10.5-1) unstable; urgency=low
 
