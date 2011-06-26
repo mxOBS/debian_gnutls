@@ -11,7 +11,10 @@ gnutls26 (2.12.7-2) UNRELEASED; urgency=low
     + runtime libraries and guile-wrapper are Multi-Arch: same with 
       Pre-Depends: ${misc:Pre-Depends}, -bin (helper binaries) and -doc are 
       Multi-Arch: foreign, -dev and -dbg remain unchanged.
-
+    + Diverge from Ubuntu patch  by not settting Multi-Arch: same on -dbg
+      package. It contains debugging symbols for both library and helper
+      binaries ( e.g. /usr/lib/debug/usr/bin/gnutls-cli) and is therefore not
+      co-installable with itself.
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 19 Jun 2011 09:16:30 +0200
 
