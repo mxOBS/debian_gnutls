@@ -6,8 +6,8 @@ Uploaders: Andreas Metzler <ametzler@debian.org>,
  Eric Dorland <eric@debian.org>,
  James Westby <jw+debian@jameswestby.net>,
  Simon Josefsson <simon@josefsson.org>
-Build-Depends: debhelper (>= 7.0.14), libgcrypt11-dev (>= 1.4.0), zlib1g-dev,
- cdbs (>= 0.4.53), gtk-doc-tools, texinfo (>= 4.8),
+Build-Depends: debhelper (>= 8.1.3), libgcrypt11-dev (>= 1.4.0), zlib1g-dev,
+ cdbs (>= 0.4.93), gtk-doc-tools, texinfo (>= 4.8),
  libtasn1-3-dev (>= 0.3.4-0), autotools-dev, guile-1.8-dev, datefudge
 Build-Conflicts: libgnutls-dev
 Standards-Version: 3.9.2
