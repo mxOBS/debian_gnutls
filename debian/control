@@ -52,6 +52,7 @@ Section: libs
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Replaces: gnutls0, gnutls3, gnutls0.4
 Conflicts: gnutls0, gnutls0.4
+Pre-Depends: ${misc:Pre-Depends}
 # libsoup* Bug 587755. - This could be removed after a libgnutls soname bump.
 # The others are using the gnutls openssl wrapper.
 Breaks: libsoup2.4-1 (<= 2.30.1-1), libsoup2.4-1 (= 2.31.2-1), 
@@ -62,6 +63,7 @@ Breaks: libsoup2.4-1 (<= 2.30.1-1), libsoup2.4-1 (= 2.31.2-1),
  snowdrop (<= 0.02b-8), ssmtp (<= 2.64-4), tf5 (<= 5.0beta8-4),
  wput (<= 0.6.2-2), zoneminder (<= 1.24.2-9)
 Suggests: gnutls-bin
+Multi-Arch: same
 Description: GNU TLS library - runtime library
  GnuTLS is a portable library which implements the Transport Layer
  Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 protocols.
@@ -99,6 +101,7 @@ Section: net
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Conflicts: libgnutls5-dev, gnutls0.4-dev, gnutls-dev (<< 0.4.0-0)
 Replaces: libgnutls5-dev, gnutls0.4-dev, gnutls-dev (<< 0.4.0-0)
+Multi-Arch: foreign
 Description: GNU TLS library - commandline utilities
  GnuTLS is a portable library which implements the Transport Layer
  Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 protocols.
@@ -124,6 +127,7 @@ Priority: optional
 Architecture: all
 Section: doc
 Depends: ${misc:Depends}
+Multi-Arch: foreign
 Description: GNU TLS library - documentation and examples
  GnuTLS is a portable library which implements the Transport Layer
  Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 protocols.
@@ -147,6 +151,8 @@ Priority: optional
 Architecture: any
 Section: lisp
 Depends: ${misc:Depends},${shlibs:Depends}, guile-1.8
+Pre-Depends: ${misc:Pre-Depends}
+Multi-Arch: same
 Description: GNU TLS library - GNU Guile bindings
  GnuTLS is a portable library which implements the Transport Layer
  Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 protocols.
@@ -170,6 +176,8 @@ Priority: extra
 Architecture: any
 Section: libs
 Depends: libgnutls26 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Pre-Depends: ${misc:Pre-Depends}
+Multi-Arch: same
 Description: GNU TLS library - C++ runtime library
  GnuTLS is a portable library which implements the Transport Layer
  Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 protocols.
@@ -193,6 +201,8 @@ Priority: standard
 Architecture: any
 Section: libs
 Depends: libgnutls26 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Pre-Depends: ${misc:Pre-Depends}
+Multi-Arch: same
 Description: GNU TLS library - OpenSSL wrapper
  GnuTLS is a portable library which implements the Transport Layer
  Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 protocols.
