@@ -1,6 +1,8 @@
 gnutls26 (2.12.7-3) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  [Simon Josefsson]
+  * Fix Debian BTS URL in --with-packager-bug-reports option.
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 26 Jun 2011 15:56:33 +0200
 
