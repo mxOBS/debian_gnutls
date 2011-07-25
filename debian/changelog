@@ -1,8 +1,8 @@
-gnutls26 (2.10.5-3) UNRELEASED; urgency=low
+gnutls26 (2.10.5-3) unstable; urgency=medium
 
-  * NOT RELEASED YET
+  * [20_gcrypt15compat.diff] Fix compatibility with gcrypt 1.5.
 
- -- Andreas Metzler <ametzler@debian.org>  Sat, 25 Jun 2011 18:34:53 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Mon, 25 Jul 2011 19:26:34 +0200
 
 gnutls26 (2.10.5-2) unstable; urgency=low
 
