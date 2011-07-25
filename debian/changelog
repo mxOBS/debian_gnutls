@@ -1,10 +1,12 @@
-gnutls26 (2.12.7-3) UNRELEASED; urgency=low
+gnutls26 (2.12.7-3) experimental; urgency=low
 
-  * NOT RELEASED YET
-  [Simon Josefsson]
+  [ Simon Josefsson ]
   * Fix Debian BTS URL in --with-packager-bug-reports option.
 
- -- Andreas Metzler <ametzler@debian.org>  Sun, 26 Jun 2011 15:56:33 +0200
+  [ Andreas Metzler ]
+  * [20_gcrypt15compat.diff] Fix compatibility with gcrypt 1.5.
+
+ -- Andreas Metzler <ametzler@debian.org>  Mon, 25 Jul 2011 19:59:36 +0200
 
 gnutls26 (2.12.7-2) experimental; urgency=low
 
