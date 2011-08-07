@@ -1,4 +1,4 @@
-Source: gnutls26
+Source: gnutls28
 Section: libs
 Priority: optional
 Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>

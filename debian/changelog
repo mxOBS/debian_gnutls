@@ -1,6 +1,10 @@
 gnutls28 (3.0.0-1) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * Drop gcrypt related patches (16_unnecessarydep.diff
+    17_ignoretestsuitteerrors.diff 18_gpgerrorinpkgconfig.diff
+    20_gcrypt15compat.diff), update remaining one
+    (14_version_gettextcat.diff).
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 07 Aug 2011 10:26:44 +0200
 
