@@ -1,3 +1,4 @@
 14_version_gettextcat.diff
 16_unnecessarydep.diff
+17_ignoretestsuitteerrors.diff
 20_gcrypt15compat.diff
