@@ -60,8 +60,8 @@ Breaks: libsoup2.4-1 (<= 2.30.1-1), libsoup2.4-1 (= 2.31.2-1),
  gkrellm (<= 2.3.4-1), macopix-gtk2 (<= 1.7.4-3), pokerth (<= 0.8.3-3+b1),
  pokerth-server (<= 0.8.3-3+b1), sipsak (<= 0.9.6-2.1),
  slrn (<= 1.0.0~pre18-1.1), slrnpull (<= 1.0.0~pre18-1.1),
- snowdrop (<= 0.02b-8), ssmtp (<= 2.64-4), tf5 (<= 5.0beta8-4),
- wput (<= 0.6.2-2), zoneminder (<= 1.24.2-9)
+ snowdrop (<= 0.02b-9), ssmtp (<= 2.64-4), tf5 (<= 5.0beta8-4),
+ wput (<= 0.6.2-2), zoneminder (<= 1.24.4-1)
 Suggests: gnutls-bin
 Multi-Arch: same
 Description: GNU TLS library - runtime library

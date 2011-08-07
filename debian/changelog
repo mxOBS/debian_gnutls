@@ -1,12 +1,12 @@
-gnutls26 (2.12.7-4) UNRELEASED; urgency=low
+gnutls26 (2.12.7-4) unstable; urgency=low
 
-  * NOT RELEASED YET
   * Upload to unstable.
   * Point watch file to stable release directory.
   * 18_gpgerrorinpkgconfig.diff: Add libgpg-error to pkg-config
     Libs.private. Closes: #632891
+  * Update libgnutls26 Breaks (snowdrop and zoneminder versions.)
 
- -- Andreas Metzler <ametzler@debian.org>  Mon, 25 Jul 2011 20:10:02 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Sun, 07 Aug 2011 09:58:28 +0200
 
 gnutls26 (2.12.7-3) experimental; urgency=low
 
