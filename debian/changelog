@@ -1,6 +1,8 @@
 gnutls26 (2.12.7-4) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * Upload to unstable.
+  * Point watch file to stable release directory.
 
  -- Andreas Metzler <ametzler@debian.org>  Mon, 25 Jul 2011 20:10:02 +0200
 
