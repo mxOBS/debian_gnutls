@@ -10,6 +10,7 @@ gnutls28 (3.0.0-1) UNRELEASED; urgency=low
     + Update (Build-)Depends.
   * Changed sonames: libgnutlsxx27 -> libgnutlsxx28, libgnutls26 ->
     libgnutls28.
+  * Drop libgnutls Breaks, they are superfluous after the soname change.
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 07 Aug 2011 10:26:44 +0200
 
