@@ -21,8 +21,8 @@ Priority: optional
 Section: libdevel
 Architecture: any
 Provides: gnutls-dev
-Depends: libgnutls26 (= ${binary:Version}), 
- libgnutlsxx27 (= ${binary:Version}),libgnutls-openssl27 (= ${binary:Version}),
+Depends: libgnutls28 (= ${binary:Version}), 
+ libgnutlsxx28 (= ${binary:Version}),libgnutls-openssl27 (= ${binary:Version}),
  nettle-dev (>= 2.2), libc6-dev | libc-dev, zlib1g-dev,
  libtasn1-3-dev (>= 0.3.4), ${misc:Depends}
 Suggests: gnutls-doc, gnutls-bin, guile-gnutls
@@ -46,7 +46,7 @@ Description: GNU TLS library - development files
  .
  This package contains the GnuTLS development files.
 
-Package: libgnutls26
+Package: libgnutls28
 Priority: standard
 Architecture: any
 Section: libs
@@ -83,11 +83,11 @@ Description: GNU TLS library - runtime library
  .
  This package contains the runtime libraries.
 
-Package: libgnutls26-dbg
+Package: libgnutls28-dbg
 Priority: extra
 Architecture: any
 Section: debug
-Depends: libgnutls26 (= ${binary:Version}), ${misc:Depends}
+Depends: libgnutls28 (= ${binary:Version}), ${misc:Depends}
 Conflicts: libgnutls13-dbg
 Description: GNU TLS library - debugger symbols
  GnuTLS is a portable library which implements the Transport Layer
@@ -172,11 +172,11 @@ Description: GNU TLS library - GNU Guile bindings
  .
  This package contains the GNU Guile 1.8 modules.
 
-Package: libgnutlsxx27
+Package: libgnutlsxx28
 Priority: extra
 Architecture: any
 Section: libs
-Depends: libgnutls26 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Depends: libgnutls28 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
 Pre-Depends: ${misc:Pre-Depends}
 Multi-Arch: same
 Description: GNU TLS library - C++ runtime library
@@ -201,7 +201,7 @@ Package: libgnutls-openssl27
 Priority: standard
 Architecture: any
 Section: libs
-Depends: libgnutls26 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Depends: libgnutls28 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
 Pre-Depends: ${misc:Pre-Depends}
 Multi-Arch: same
 Description: GNU TLS library - OpenSSL wrapper

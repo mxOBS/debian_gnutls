@@ -8,6 +8,8 @@ gnutls28 (3.0.0-1) UNRELEASED; urgency=low
   * Build against nettle and p11-kit.
     + Update DEB_CONFIGURE_EXTRA_FLAGS.
     + Update (Build-)Depends.
+  * Changed sonames: libgnutlsxx27 -> libgnutlsxx28, libgnutls26 ->
+    libgnutls28.
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 07 Aug 2011 10:26:44 +0200
 

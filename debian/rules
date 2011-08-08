@@ -12,8 +12,8 @@ DEB_CONFIGURE_EXTRA_FLAGS = --enable-ld-version-script --enable-cxx \
 	--with-packager-version="$(DEB_VERSION)" \
 	--libdir=\$${prefix}/lib/$(DEB_HOST_MULTIARCH)
 DEB_MAKE_CHECK_TARGET = check
-DEB_DH_MAKESHLIBS_ARGS_libgnutls26 := -V 'libgnutls26 (>= 2.12.6.1-0)'
-DEB_DH_MAKESHLIBS_ARGS_guile-gnutls := -V 'guile-gnutls (>= 2.12.6.1-0)'
+DEB_DH_MAKESHLIBS_ARGS_libgnutls28 := -V 'libgnutls28 (>= 3.0.0-0)'
+DEB_DH_MAKESHLIBS_ARGS_guile-gnutls := -V 'guile-gnutls (>= 3.0.0-0)'
 DEB_COMPRESS_EXCLUDE := gnutls.pdf
 
 # pre-clean rule: save gnutls.pdf since it is expensive to regenerate.
@@ -30,7 +30,7 @@ clean::
 
 	-rm -f tests/stamp-tests
 	# stupid conflicts
-	-rm -f doc/*.info* lib/po/libgnutls26.pot
+	-rm -f doc/*.info* lib/po/libgnutls28.pot
 	# restore gnutls.pdf
 	if [ -e doc/gnutls.pdf.debbackup ] && [ ! -e doc/gnutls.pdf ] ; then mv doc/gnutls.pdf.debbackup doc/gnutls.pdf ; fi
 
