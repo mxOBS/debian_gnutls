@@ -50,3 +50,6 @@ binary-install/gnutls-doc::
 	cd ../.. && \
 	dh_link -pgnutls-doc
 
+common-install-arch::
+	find debian/*/usr/lib/* -name '*.so.*.*' -type f -exec \
+		chrpath -d {} +
