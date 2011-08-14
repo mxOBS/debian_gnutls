@@ -23,6 +23,7 @@ Architecture: any
 Provides: gnutls-dev
 Depends: libgnutls28 (= ${binary:Version}), 
  libgnutlsxx28 (= ${binary:Version}),libgnutls-openssl27 (= ${binary:Version}),
+ libgnutls-extra28 (= ${binary:Version}), 
  nettle-dev (>= 2.2), libc6-dev | libc-dev, zlib1g-dev,
  libtasn1-3-dev (>= 0.3.4), ${misc:Depends}
 Suggests: gnutls-doc, gnutls-bin, guile-gnutls
@@ -56,7 +57,7 @@ Conflicts: gnutls0, gnutls0.4
 Pre-Depends: ${misc:Pre-Depends}
 Suggests: gnutls-bin
 Multi-Arch: same
-Description: GNU TLS library - runtime library
+Description: GNU TLS library - main runtime library
  GnuTLS is a portable library which implements the Transport Layer
  Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 protocols.
  .
@@ -72,7 +73,7 @@ Description: GNU TLS library - runtime library
   - all the strong encryption algorithms (including SHA-256/384/512 and
     Camellia (RFC 4132)).
  .
- This package contains the runtime libraries.
+ This package contains the main runtime library.
 
 Package: libgnutls28-dbg
 Priority: extra
@@ -212,3 +213,29 @@ Description: GNU TLS library - OpenSSL wrapper
     Camellia (RFC 4132)).
  .
  This package contains the runtime library of the GnuTLS OpenSSL wrapper.
+
+Package: libgnutls-extra28
+Priority: standard
+Architecture: any
+Section: libs
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Pre-Depends: ${misc:Pre-Depends}
+Multi-Arch: same
+Description: GNU TLS library - GnuTLS Inner Application runtime library
+ GnuTLS is a portable library which implements the Transport Layer
+ Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 protocols.
+ .
+ GnuTLS features support for:
+  - TLS extensions: server name indication, max record size, opaque PRF
+    input, etc.
+  - authentication using the SRP protocol.
+  - authentication using both X.509 certificates and OpenPGP keys.
+  - TLS Pre-Shared-Keys (PSK) extension.
+  - Inner Application (TLS/IA) extension.
+  - X.509 and OpenPGP certificate handling.
+  - X.509 Proxy Certificates (RFC 3820).
+  - all the strong encryption algorithms (including SHA-256/384/512 and
+    Camellia (RFC 4132)).
+ .
+ This package contains the GnuTLS Inner Application runtime library.
+

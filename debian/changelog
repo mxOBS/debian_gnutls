@@ -17,6 +17,7 @@ gnutls28 (3.0.0-1) experimental; urgency=low
   * Delete unneccessary rpath entries.
   * Update debian/copyright. GnuTLS is LGPLv3+ now, GnuTLS-EXTRA GPLv3+. Add a
     NEWS entry for this license change.
+  * Move gnutls-extra library to separate package.
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 14 Aug 2011 16:44:11 +0200
 
