@@ -15,6 +15,7 @@ gnutls28 (3.0.0-1) UNRELEASED; urgency=low
   * [20_executablestack] pulled from upstream GIT. Adds GNU-stack note to
     assembly files.
   * Delete unneccessary rpath entries.
+  * Update debian/copyright. GnuTLS is LGPLv3+ now, GnuTLS-EXTRA GPLv3+.
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 07 Aug 2011 10:26:44 +0200
 
