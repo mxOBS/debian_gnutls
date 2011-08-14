@@ -1,13 +1,13 @@
-gnutls28 (3.0.0-1) UNRELEASED; urgency=low
+gnutls28 (3.0.0-1) experimental; urgency=low
 
-  * NOT RELEASED YET
   * Drop gcrypt related patches (16_unnecessarydep.diff
     17_ignoretestsuitteerrors.diff 18_gpgerrorinpkgconfig.diff
     20_gcrypt15compat.diff), update remaining one
     (14_version_gettextcat.diff).
   * Build against nettle and p11-kit.
     + Update DEB_CONFIGURE_EXTRA_FLAGS.
-    + Update (Build-)Depends.
+    + Update (Build-)Depends. (Add pkg-config, it is used for locating
+      p11-kit.)
   * Changed sonames: libgnutlsxx27 -> libgnutlsxx28, libgnutls26 ->
     libgnutls28.
   * Drop libgnutls Breaks, they are superfluous after the soname change.
@@ -18,7 +18,7 @@ gnutls28 (3.0.0-1) UNRELEASED; urgency=low
   * Update debian/copyright. GnuTLS is LGPLv3+ now, GnuTLS-EXTRA GPLv3+. Add a
     NEWS entry for this license change.
 
- -- Andreas Metzler <ametzler@debian.org>  Sun, 07 Aug 2011 10:26:44 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Sun, 14 Aug 2011 16:44:11 +0200
 
 gnutls26 (2.12.7-4) unstable; urgency=low
 
