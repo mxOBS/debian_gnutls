@@ -1,3 +1,9 @@
+gnutls28 (3.0.0-2) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Andreas Metzler <ametzler@debian.org>  Sun, 14 Aug 2011 18:07:52 +0200
+
 gnutls28 (3.0.0-1) experimental; urgency=low
 
   * Drop gcrypt related patches (16_unnecessarydep.diff
