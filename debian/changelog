@@ -1,6 +1,7 @@
 gnutls28 (3.0.0-2) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * Add missing b-d on chrpath.
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 14 Aug 2011 18:07:52 +0200
 
