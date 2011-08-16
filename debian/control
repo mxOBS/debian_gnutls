@@ -12,8 +12,8 @@ Build-Depends: debhelper (>= 8.1.3), nettle-dev (>= 2.2), zlib1g-dev,
  libp11-kit-dev (>= 0.2), pkg-config, chrpath
 Build-Conflicts: libgnutls-dev
 Standards-Version: 3.9.2
-Vcs-Svn: svn://svn.debian.org/svn/pkg-gnutls/packages/gnutls26/trunk
-Vcs-Browser: http://svn.debian.org/wsvn/pkg-gnutls/packages/gnutls26/trunk/
+Vcs-Svn: svn://svn.debian.org/svn/pkg-gnutls/packages/gnutls28/trunk
+Vcs-Browser: http://svn.debian.org/wsvn/pkg-gnutls/packages/gnutls28/trunk/
 Homepage: http://www.gnutls.org/
 
 Package: libgnutls-dev
