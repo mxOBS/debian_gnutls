@@ -221,7 +221,7 @@ Section: libs
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Pre-Depends: ${misc:Pre-Depends}
 Multi-Arch: same
-Description: GNU TLS library - GnuTLS Inner Application runtime library
+Description: GNU TLS library - GnuTLS extra (GPL) runtime library
  GnuTLS is a portable library which implements the Transport Layer
  Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 protocols.
  .
@@ -237,5 +237,6 @@ Description: GNU TLS library - GnuTLS Inner Application runtime library
   - all the strong encryption algorithms (including SHA-256/384/512 and
     Camellia (RFC 4132)).
  .
- This package contains the GnuTLS Inner Application runtime library.
+ This package contains the GPL (instead of LGPL) licensed parts of the GnuTLS
+ runtime library.
 
