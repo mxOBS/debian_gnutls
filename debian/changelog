@@ -7,6 +7,7 @@ gnutls28 (3.0.1-1) UNRELEASED; urgency=low
   * Bump build-dependency on libp11-kit-dev to (>= 0.4).
   * Drop 20_executablestack.diff, included upstream.
   * Add build-dependency on libidn11-dev, needed for newly added crywrap tool.
+  * Bump shlibs. (New flags).
 
  -- Andreas Metzler <ametzler@debian.org>  Tue, 16 Aug 2011 14:06:08 +0200
 
