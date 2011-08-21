@@ -174,3 +174,55 @@ contains the code for "GnuTLS Inner Application" support and the
 OpenSSL compatibility layer.  The gnutls library is located in the
 lib/ directory, while the gnutls-extra library is at libextra/.
 
+============================================
+Non FSF code
+
+crywrap is shipped with GnuTLS.
+Upstream Authors: Gergely Nagy <algernon@bonehunter.rulez.org>
+                  Nikos Mavrogiannopoulos
+License: GPLv3+
+
+Copyright: 
+--------------------
+ * Copyright (C) 2003, 2004 Gergely Nagy <algernon@bonehunter.rulez.org>
+ * Copyright (C) 2011 Nikos Mavrogiannopoulos
+ *
+ * This file is part of CryWrap.
+ *
+ * CryWrap is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * CryWrap is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+--------------------
+
+crywrap documentation (manpage):
+Upstream Author: Gergely Nagy <algernon@bonehunter.rulez.org>
+License: nonstandard, see below
+Copyright:
+--------------------
+.\" This manual is for CRYWrap
+.\"
+.\" Copyright (C) 2003 Gergely Nagy <algernon@@bonehunter.rulez.org>
+.\"
+.\" Permission is granted to make and distribute verbatim copies of this
+.\" manual provided the copyright notice and this permission notice are
+.\" preserved on all copies.
+.\"
+.\" Permission is granted to copy and distribute modified versions of this
+.\" manual under the conditions for verbatim copying, provided that the
+.\" entire resulting derived work is distributed under the terms of a
+.\" permission notice identical to this one.
+.\"
+.\" Permission is granted to copy and distribute translations of this
+.\" manual into another language, under the above conditions for modified
+.\" versions, except that this permission notice may be stated in a
+.\" translation approved by the Author.
+--------------------
