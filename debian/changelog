@@ -3,6 +3,7 @@ gnutls28 (3.0.1-1) UNRELEASED; urgency=low
   * NOT RELEASED YET
   * Update Vcs-Svn and Vcs-Browser for new source package name.
   * New upstream version.
+    + corrects formatting of gnutls-cli(1) manpage. Closes: #637551
   * Bump build-dependency on libp11-kit-dev to (>= 0.4).
   * Drop 20_executablestack.diff, included upstream.
   * Add build-dependency on libidn11-dev, needed for newly added crywrap tool.
