@@ -1,6 +1,5 @@
-gnutls28 (3.0.1-1) UNRELEASED; urgency=low
+gnutls28 (3.0.1-1) experimental; urgency=low
 
-  * NOT RELEASED YET
   * Update Vcs-Svn and Vcs-Browser for new source package name.
   * New upstream version.
     + corrects formatting of gnutls-cli(1) manpage. Closes: #637551
@@ -11,7 +10,7 @@ gnutls28 (3.0.1-1) UNRELEASED; urgency=low
   * Add build-dependency on libidn11-dev, needed for newly added crywrap tool.
   * Bump shlibs. (New flags).
 
- -- Andreas Metzler <ametzler@debian.org>  Tue, 16 Aug 2011 14:06:08 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Sun, 21 Aug 2011 14:54:23 +0200
 
 gnutls28 (3.0.0-2) experimental; urgency=low
 
