@@ -1,3 +1,9 @@
+gnutls28 (3.0.1-2) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Andreas Metzler <ametzler@debian.org>  Sun, 21 Aug 2011 14:58:52 +0200
+
 gnutls28 (3.0.1-1) experimental; urgency=low
 
   * Update Vcs-Svn and Vcs-Browser for new source package name.
