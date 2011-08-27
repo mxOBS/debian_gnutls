@@ -2,6 +2,9 @@ gnutls28 (3.0.1-2) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
   * Update debian/copyright for crywrap.
+  * Since libgnutls*-dbg contains debugging symbols of helper applications
+    libgnutls26-dbg and libgnutls28-dbg are not co-installable. Update
+    Conflicts.
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 21 Aug 2011 14:58:52 +0200
 

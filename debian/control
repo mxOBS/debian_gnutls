@@ -80,7 +80,7 @@ Priority: extra
 Architecture: any
 Section: debug
 Depends: libgnutls28 (= ${binary:Version}), ${misc:Depends}
-Conflicts: libgnutls13-dbg
+Conflicts: libgnutls13-dbg, libgnutls26-dbg
 Description: GNU TLS library - debugger symbols
  GnuTLS is a portable library which implements the Transport Layer
  Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 protocols.
