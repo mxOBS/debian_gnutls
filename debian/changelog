@@ -1,3 +1,9 @@
+gnutls28 (3.0.2-2) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 03 Sep 2011 13:29:26 +0200
+
 gnutls28 (3.0.2-1) experimental; urgency=low
 
   * Update debian/copyright for crywrap.
