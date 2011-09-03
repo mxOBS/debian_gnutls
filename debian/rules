@@ -5,7 +5,7 @@ include /usr/share/cdbs/1/rules/debhelper.mk
 include /usr/share/cdbs/1/class/autotools.mk
 
 DEB_CONFIGURE_EXTRA_FLAGS = --enable-ld-version-script --enable-cxx \
-	--without-lzo --enable-guile \
+	--without-lzo --enable-guile --enable-gtk-doc \
 	--with-guile-site-dir=/usr/share/guile/site \
 	--with-packager=Debian \
 	--with-packager-bug-reports=http://bugs.debian.org/ \

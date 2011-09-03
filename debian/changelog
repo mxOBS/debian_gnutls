@@ -1,10 +1,18 @@
-gnutls28 (3.0.1-2) UNRELEASED; urgency=low
+gnutls28 (3.0.2-1) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
   * Update debian/copyright for crywrap.
   * Since libgnutls*-dbg contains debugging symbols of helper applications
     libgnutls26-dbg and libgnutls28-dbg are not co-installable. Update
     Conflicts.
+  * New upstream version. It also includes the fixes for #638586 (Correct
+    parsing of XMPP subject alternative names) and #638595
+    (gnutls_certificate_set_x509_key() and
+    gnutls_certificate_set_openpgp_key() operate as in 2.10.x and allow the
+    release of the private key during the lifetime of the certificate
+    structure.)
+  * Configure with --enable-gtk-doc, the included API reference is incomplete
+    in the tarball.
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 21 Aug 2011 14:58:52 +0200
 
