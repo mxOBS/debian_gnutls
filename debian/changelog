@@ -13,6 +13,8 @@ gnutls28 (3.0.2-1) UNRELEASED; urgency=low
     structure.)
   * Configure with --enable-gtk-doc, the included API reference is incomplete
     in the tarball.
+  * [lintian] Get rid of binary-control-field-duplicates-source field
+    warnings.
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 21 Aug 2011 14:58:52 +0200
 
