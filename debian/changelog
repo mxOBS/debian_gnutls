@@ -1,6 +1,7 @@
 gnutls28 (3.0.3-2) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * Add libp11-kit-dev to libgnutls-dev dependencies. Closes: #643811
 
  -- Andreas Metzler <ametzler@debian.org>  Tue, 20 Sep 2011 19:44:22 +0200
 

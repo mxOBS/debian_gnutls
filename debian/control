@@ -24,7 +24,7 @@ Depends: libgnutls28 (= ${binary:Version}),
  libgnutlsxx28 (= ${binary:Version}),libgnutls-openssl27 (= ${binary:Version}),
  libgnutls-extra28 (= ${binary:Version}), 
  nettle-dev (>= 2.2), libc6-dev | libc-dev, zlib1g-dev,
- libtasn1-3-dev (>= 0.3.4), ${misc:Depends}
+ libtasn1-3-dev (>= 0.3.4), libp11-kit-dev (>= 0.4), ${misc:Depends}
 Suggests: gnutls-doc, gnutls-bin, guile-gnutls
 Conflicts: libgnutls11-dev, gnutls-dev (<< 0.4.0-0), gnutls0.4-dev
 Replaces: libgnutls11-dev, gnutls-dev (<< 0.4.0-0), gnutls0.4-dev
