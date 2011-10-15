@@ -9,6 +9,7 @@ gnutls28 (3.0.4-1) UNRELEASED; urgency=low
     padlock-common.s.
   * Stop shipping libgnutls-extra.so. It is an empty shell currently and will
     be packaged for Debian again when it provides functionality.
+  * Update debian/copyright, accelerated assembly code is non-FSF copyright.
 
  -- Andreas Metzler <ametzler@debian.org>  Tue, 20 Sep 2011 19:44:22 +0200
 
