@@ -3,6 +3,7 @@ gnutls28 (3.0.4-1) UNRELEASED; urgency=low
   * NOT RELEASED YET
   * New upstream version.
     + bump shlibs.
+    + bump nettle build-dependency to >= 2.4. (Required for ripemd-160).
   * Add libp11-kit-dev to libgnutls-dev dependencies. Closes: #643811
   * [20_addGNU-stack.diff] Add GNU-stack note to newly added
     padlock-common.s.
