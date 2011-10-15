@@ -1,6 +1,8 @@
 gnutls28 (3.0.4-2) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * Drop libgnutls-dev.README.Debian, the information provided there stopped
+    being relevant in 2.7.12.
 
  -- Andreas Metzler <ametzler@debian.org>  Sat, 15 Oct 2011 13:43:52 +0200
 
