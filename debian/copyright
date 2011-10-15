@@ -76,12 +76,12 @@ Upstream Authors:
 
 
 License: The main library is licensed under GNU Lesser General Public
-License (LGPL) version 3+, Gnutls Extra (i.e. openssl wrapper library,
-and library for code for "GnuTLS Inner Application" support) build system,
-testsuite and commandline utilities are licenced under the GNU General
-Public License version 3+. The Guile bindings use the same license as the
-respective underlying library, i.e. LGPLv3+ for the main library and
-GPLv3+ for Gnutls extra.
+License (LGPL) version 3+, Gnutls Extra (which is currently just the
+openssl wrapper library, the gnutls-extra library is just an empty
+shell), build system, testsuite and commandline utilities are licenced
+under the GNU General Public License version 3+. The Guile bindings use
+the same license as the respective underlying library, i.e.  LGPLv3+ for
+the main library and GPLv3+ for Gnutls extra.
 
 Copyright:
 --------------------
@@ -151,30 +151,24 @@ be found in `/usr/share/common-licenses/GPL' (version 3 in
 License is available under /usr/share/common-licenses/GFDL-1.3.
 
 
+============================================
 Excerpt from upstream's README:
-LICENSE ISSUES
---------------
+LICENSING
+---------
+Since GnuTLS version 3.0.0, the core library has been released under
+the GNU Lesser General Public License (LGPL) version 3 or later.
 
-Since the 0.4.2 version the gnutls library is covered under the GNU
-Lesser GPL. Previously released versions were licensed under the GNU
-GPL.
+The GNU LGPL applies to the main GnuTLS library, while the
+included applications as well as gnutls-extra and gnutls-openssl
+libraries are under the GNU GPL version 3.  The gnutls library is
+located in the lib/ directory, while the applications in src/ and
+gnutls-extra and gnutls-openssl library are at libextra/.
 
-We changed the license for most of GNUTLS because other free libraries
-already exist that do the same jobs and have lax licenses.  We want
-GNUTLS to be usable in all the same places as those other libraries.
-We kept some parts of GNUTLS under the GPL because they are unique,
-and with the GPL they provide free software projects (which deserve
-our help) an advantage over non-free projects (which do not deserve
-our help, since they refuse to share with us).  For more explanation,
-see http://www.gnu.org/philosophy/why-not-lgpl.html.
-
-The GNU Lesser GPL license applies to the main gnutls library, while
-the gnutls-extra library is under the GPL. The gnutls-extra library
-contains the code for "GnuTLS Inner Application" support and the
-OpenSSL compatibility layer.  The gnutls library is located in the
-lib/ directory, while the gnutls-extra library is at libextra/.
+For any copyright year range specified as YYYY-ZZZZ in this package
+note that the range specifies every single year in that closed interval.
 
 ============================================
+
 Non FSF code
 
 crywrap is shipped with GnuTLS.

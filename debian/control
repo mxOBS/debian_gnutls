@@ -22,7 +22,6 @@ Architecture: any
 Provides: gnutls-dev
 Depends: libgnutls28 (= ${binary:Version}), 
  libgnutlsxx28 (= ${binary:Version}),libgnutls-openssl27 (= ${binary:Version}),
- libgnutls-extra28 (= ${binary:Version}), 
  nettle-dev (>= 2.2), libc6-dev | libc-dev, zlib1g-dev,
  libtasn1-3-dev (>= 0.3.4), libp11-kit-dev (>= 0.4), ${misc:Depends}
 Suggests: gnutls-doc, gnutls-bin, guile-gnutls
@@ -206,29 +205,4 @@ Description: GNU TLS library - OpenSSL wrapper
     Camellia (RFC 4132)).
  .
  This package contains the runtime library of the GnuTLS OpenSSL wrapper.
-
-Package: libgnutls-extra28
-Priority: standard
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Pre-Depends: ${misc:Pre-Depends}
-Multi-Arch: same
-Description: GNU TLS library - GnuTLS extra (GPL) runtime library
- GnuTLS is a portable library which implements the Transport Layer
- Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 protocols.
- .
- GnuTLS features support for:
-  - TLS extensions: server name indication, max record size, opaque PRF
-    input, etc.
-  - authentication using the SRP protocol.
-  - authentication using both X.509 certificates and OpenPGP keys.
-  - TLS Pre-Shared-Keys (PSK) extension.
-  - Inner Application (TLS/IA) extension.
-  - X.509 and OpenPGP certificate handling.
-  - X.509 Proxy Certificates (RFC 3820).
-  - all the strong encryption algorithms (including SHA-256/384/512 and
-    Camellia (RFC 4132)).
- .
- This package contains the GPL (instead of LGPL) licensed parts of the GnuTLS
- runtime library.
 

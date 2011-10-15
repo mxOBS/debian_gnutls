@@ -14,7 +14,6 @@ DEB_CONFIGURE_EXTRA_FLAGS = --enable-ld-version-script --enable-cxx \
 DEB_MAKE_CHECK_TARGET = check
 DEB_DH_MAKESHLIBS_ARGS_libgnutls28 := -V 'libgnutls28 (>= 3.0.4-0)'
 DEB_DH_MAKESHLIBS_ARGS_libgnutlsxx28 := -V 'libgnutlsxx28 (>= 3.0.4-0)'
-DEB_DH_MAKESHLIBS_ARGS_libgnutls-extra28 := -V 'libgnutls-extra28 (>= 3.0.4-0)'
 DEB_DH_MAKESHLIBS_ARGS_guile-gnutls := -V 'guile-gnutls (>= 3.0.4-0)'
 DEB_COMPRESS_EXCLUDE := gnutls.pdf
 
@@ -52,11 +51,6 @@ binary-install/gnutls-doc::
 	cd ../.. && \
 	dh_link -pgnutls-doc
 
-binary-install/libgnutls-extra28::
-	rm -vrf debian/libgnutls-extra28/usr/share/doc/libgnutls-extra28
-	dh_link -plibgnutls-extra28 usr/share/doc/libgnutls28 \
-		usr/share/doc/libgnutls-extra28
-
 binary-install/libgnutlsxx28::
 	rm -vrf debian/libgnutlsxx28/usr/share/doc/libgnutlsxx28
 	dh_link -plibgnutlsxx28 usr/share/doc/libgnutls28 \
@@ -65,3 +59,14 @@ binary-install/libgnutlsxx28::
 common-install-arch::
 	find debian/*/usr/lib/* -name '*.so.*.*' -type f -exec \
 		chrpath -d {} +
+	cd debian/tmp && rm -vf usr/include/gnutls/extra.h \
+		usr/lib/*/libgnutls-extra.* \
+		usr/lib/*/pkgconfig/gnutls-extra.pc \
+		usr/lib/*/libguile-gnutls-extra* \
+		usr/share/guile/site/gnutls/extra.scm
+
+common-install-indep::
+	cd debian/tmp && rm -fv \
+		usr/share/gtk-doc/html/gnutls/gnutls-extra.html \
+		usr/share/man/man3/gnutls_global_init_extra.3 \
+		usr/share/man/man3/gnutls_extra_check_version.3
