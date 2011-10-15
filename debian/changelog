@@ -10,6 +10,7 @@ gnutls28 (3.0.4-1) UNRELEASED; urgency=low
   * Stop shipping libgnutls-extra.so. It is an empty shell currently and will
     be packaged for Debian again when it provides functionality.
   * Update debian/copyright, accelerated assembly code is non-FSF copyright.
+  * Add crywrap.8 manpage.
 
  -- Andreas Metzler <ametzler@debian.org>  Tue, 20 Sep 2011 19:44:22 +0200
 
