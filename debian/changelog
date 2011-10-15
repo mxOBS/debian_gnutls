@@ -4,6 +4,8 @@ gnutls28 (3.0.4-1) UNRELEASED; urgency=low
   * New upstream version.
     + bump shlibs.
   * Add libp11-kit-dev to libgnutls-dev dependencies. Closes: #643811
+  * [20_addGNU-stack.diff] Add GNU-stack note to newly added
+    padlock-common.s.
 
  -- Andreas Metzler <ametzler@debian.org>  Tue, 20 Sep 2011 19:44:22 +0200
 
