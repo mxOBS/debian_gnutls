@@ -64,6 +64,8 @@ common-install-arch::
 		usr/lib/*/pkgconfig/gnutls-extra.pc \
 		usr/lib/*/libguile-gnutls-extra* \
 		usr/share/guile/site/gnutls/extra.scm
+	rmdir --ignore-fail-on-non-empty --verbose \
+		debian/tmp/usr/share/guile/site/gnutls
 
 common-install-indep::
 	cd debian/tmp && rm -fv \
