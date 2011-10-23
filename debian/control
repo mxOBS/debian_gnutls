@@ -16,7 +16,7 @@ Vcs-Svn: svn://svn.debian.org/svn/pkg-gnutls/packages/gnutls28/trunk
 Vcs-Browser: http://svn.debian.org/wsvn/pkg-gnutls/packages/gnutls28/trunk/
 Homepage: http://www.gnutls.org/
 
-Package: libgnutls-dev
+Package: libgnutls28-dev
 Section: libdevel
 Architecture: any
 Provides: gnutls-dev
@@ -25,8 +25,8 @@ Depends: libgnutls28 (= ${binary:Version}),
  nettle-dev (>= 2.2), libc6-dev | libc-dev, zlib1g-dev,
  libtasn1-3-dev (>= 0.3.4), libp11-kit-dev (>= 0.4), ${misc:Depends}
 Suggests: gnutls-doc, gnutls-bin, guile-gnutls
-Conflicts: libgnutls11-dev, gnutls-dev (<< 0.4.0-0), gnutls0.4-dev
-Replaces: libgnutls11-dev, gnutls-dev (<< 0.4.0-0), gnutls0.4-dev
+Conflicts: gnutls-dev
+Replaces: gnutls-dev
 Description: GNU TLS library - development files
  GnuTLS is a portable library which implements the Transport Layer
  Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 protocols.
@@ -88,8 +88,6 @@ Package: gnutls-bin
 Architecture: any
 Section: net
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Conflicts: libgnutls5-dev, gnutls0.4-dev, gnutls-dev (<< 0.4.0-0)
-Replaces: libgnutls5-dev, gnutls0.4-dev, gnutls-dev (<< 0.4.0-0)
 Multi-Arch: foreign
 Description: GNU TLS library - commandline utilities
  GnuTLS is a portable library which implements the Transport Layer

@@ -4,6 +4,14 @@ gnutls28 (3.0.4-2) UNRELEASED; urgency=low
   * Drop libgnutls-dev.README.Debian, the information provided there stopped
     being relevant in 2.7.12.
   * Delete superfluous info from debian/README.source.
+  * Rename libgnutls-dev to libgnutls28-dev. A big quick transition does not
+    seem to be possible.
+    http://lists.debian.org/debian-devel/2011/10/msg00332.html
+  * Simplify dependencies:
+    + libgnutls28-dev Provides/Conflicts/Replaces gnutls-dev (which is
+      also provided by gnutls26' libgnutls-dev).
+    + Drop *ancient* Conflicts/Replaces against libgnutls5-dev, gnutls0.4-dev,
+      gnutls-dev (<< 0.4.0-0), libgnutls11-dev.
 
  -- Andreas Metzler <ametzler@debian.org>  Sat, 15 Oct 2011 13:43:52 +0200
 
