@@ -1,6 +1,8 @@
-gnutls28 (3.0.4-3) UNRELEASED; urgency=low
+gnutls28 (3.0.5-1) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * New upstream version.
+  * Drop 20_addGNU-stack.diff, included upstream.
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 23 Oct 2011 18:18:17 +0200
 
