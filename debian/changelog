@@ -6,6 +6,8 @@ gnutls28 (3.0.6-1) UNRELEASED; urgency=low
   * loadable Guile module no longer installed directly to $libdir but to
     $libdir/guile/X.Y/. Drop nunnecessary lintian overrides and (from
     debian/rules) DEB_DH_MAKESHLIBS_ARGS_guile-gnutls.
+  * gnutls-extra is removed upstream, there is no need anaymore to manually
+    remove the bits and pieces in debian/rules.
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 23 Oct 2011 18:18:17 +0200
 

@@ -58,16 +58,3 @@ binary-install/libgnutlsxx28::
 common-install-arch::
 	find debian/*/usr/lib/* -name '*.so.*.*' -type f -exec \
 		chrpath -d {} +
-	cd debian/tmp && rm -vf usr/include/gnutls/extra.h \
-		usr/lib/*/libgnutls-extra.* \
-		usr/lib/*/pkgconfig/gnutls-extra.pc \
-		usr/lib/*/libguile-gnutls-extra* \
-		usr/share/guile/site/gnutls/extra.scm
-	rmdir --ignore-fail-on-non-empty --verbose \
-		debian/tmp/usr/share/guile/site/gnutls
-
-common-install-indep::
-	cd debian/tmp && rm -fv \
-		usr/share/gtk-doc/html/gnutls/gnutls-extra.html \
-		usr/share/man/man3/gnutls_global_init_extra.3 \
-		usr/share/man/man3/gnutls_extra_check_version.3
