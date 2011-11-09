@@ -1,2 +1,2 @@
-debian/tmp/usr/lib/*/libguile-gnutls*.so*
+debian/tmp/usr/lib/*/guile/*/guile-gnutls*.so*
 debian/tmp/usr/share/guile/site
