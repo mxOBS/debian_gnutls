@@ -136,7 +136,6 @@ Package: guile-gnutls
 Architecture: any
 Section: lisp
 Depends: ${misc:Depends},${shlibs:Depends}, guile-1.8
-Pre-Depends: ${misc:Pre-Depends}
 Multi-Arch: same
 Description: GNU TLS library - GNU Guile bindings
  GnuTLS is a portable library which implements the Transport Layer

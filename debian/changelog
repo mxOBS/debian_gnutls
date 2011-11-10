@@ -1,15 +1,15 @@
-gnutls28 (3.0.7-1) UNRELEASED; urgency=low
+gnutls28 (3.0.7-1) experimental; urgency=low
 
-  * NOT RELEASED YET
   * New upstream version.
   * Drop 20_addGNU-stack.diff, included upstream.
   * loadable Guile module no longer installed directly to $libdir but to
-    $libdir/guile/X.Y/. Drop nunnecessary lintian overrides and (from
-    debian/rules) DEB_DH_MAKESHLIBS_ARGS_guile-gnutls.
-  * gnutls-extra is removed upstream, there is no need anaymore to manually
+    $libdir/guile/X.Y/. Drop nunnecessary lintian overrides and
+    Pre-Depends: ${misc:Pre-Depends} from guile-gnutls. Also modify     
+    DEB_DH_MAKESHLIBS_ARGS_guile-gnutls to ignore the binary module.
+  * gnutls-extra is removed upstream, there is no need anymore to manually
     remove the bits and pieces in debian/rules.
 
- -- Andreas Metzler <ametzler@debian.org>  Sun, 23 Oct 2011 18:18:17 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Thu, 10 Nov 2011 19:35:30 +0100
 
 gnutls28 (3.0.4-2) experimental; urgency=low
 
