@@ -7,6 +7,7 @@ gnutls28 (3.0.7-2) UNRELEASED; urgency=low
 gnutls28 (3.0.7-1) experimental; urgency=low
 
   * New upstream version.
+    + Fixes GNUTLS-SA-2011-2 CVE-2011-4128 #648441
   * Drop 20_addGNU-stack.diff, included upstream.
   * loadable Guile module no longer installed directly to $libdir but to
     $libdir/guile/X.Y/. Drop nunnecessary lintian overrides and
