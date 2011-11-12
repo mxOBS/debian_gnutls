@@ -1,6 +1,9 @@
 gnutls28 (3.0.7-2) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * Build gnutls with --disable-largefile on armel, armhf and mipsel to fix
+    guile related FTBFS on these architectures.
+    See http://lists.gnu.org/archive/html/gnutls-devel/2011-10/msg00075.html
 
  -- Andreas Metzler <ametzler@debian.org>  Thu, 10 Nov 2011 19:54:13 +0100
 

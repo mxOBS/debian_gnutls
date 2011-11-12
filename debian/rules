@@ -17,6 +17,11 @@ DEB_DH_MAKESHLIBS_ARGS_libgnutlsxx28 := -V 'libgnutlsxx28 (>= 3.0.4-0)'
 DEB_DH_MAKESHLIBS_ARGS_guile-gnutls := -Xguile/1.8/guile-gnutls-v-2.so
 DEB_COMPRESS_EXCLUDE := gnutls.pdf
 
+# workaround for guile testsuite failure.
+ifneq (,$(filter $(DEB_BUILD_ARCH),armel armhf mipsel))
+	DEB_CONFIGURE_EXTRA_FLAGS += --disable-largefile
+endif
+
 # pre-clean rule: save gnutls.pdf since it is expensive to regenerate.
 # See README.source
 cleanbuilddir/gnutls-doc::
