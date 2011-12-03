@@ -1,3 +1,9 @@
+gnutls28 (3.0.8-3) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 03 Dec 2011 10:45:28 +0100
+
 gnutls28 (3.0.8-2) unstable; urgency=low
 
   * First upload to unstable.
