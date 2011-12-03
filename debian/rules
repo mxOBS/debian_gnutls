@@ -64,3 +64,4 @@ binary-install/libgnutlsxx28::
 common-install-arch::
 	find debian/*/usr/lib/* -name '*.so.*.*' -type f -exec \
 		chrpath -d {} +
+	rm -vf debian/*/usr/lib/*/libgnutls-openssl*

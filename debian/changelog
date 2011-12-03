@@ -1,11 +1,12 @@
-gnutls28 (3.0.8-2) UNRELEASED; urgency=low
+gnutls28 (3.0.8-2) unstable; urgency=low
 
-  * NOT RELEASED YET
   * First upload to unstable.
     + Disable openssl-wrapper package, let it be provided by gnutls26 until
       gnutls28 is in testing.
+    + Disable gnutls-guile package, let it be provided by gnutls26 until
+      gnutls28 is in testing.
 
- -- Andreas Metzler <ametzler@debian.org>  Sat, 12 Nov 2011 17:12:37 +0100
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 03 Dec 2011 10:30:04 +0100
 
 gnutls28 (3.0.8-1) experimental; urgency=low
 
