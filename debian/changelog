@@ -2,6 +2,7 @@ gnutls28 (3.0.9-1) experimental; urgency=low
 
   * New upstream version.
   * Include guile-gnutls package.
+  * Bump shlibs.
 
  -- Andreas Metzler <ametzler@debian.org>  Wed, 14 Dec 2011 19:54:20 +0100
 
