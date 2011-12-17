@@ -3,6 +3,7 @@ gnutls28 (3.0.9-2) UNRELEASED; urgency=low
   * NOT RELEASED YET
   * [20_test-select.diff] Do not run gnulib test-select test anymore. The
     test fails on kfreebsd-i386, the gnutls library does not use select().
+  * [30_correctly-set-the-odd-bits.patch] Post release fix from GIT head.
 
  -- Andreas Metzler <ametzler@debian.org>  Wed, 14 Dec 2011 20:08:18 +0100
 
