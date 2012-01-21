@@ -4,7 +4,8 @@ gnutls28 (3.0.12-1) UNRELEASED; urgency=low
   * New upstream version.
   * [30_guilegnutlserrorcodes.diff] (pulled from git head): fixes guile
     testsuite error.
-  * Update debian/cvopyright.
+  * Update debian/copyright.
+  * Bump shlibs. (OCSP support)
 
  -- Andreas Metzler <ametzler@debian.org>  Sat, 07 Jan 2012 13:05:15 +0100
 
