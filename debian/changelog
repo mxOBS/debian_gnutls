@@ -1,8 +1,8 @@
-gnutls28 (3.0.12-2) UNRELEASED; urgency=low
+gnutls28 (3.0.12-2) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * De-multiarch guile-gnutls. Closes: #658110
 
- -- Andreas Metzler <ametzler@debian.org>  Sat, 21 Jan 2012 10:48:48 +0100
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 04 Feb 2012 14:34:48 +0100
 
 gnutls28 (3.0.12-1) unstable; urgency=low
 
