@@ -1,6 +1,8 @@
-gnutls28 (3.0.12-3) UNRELEASED; urgency=low
+gnutls28 (3.0.13-1) UNRELEASED; urgency=low
 
-  * NOT RELEASED YET
+  * New upstream version.
+    + bump libp11-kit-dev build-dep. to >= 0.11.
+    + drop 30_guilegnutlserrorcodes.diff.
 
  -- Andreas Metzler <ametzler@debian.org>  Sat, 04 Feb 2012 14:42:02 +0100
 
