@@ -39,6 +39,11 @@ clean::
 	-rm -f doc/*.info* lib/po/libgnutls28.pot
 	# restore gnutls.pdf
 	if [ -e doc/gnutls.pdf.debbackup ] && [ ! -e doc/gnutls.pdf ] ; then mv doc/gnutls.pdf.debbackup doc/gnutls.pdf ; fi
+	# force regeneration of autogen-ed files.
+	for i in `grep -l AutoGen-ed src/*.c` ; do \
+		t=`basename $$i .c` ;\
+		rm -v $$i src/$$t.h;\
+		done
 
 # additional comands for build rule
 build/gnutls-doc::
