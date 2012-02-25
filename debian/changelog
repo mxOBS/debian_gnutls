@@ -1,6 +1,8 @@
-gnutls28 (3.0.13-2) experimental; urgency=low
+gnutls28 (3.0.14-1) experimental; urgency=low
 
   * NOT RELEASED YET.
+  * New upstream version.
+    + Drop 30_force-kill-of-child.diff.
 
  -- Andreas Metzler <ametzler@debian.org>  Mon, 20 Feb 2012 19:54:06 +0100
 
