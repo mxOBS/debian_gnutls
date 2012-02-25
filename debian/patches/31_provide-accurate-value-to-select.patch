@@ -1,0 +1,31 @@
+From bd86118a9dec58bf720780291b93f12150841cea Mon Sep 17 00:00:00 2001
+From: Nikos Mavrogiannopoulos <nmav@gnutls.org>
+Date: Sat, 25 Feb 2012 13:04:38 +0100
+Subject: [PATCH 2/2] provide accurate value to select
+
+---
+ src/udp-serv.c |    8 +++++++-
+ 1 files changed, 7 insertions(+), 1 deletions(-)
+
+diff --git a/src/udp-serv.c b/src/udp-serv.c
+index 489a577..c4a376b 100644
+--- a/src/udp-serv.c
++++ b/src/udp-serv.c
+@@ -190,7 +190,13 @@ char c;
+   
+   tv.tv_sec = 0;
+   tv.tv_usec = ms * 1000;
+-  
++
++  while(tv.tv_usec >= 1000000)
++    {
++      tv.tv_usec -= 1000000;
++      tv.tv_sec++;
++    }
++
+   ret = select(priv->fd+1, &rfds, NULL, NULL, &tv);
+ 
+   if (ret <= 0)
+-- 
+1.7.2.5
+

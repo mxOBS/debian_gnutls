@@ -3,6 +3,9 @@ gnutls28 (3.0.14-1) experimental; urgency=low
   * NOT RELEASED YET.
   * New upstream version.
     + Drop 30_force-kill-of-child.diff.
+  * Pull 30_microseconds-does-not-overflow.patch and
+    31_provide-accurate-value-to-select.patch from GIT head, fixing testsuite
+    error (tests/mini-loss) on kfreebsd-*.
 
  -- Andreas Metzler <ametzler@debian.org>  Mon, 20 Feb 2012 19:54:06 +0100
 
