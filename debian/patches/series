@@ -1,4 +1,3 @@
 14_version_gettextcat.diff
 20_test-select.diff
-30_microseconds-does-not-overflow.patch
-31_provide-accurate-value-to-select.patch
+30_forcesystemlibopts.diff

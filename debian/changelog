@@ -1,6 +1,10 @@
-gnutls28 (3.0.14-2) UNRELEASED; urgency=low
+gnutls28 (3.0.15-1) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * New upstream version.
+    + Drop superfluous patchs (30_microseconds-does-not-overflow.patch, 
+      31_provide-accurate-value-to-select.patch)
+  * 30_forcesystemlibopts.diff Force linkage against Debian's libopts.
 
  -- Andreas Metzler <ametzler@debian.org>  Sat, 25 Feb 2012 15:37:54 +0100
 
