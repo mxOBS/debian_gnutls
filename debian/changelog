@@ -1,9 +1,9 @@
 gnutls28 (3.0.15-1) experimental; urgency=low
 
   * New upstream version.
-    + Drop superfluous patchs (30_microseconds-does-not-overflow.patch, 
+    + Drop superfluous patches (30_microseconds-does-not-overflow.patch, 
       31_provide-accurate-value-to-select.patch)
-  * 30_forcesystemlibopts.diff Force linkage against Debian's libopts.
+  * 30_forcesystemlibopts.diff: Force linkage against Debian's libopts.
   * Bump libgnutls-dev dependency on libp11-kit-dev.
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 04 Mar 2012 15:58:38 +0100
