@@ -1,6 +1,8 @@
 gnutls28 (3.0.15-2) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * 25_disabledtls_kFreeBSD.diff: Skip dtls-stress on kFreeBSD-* since
+    support for CLOCK_MONOTONIC is missing there. (See #662018.)
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 04 Mar 2012 17:13:42 +0100
 
