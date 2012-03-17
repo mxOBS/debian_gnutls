@@ -1,8 +1,9 @@
-gnutls28 (3.0.15-3) UNRELEASED; urgency=low
+gnutls28 (3.0.17-1) experimental; urgency=low
 
-  * NOT RELEASED YET
+  * New upstream version.
+    + Bump shlibs.
 
- -- Andreas Metzler <ametzler@debian.org>  Sun, 11 Mar 2012 10:38:53 +0100
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 17 Mar 2012 15:59:17 +0100
 
 gnutls28 (3.0.15-2) experimental; urgency=low
 
