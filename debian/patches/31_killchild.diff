@@ -1,0 +1,18 @@
+Description: kill child in test
+ revert upstream commit 4965c2fbfd3405e2dfe7f7d747d03185d155c2a1
+ with it "make check 2>&1 | tee /tmp/foo" never exits.
+Author: Andreas Metzler <ametzler@debian.org>
+Forwarded: http://mid.gmane.org/20120406174521.GA2792%40downhill.g.la
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: 2012-04-07
+
+--- gnutls28-3.0.18.orig/tests/mini-loss-time.c
++++ gnutls28-3.0.18/tests/mini-loss-time.c
+@@ -274,6 +274,7 @@ static void start (int server_packet, in
+       close(fd[1]);
+       server (fd[0], server_packet);
+       close(fd[0]);
++      kill(child, SIGTERM);
+     }
+   else 
+     {

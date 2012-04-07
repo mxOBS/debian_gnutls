@@ -1,8 +1,11 @@
-gnutls28 (3.0.17-3) UNRELEASED; urgency=low
+gnutls28 (3.0.18-1) experimental; urgency=low
 
-  * NOT RELEASED YET
+  * New upstream version.
+    + Bump shlibs.
+  * patches/31_killchild.diff: Revert upstream change which caused tee-ing a
+    build to hang.
 
- -- Andreas Metzler <ametzler@debian.org>  Tue, 20 Mar 2012 19:31:25 +0100
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 07 Apr 2012 09:11:39 +0200
 
 gnutls28 (3.0.17-2) unstable; urgency=low
 
