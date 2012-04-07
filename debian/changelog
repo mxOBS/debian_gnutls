@@ -1,3 +1,9 @@
+gnutls28 (3.0.18-2) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 07 Apr 2012 09:24:02 +0200
+
 gnutls28 (3.0.18-1) experimental; urgency=low
 
   * New upstream version.
