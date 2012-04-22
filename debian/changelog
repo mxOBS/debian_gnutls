@@ -1,12 +1,11 @@
-gnutls28 (3.0.19-1) UNRELEASED; urgency=low
+gnutls28 (3.0.19-1) experimental; urgency=low
 
-  * NOT RELEASED YET
   * New upstream version.
     + libgnutls: When decoding a PKCS #11 URL the pin-source field
       is assumed to be a file that stores the pin. (LP: #929108)
     + Drop 31_killchild.diff, included upstream.
 
- -- Andreas Metzler <ametzler@debian.org>  Sat, 14 Apr 2012 16:48:03 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Sun, 22 Apr 2012 18:14:41 +0200
 
 gnutls28 (3.0.18-2) unstable; urgency=low
 
