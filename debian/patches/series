@@ -2,4 +2,3 @@
 20_test-select.diff
 25_disabledtls_kFreeBSD.diff
 30_forcesystemlibopts.diff
-31_killchild.diff
