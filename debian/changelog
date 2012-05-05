@@ -1,6 +1,6 @@
-gnutls28 (3.0.19-2) experimental; urgency=low
+gnutls28 (3.0.19-2) unstable; urgency=low
 
-  * 
+  * Upload to unstable.
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 22 Apr 2012 18:42:46 +0200
 
