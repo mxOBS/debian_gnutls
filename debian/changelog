@@ -1,6 +1,8 @@
 gnutls28 (3.0.19-3) unstable; urgency=low
 
   * NOT RELEASED YET
+  * Drop 25_disabledtls_kFreeBSD.diff, kFreeBSD has support for
+    CLOCK_MONOTONIC now. #662018
 
  -- Andreas Metzler <ametzler@debian.org>  Sat, 05 May 2012 09:37:22 +0200
 
