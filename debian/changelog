@@ -1,10 +1,10 @@
-gnutls28 (3.0.21-1) UNRELEASED; urgency=low
+gnutls28 (3.0.21-1) experimental; urgency=low
 
-  * NOT RELEASED YET
   * New upstream version.
     + Drop 35_s390buildfix.diff.
+  * Bump shlibs (new functions added.)
 
- -- Andreas Metzler <ametzler@debian.org>  Sat, 23 Jun 2012 08:17:19 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Tue, 03 Jul 2012 19:50:14 +0200
 
 gnutls28 (3.0.20-3) unstable; urgency=low
 
