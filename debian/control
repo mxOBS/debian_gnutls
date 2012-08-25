@@ -30,7 +30,8 @@ Conflicts: gnutls-dev
 Replaces: gnutls-dev
 Description: GNU TLS library - development files
  GnuTLS is a portable library which implements the Transport Layer
- Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 protocols.
+ Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 and Datagram
+ TLS 1.0 protocols.
  .
  GnuTLS features support for:
   - TLS extensions: server name indication, max record size, opaque PRF
@@ -57,7 +58,8 @@ Suggests: gnutls-bin
 Multi-Arch: same
 Description: GNU TLS library - main runtime library
  GnuTLS is a portable library which implements the Transport Layer
- Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 protocols.
+ Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 and Datagram
+ TLS 1.0 protocols.
  .
  GnuTLS features support for:
   - TLS extensions: server name indication, max record size, opaque PRF
@@ -81,7 +83,8 @@ Depends: libgnutls28 (= ${binary:Version}), ${misc:Depends}
 Conflicts: libgnutls13-dbg, libgnutls26-dbg
 Description: GNU TLS library - debugger symbols
  GnuTLS is a portable library which implements the Transport Layer
- Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 protocols.
+ Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 and Datagram
+ TLS 1.0 protocols.
  .
  This package contains the debugger symbols.
 
@@ -92,7 +95,8 @@ Depends: ${shlibs:Depends}, ${misc:Depends}
 Multi-Arch: foreign
 Description: GNU TLS library - commandline utilities
  GnuTLS is a portable library which implements the Transport Layer
- Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 protocols.
+ Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 and Datagram
+ TLS 1.0 protocols.
  .
  GnuTLS features support for:
   - TLS extensions: server name indication, max record size, opaque PRF
@@ -117,7 +121,8 @@ Depends: ${misc:Depends}
 Multi-Arch: foreign
 Description: GNU TLS library - documentation and examples
  GnuTLS is a portable library which implements the Transport Layer
- Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 protocols.
+ Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 and Datagram
+ TLS 1.0 protocols.
  .
  GnuTLS features support for:
   - TLS extensions: server name indication, max record size, opaque PRF
@@ -139,7 +144,8 @@ Section: lisp
 Depends: ${misc:Depends},${shlibs:Depends}, guile-1.8
 Description: GNU TLS library - GNU Guile bindings
  GnuTLS is a portable library which implements the Transport Layer
- Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 protocols.
+ Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 and Datagram
+ TLS 1.0 protocols.
  .
  GnuTLS features support for:
   - TLS extensions: server name indication, max record size, opaque PRF
@@ -163,7 +169,8 @@ Pre-Depends: ${misc:Pre-Depends}
 Multi-Arch: same
 Description: GNU TLS library - C++ runtime library
  GnuTLS is a portable library which implements the Transport Layer
- Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 protocols.
+ Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 and Datagram
+ TLS 1.0 protocols.
  .
  GnuTLS features support for:
   - TLS extensions: server name indication, max record size, opaque PRF
@@ -187,7 +194,8 @@ Description: GNU TLS library - C++ runtime library
 ##Multi-Arch: same
 ##Description: GNU TLS library - OpenSSL wrapper
 ## GnuTLS is a portable library which implements the Transport Layer
-## Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 protocols.
+## Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 and Datagram
+## TLS 1.0 protocols.
 ## .
 ## GnuTLS features support for:
 ##  - TLS extensions: server name indication, max record size, opaque PRF

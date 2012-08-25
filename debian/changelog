@@ -1,8 +1,9 @@
-gnutls28 (3.0.22-2) UNRELEASED; urgency=low
+gnutls28 (3.0.22-2) unstable; urgency=low
 
-  * 
+  * Upload to unstable. This is a leaf-package experimental should get
+    3.1.0.
 
- -- Andreas Metzler <ametzler@debian.org>  Sun, 05 Aug 2012 08:41:03 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 25 Aug 2012 09:22:37 +0200
 
 gnutls28 (3.0.22-1) experimental; urgency=low
 
