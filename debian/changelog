@@ -2,6 +2,8 @@ gnutls28 (3.1.0-2) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
   * Mention abbreviation "DTLS" in package description.
+  * [40_debugtestsuite] Enable verbose execution of mini-emsgsize-dtls test,
+    it spuriously fails on about half of the buildds.
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 26 Aug 2012 14:05:47 +0200
 
