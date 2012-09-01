@@ -1,8 +1,8 @@
-gnutls28 (3.1.0-3) UNRELEASED; urgency=low
+gnutls28 (3.1.0-3) experimental; urgency=low
 
-  * NOT RELEASED YET
+  * [40_debugtestsuite] Debug the correct test, mini-handshake-timeout.
 
- -- Andreas Metzler <ametzler@debian.org>  Sat, 01 Sep 2012 08:52:51 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 01 Sep 2012 10:02:54 +0200
 
 gnutls28 (3.1.0-2) experimental; urgency=low
 
