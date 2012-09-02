@@ -1,8 +1,9 @@
-gnutls28 (3.1.0-4) UNRELEASED; urgency=low
+gnutls28 (3.1.0-4) experimental; urgency=low
 
-  * NOT RELEASED YET
+  * 41_use-errno.diff 42_dump-the-errno.diff: Get more info for debugging the
+    testsuite error.
 
- -- Andreas Metzler <ametzler@debian.org>  Sat, 01 Sep 2012 10:15:37 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Sun, 02 Sep 2012 13:28:55 +0200
 
 gnutls28 (3.1.0-3) experimental; urgency=low
 
