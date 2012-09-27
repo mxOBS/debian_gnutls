@@ -2,6 +2,7 @@ gnutls28 (3.1.2-1) UNRELEASED; urgency=low
 
   * New upstream release.
     + Requires libtasn1-3 2.14, bump (b-)d.
+    + New symbols added, bump shlibs.
 
  -- Andreas Metzler <ametzler@debian.org>  Tue, 04 Sep 2012 19:42:24 +0200
 
