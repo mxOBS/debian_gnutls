@@ -7,6 +7,7 @@ include /usr/share/cdbs/1/class/autotools.mk
 DEB_CONFIGURE_EXTRA_FLAGS = --enable-ld-version-script --enable-cxx \
 	--without-lzo --enable-guile --enable-gtk-doc \
 	--with-guile-site-dir=/usr/share/guile/site \
+	--disable-libdane --without-tpm \
 	--with-packager=Debian \
 	--with-packager-bug-reports=http://bugs.debian.org/ \
 	--with-packager-version="$(DEB_VERSION)" \
