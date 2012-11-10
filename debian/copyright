@@ -86,6 +86,9 @@ Upstream Authors:
        Ilya Tumaykin *itumaykin [at] gmail.com*
        Elliptic curve support improvements (wmNAF implementation and others).
 
+       Martin Storjo *martin [at] martin.st*
+       DTLS-SRTP support.
+
 
 License: The main library is licensed under GNU Lesser General Public
 License (LGPL) version 3+, Gnutls Extra (which is currently just the
