@@ -1,0 +1,42 @@
+From: =?UTF-8?q?Diego=20Elio=20Petten=C3=B2?= <flameeyes@flameeyes.eu>
+To: gnutls-devel@gnu.org
+Subject: [PATCH] build: only run the dane cert test if dane is enabled.
+Date: Fri,  9 Nov 2012 17:41:45 -0800
+Message-Id: <1352511705-442823-1-git-send-email-flameeyes@flameeyes.eu>
+List-Id: GnuTLS development discussions <gnutls-devel.gnu.org>
+
+This fixes a test failure when disabling dane support.
+
+--- gnutls28-3.1.4.orig/tests/cert-tests/Makefile.in
++++ gnutls28-3.1.4/tests/cert-tests/Makefile.in
+@@ -70,6 +70,7 @@ PRE_UNINSTALL = :
+ POST_UNINSTALL = :
+ build_triplet = @build@
+ host_triplet = @host@
++@ENABLE_DANE_TRUE@am__append_1 = dane
+ subdir = tests/cert-tests
+ DIST_COMMON = $(dist_check_SCRIPTS) $(srcdir)/Makefile.am \
+ 	$(srcdir)/Makefile.in
+@@ -1460,7 +1461,7 @@ EXTRA_DIST = ca-no-pathlen.pem no-ca-or-
+ 	funny-spacing.pem ca-certs.pem dane-test.rr cert-ecc256.pem
+ 
+ dist_check_SCRIPTS = pathlen aki template-test pem-decoding dane
+-TESTS = pathlen aki template-test pem-decoding dane
++TESTS = pathlen aki template-test pem-decoding $(am__append_1)
+ TESTS_ENVIRONMENT = EXEEXT=$(EXEEXT)
+ all: all-am
+ 
+--- gnutls28-3.1.4.orig/tests/cert-tests/Makefile.am
++++ gnutls28-3.1.4/tests/cert-tests/Makefile.am
+@@ -25,6 +25,10 @@ EXTRA_DIST = ca-no-pathlen.pem no-ca-or-
+ 
+ dist_check_SCRIPTS = pathlen aki template-test pem-decoding dane
+ 
+-TESTS = pathlen aki template-test pem-decoding dane
++TESTS = pathlen aki template-test pem-decoding
++
++if ENABLE_DANE
++TESTS += dane
++endif
+ 
+ TESTS_ENVIRONMENT = EXEEXT=$(EXEEXT)
