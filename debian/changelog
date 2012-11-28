@@ -1,6 +1,10 @@
-gnutls28 (3.1.4-2) UNRELEASED; urgency=low
+gnutls28 (3.1.5-1) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * New upstream version.
+    + Drop 40_danetestfail.diff
+    + Unfuzz 20_test-select.diff
+    + Bump shlibs.
 
  -- Andreas Metzler <ametzler@debian.org>  Sat, 10 Nov 2012 09:32:18 +0100
 

@@ -4,16 +4,16 @@ Description: Disable gnulib test-select test
  utilities but not the library stop running the test.
 Bug-Debian: http://bugs.debian.org/648247
 Forwarded: http://article.gmane.org/gmane.comp.lib.gnulib.bugs/29018
-Last-Update: 2012-12-17
+Last-Update: 2012-11-25
 
---- gnutls28-3.0.9.orig/gl/tests/Makefile.in
-+++ gnutls28-3.0.9/gl/tests/Makefile.in
-@@ -89,7 +89,7 @@ TESTS = test-accept$(EXEEXT) test-alloca
- 	test-pipe$(EXEEXT) test-printf-frexp$(EXEEXT) \
- 	test-printf-frexpl$(EXEEXT) test-rawmemchr$(EXEEXT) \
- 	test-read-file$(EXEEXT) test-recv$(EXEEXT) \
--	test-recvfrom$(EXEEXT) test-select$(EXEEXT) test-select-in.sh \
-+	test-recvfrom$(EXEEXT) test-select-in.sh \
- 	test-select-out.sh test-send$(EXEEXT) test-sendto$(EXEEXT) \
- 	test-setenv$(EXEEXT) test-setsockopt$(EXEEXT) \
- 	test-shutdown$(EXEEXT) test-signal-h$(EXEEXT) \
+--- gnutls-3.1.5.bak/gl/tests/Makefile.in	2012-11-22 21:32:16.000000000 +0100
++++ gnutls-3.1.5/gl/tests/Makefile.in	2012-11-25 14:31:11.534570084 +0100
+@@ -108,7 +108,7 @@ TESTS = test-accept$(EXEEXT) test-alloca
+ 	test-perror2$(EXEEXT) test-pipe$(EXEEXT) \
+ 	test-printf-frexp$(EXEEXT) test-printf-frexpl$(EXEEXT) \
+ 	test-rawmemchr$(EXEEXT) test-read-file$(EXEEXT) \
+-	test-recv$(EXEEXT) test-recvfrom$(EXEEXT) test-select$(EXEEXT) \
++	test-recv$(EXEEXT) test-recvfrom$(EXEEXT) \
+ 	test-select-in.sh test-select-out.sh test-send$(EXEEXT) \
+ 	test-sendto$(EXEEXT) test-setenv$(EXEEXT) test-setlocale1.sh \
+ 	test-setlocale2.sh test-setsockopt$(EXEEXT) \
