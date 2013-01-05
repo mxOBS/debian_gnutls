@@ -1,4 +1,4 @@
-gnutls28 (3.1.6-1) UNRELEASED; urgency=low
+gnutls28 (3.1.6-1) experimental; urgency=low
 
   * Update watchfile, based on Bart Martens version for gnutls26 on 
     q.d.o, but use a) ftp.gnutls.org as mirror and b) limit the the match to
@@ -9,7 +9,7 @@ gnutls28 (3.1.6-1) UNRELEASED; urgency=low
     + update debian/copyright to reflect the fact that GnuTLS authors have
       stopped assigning copyright to FSF. 
 
- -- Andreas Metzler <ametzler@debian.org>  Sat, 01 Dec 2012 16:02:52 +0100
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 05 Jan 2013 09:38:41 +0100
 
 gnutls28 (3.1.5-1) experimental; urgency=low
 
