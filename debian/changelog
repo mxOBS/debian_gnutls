@@ -5,6 +5,7 @@ gnutls28 (3.1.6-1) UNRELEASED; urgency=low
     3.x versions.
   * New upstream version.
     + requires libtasn1 >= 3.1, bump build-depends.
+    + requires a a newer version of autogen, bump build-depends.
 
  -- Andreas Metzler <ametzler@debian.org>  Sat, 01 Dec 2012 16:02:52 +0100
 
