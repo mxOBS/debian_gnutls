@@ -5,7 +5,7 @@ maintained by Andreas Metzler <ametzler@debian.org> Eric Dorland
 <eric@debian.org>, James Westby <jw+debian@jameswestby.net>
 
 
-It was downloaded from ftp://gnutls.hellug.gr/pub/gnutls
+It was downloaded from ftp://ftp.gnutls.org/gcrypt/gnutls/
 
 Upstream Authors: 
        Simon Josefsson *simon [at] josefsson.org*
@@ -155,6 +155,15 @@ Copyright (C) 2001-2012 Free Software Foundation, Inc.
      no Back-Cover Texts.  A copy of the license is included in the
      section entitled "GNU Free Documentation License".
 --------------------
+
+--------------------
+From December 2012 onwards FSF is not the sole copyright holder of GnuTLS
+anymore (See <http://article.gmane.org/gmane.network.gnutls.general/3026>),
+the headers currently also list these authors::
+* 2012 Nikos Mavrogiannopoulos
+--------------------
+
+
 
 On Debian GNU/Linux systems, the complete text of the latest version of
 the GNU Lesser General Public License can be found in
