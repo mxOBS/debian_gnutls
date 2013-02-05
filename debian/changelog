@@ -1,7 +1,10 @@
-gnutls28 (3.1.6-2) UNRELEASED; urgency=low
+gnutls28 (3.1.7-1) UNRELEASED; urgency=low
 
   * Let libgnutls28 depend on libtasn1-6 instead of on libtasn1-3, matching
     the build-depency. (Thanks, Daniel Kahn Gillmor)
+  * New upstream version.
+    + Includes a fix for GNUTLS-SA-2013-1 TLS CBC padding timing attack.
+    + New symboös added, bump shlibs.
 
  -- Andreas Metzler <ametzler@debian.org>  Sat, 05 Jan 2013 09:51:54 +0100
 
