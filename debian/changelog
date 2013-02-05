@@ -4,7 +4,8 @@ gnutls28 (3.1.7-1) UNRELEASED; urgency=low
     the build-depency. (Thanks, Daniel Kahn Gillmor)
   * New upstream version.
     + Includes a fix for GNUTLS-SA-2013-1 TLS CBC padding timing attack.
-    + New symboös added, bump shlibs.
+    + New symbols added, bump shlibs.
+    + Ship newly available libgnutls-xssl0 library in a separate package.
 
  -- Andreas Metzler <ametzler@debian.org>  Sat, 05 Jan 2013 09:51:54 +0100
 

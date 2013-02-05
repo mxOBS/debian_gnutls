@@ -67,6 +67,11 @@ binary-install/libgnutlsxx28::
 	dh_link -plibgnutlsxx28 usr/share/doc/libgnutls28 \
 		usr/share/doc/libgnutlsxx28
 
+binary-install/libgnutls-xssl0::
+	rm -vrf debian/libgnutls-xssl0/usr/share/doc/libgnutls-xssl0
+	dh_link -plibgnutls-xssl0 usr/share/doc/libgnutls28 \
+		usr/share/doc/libgnutls-xssl0
+
 # See #658110
 binary-install/guile-gnutls::
 	mv -v debian/guile-gnutls/usr/lib/*/guile debian/guile-gnutls/usr/lib \
