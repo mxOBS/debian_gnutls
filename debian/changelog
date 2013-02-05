@@ -1,3 +1,9 @@
+gnutls28 (3.1.7-2) UNRELEASED; urgency=low
+
+  * 
+
+ -- Andreas Metzler <ametzler@debian.org>  Tue, 05 Feb 2013 16:31:14 +0100
+
 gnutls28 (3.1.7-1) experimental; urgency=low
 
   * Let libgnutls28 depend on libtasn1-6 instead of on libtasn1-3, matching
