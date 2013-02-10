@@ -1,8 +1,8 @@
-gnutls28 (3.1.7-2) UNRELEASED; urgency=low
+gnutls28 (3.1.8-1) experimental; urgency=low
 
-  * 
+  * New upstream version.
 
- -- Andreas Metzler <ametzler@debian.org>  Tue, 05 Feb 2013 16:31:14 +0100
+ -- Andreas Metzler <ametzler@debian.org>  Sun, 10 Feb 2013 13:35:32 +0100
 
 gnutls28 (3.1.7-1) experimental; urgency=low
 
@@ -10,6 +10,7 @@ gnutls28 (3.1.7-1) experimental; urgency=low
     the build-depency. (Thanks, Daniel Kahn Gillmor)
   * New upstream version.
     + Includes a fix for GNUTLS-SA-2013-1 TLS CBC padding timing attack.
+      CVE-2013-0169 CVE-2013-1619.
     + New symbols added, bump shlibs.
     + Ship newly available libgnutls-xssl0 library in a separate package.
   * Disable Heart Beat (RFC6520) support.
