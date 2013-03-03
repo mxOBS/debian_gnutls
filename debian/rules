@@ -46,6 +46,7 @@ clean::
 		t=`basename $$i .c` ;\
 		rm -v $$i src/$$t.h;\
 		done
+	rm -v `grep -l 'has been AutoGen-ed ' doc/manpages/*.?` 
 
 # additional comands for build rule
 build/gnutls-doc::
