@@ -91,19 +91,20 @@ Upstream Authors:
 
 
 License: The main library and gnutls-xssl are licensed under GNU Lesser
-General Public License (LGPL) version 3+, Gnutls Extra (which is currently
+General Public License (LGPL) version 2.1+, Gnutls Extra (which is currently
 just the openssl wrapper library), build system, testsuite and commandline
 utilities are licenced under the GNU General Public License version 3+.  The
 Guile bindings use the same license as the respective underlying library,
-i.e.  LGPLv3+ for the main library and GPLv3+ for Gnutls extra.
+i.e. LGPLv2.1+ for the main library and GPLv3+ for Gnutls extra.
 
-Although many of the individual files making up the library are actually
-licensed LGPLv2.1+, a complete switch has not yet been made. Also GnuTLS
-requires nettle which requires (LGPLv3+) GMP.
+However to be able to use and link against libgnutls a program needs to be
+available under a license compatible with LGPLv3+ since GnuTLS
+requires nettle which requires GMP. GMP was re-licensed to LGPLv3+ a couple
+of years ago.
 
 Copyright:
 --------------------
-/*
+/* -*- c -*-
  * Copyright (C) 2000-2012 Free Software Foundation, Inc.
  *
  * Author: Nikos Mavrogiannopoulos
@@ -112,7 +113,7 @@ Copyright:
  *
  * The GnuTLS is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public License
- * as published by the Free Software Foundation; either version 3 of
+ * as published by the Free Software Foundation; either version 2.1 of
  * the License, or (at your option) any later version.
  *
  * This library is distributed in the hope that it will be useful, but
