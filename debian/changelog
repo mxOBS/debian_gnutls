@@ -1,6 +1,7 @@
 gnutls28 (3.1.11-2) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * Use rm -f on clean, fixing an issue with building twice in row.
 
  -- Andreas Metzler <ametzler@debian.org>  Fri, 10 May 2013 17:38:32 +0200
 
