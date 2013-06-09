@@ -14,8 +14,8 @@ DEB_CONFIGURE_EXTRA_FLAGS = --enable-ld-version-script --enable-cxx \
 	--with-packager-version="$(DEB_VERSION)" \
 	--libdir=\$${prefix}/lib/$(DEB_HOST_MULTIARCH)
 DEB_MAKE_CHECK_TARGET = check
-DEB_DH_MAKESHLIBS_ARGS_libgnutls28 := -V 'libgnutls28 (>= 3.1.11-0)'
-DEB_DH_MAKESHLIBS_ARGS_libgnutlsxx28 := -V 'libgnutlsxx28 (>= 3.1.11-0)'
+DEB_DH_MAKESHLIBS_ARGS_libgnutls28 := -V 'libgnutls28 (>= 3.2.1-0)'
+DEB_DH_MAKESHLIBS_ARGS_libgnutlsxx28 := -V 'libgnutlsxx28 (>= 3.2.1-0)'
 DEB_DH_MAKESHLIBS_ARGS_guile-gnutls := -Xguile/1.8/guile-gnutls-v-2.so
 DEB_COMPRESS_EXCLUDE := gnutls.pdf
 
