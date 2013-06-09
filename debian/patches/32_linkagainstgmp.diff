@@ -1,0 +1,17 @@
+Description: Link libgnutls against gmp
+ As GnuTLS has started using gmp directly it must link against it.
+ Upstream git already has a better patch.
+Author: Andreas Metzler <ametzler@debian.org>
+Forwarded: not-needed
+
+--- gnutls28-3.2.1.orig/lib/nettle/Makefile.in
++++ gnutls28-3.2.1/lib/nettle/Makefile.in
+@@ -214,7 +214,7 @@ CONFIG_HEADER = $(top_builddir)/config.h
+ CONFIG_CLEAN_FILES =
+ CONFIG_CLEAN_VPATH_FILES =
+ LTLIBRARIES = $(noinst_LTLIBRARIES)
+-libcrypto_la_LIBADD =
++libcrypto_la_LIBADD = -lgmp
+ am_libcrypto_la_OBJECTS = pk.lo mpi.lo mac.lo cipher.lo rnd.lo init.lo \
+ 	egd.lo
+ libcrypto_la_OBJECTS = $(am_libcrypto_la_OBJECTS)
