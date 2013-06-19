@@ -1,6 +1,8 @@
 gnutls28 (3.2.1-2) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * Do not link everything against nettle on mips(el), the isue being worked
+    around was fixed by the latest eglibc upload. 
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 09 Jun 2013 20:22:32 +0200
 
