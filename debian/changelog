@@ -3,7 +3,8 @@ gnutls28 (3.2.1-2) UNRELEASED; urgency=low
   * NOT RELEASED YET
   * Do not link everything against nettle on mips(el), the issue being worked
     around was fixed by the latest eglibc upload.
-  * Use debhelper v9 mode.
+  * Use debhelper v9 mode. This allows us to mark libgnutls28-dbg Multi-Arch:
+    same.
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 09 Jun 2013 20:22:32 +0200
 
