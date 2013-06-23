@@ -1,12 +1,12 @@
-gnutls28 (3.2.1-2) UNRELEASED; urgency=low
+gnutls28 (3.2.1-2) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * Upload to unstable.
   * Do not link everything against nettle on mips(el), the issue being worked
     around was fixed by the latest eglibc upload.
   * Use debhelper v9 mode. This allows us to mark libgnutls28-dbg Multi-Arch:
     same.
 
- -- Andreas Metzler <ametzler@debian.org>  Sun, 09 Jun 2013 20:22:32 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Sun, 23 Jun 2013 16:55:09 +0200
 
 gnutls28 (3.2.1-1) experimental; urgency=low
 
