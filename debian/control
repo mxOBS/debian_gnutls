@@ -29,6 +29,7 @@ Depends: libgnutls28 (= ${binary:Version}),
 Suggests: gnutls-doc, gnutls-bin, guile-gnutls
 Conflicts: gnutls-dev
 Replaces: gnutls-dev
+Multi-Arch: same
 Description: GNU TLS library - development files
  GnuTLS is a portable library which implements the Transport Layer
  Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 and Datagram
