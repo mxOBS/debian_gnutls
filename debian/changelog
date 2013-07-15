@@ -5,6 +5,7 @@ gnutls28 (3.2.2-1) UNRELEASED; urgency=low
     Closes: #678070
   * New upstream version.
   * Drop superfluous patches. 31_testsuite32bit.diff 32_linkagainstgmp.diff
+  * Bump shlibs.
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 23 Jun 2013 18:49:17 +0200
 
