@@ -1,8 +1,10 @@
-gnutls28 (3.2.1-3) UNRELEASED; urgency=low
+gnutls28 (3.2.2-1) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
   * Mark libgnutls28-dev Multi-Arch: same. (Thanks, Nicolas Le Cam)
     Closes: #678070
+  * New upstream version.
+  * Drop superfluous patches. 31_testsuite32bit.diff 32_linkagainstgmp.diff
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 23 Jun 2013 18:49:17 +0200
 
