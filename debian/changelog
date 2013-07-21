@@ -1,3 +1,12 @@
+gnutls28 (3.2.2-2) UNRELEASED; urgency=low
+
+  * Pull two patches from upstream:
+    +35_gnutls-priority-string.diff Fix priority string parsing broken in
+     3.2.2 Closes: #717314
+    +36_avoid-leaking-a-buffer-element.diff 
+
+ -- Andreas Metzler <ametzler@debian.org>  Sun, 21 Jul 2013 15:18:00 +0200
+
 gnutls28 (3.2.2-1) unstable; urgency=low
 
   * Mark libgnutls28-dev Multi-Arch: same. (Thanks, Nicolas Le Cam)
