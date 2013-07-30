@@ -1,4 +1,2 @@
 14_version_gettextcat.diff
 30_forcesystemlibopts.diff
-35_gnutls-priority-string.diff
-36_avoid-leaking-a-buffer-element.diff

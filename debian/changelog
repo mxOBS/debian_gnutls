@@ -1,3 +1,11 @@
+gnutls28 (3.2.3-1) UNRELEASED; urgency=low
+
+  * New upstream release.
+  * Drop superfluous patches. (35_gnutls-priority-string.diff
+    36_avoid-leaking-a-buffer-element.diff)
+
+ -- Andreas Metzler <ametzler@debian.org>  Mon, 29 Jul 2013 20:07:13 +0200
+
 gnutls28 (3.2.2-2) unstable; urgency=low
 
   * Pull two patches from upstream:
