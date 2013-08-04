@@ -5,8 +5,7 @@ include /usr/share/cdbs/1/rules/debhelper.mk
 include /usr/share/cdbs/1/class/autotools.mk
 
 DEB_CONFIGURE_EXTRA_FLAGS = --enable-ld-version-script --enable-cxx \
-	--without-lzo --enable-guile --enable-gtk-doc \
-	--with-guile-site-dir=/usr/share/guile/site \
+	--without-lzo --enable-gtk-doc \
 	--disable-libdane --without-tpm \
 	--disable-heartbeat-support \
 	--with-packager=Debian \
@@ -16,13 +15,17 @@ DEB_CONFIGURE_EXTRA_FLAGS = --enable-ld-version-script --enable-cxx \
 DEB_MAKE_CHECK_TARGET = check
 DEB_DH_MAKESHLIBS_ARGS_libgnutls28 := -V 'libgnutls28 (>= 3.2.3-0)'
 DEB_DH_MAKESHLIBS_ARGS_libgnutlsxx28 := -V 'libgnutlsxx28 (>= 3.2.3-0)'
-DEB_DH_MAKESHLIBS_ARGS_guile-gnutls := -Xguile/1.8/guile-gnutls-v-2.so
+DEB_DH_MAKESHLIBS_ARGS_guile-gnutls := -Xguile/2.0/guile-gnutls-v-2.so
 DEB_COMPRESS_EXCLUDE := gnutls.pdf
 
-# workaround for guile testsuite failure.
-ifneq (,$(filter $(DEB_BUILD_ARCH),armel armhf mipsel))
-	DEB_CONFIGURE_EXTRA_FLAGS += --disable-largefile
+# Guile 2.0 does not build here.
+ifeq (,$(filter $(DEB_BUILD_ARCH),ia64))
+	DEB_CONFIGURE_EXTRA_FLAGS += --enable-guile --with-guile-site-dir=/usr/share/guile/site
+else
+	DEB_CONFIGURE_EXTRA_FLAGS += --disable-guile
 endif
+
+
 
 # pre-clean rule: save gnutls.pdf since it is expensive to regenerate.
 # See README.source
@@ -76,12 +79,15 @@ binary-install/libgnutls-xssl0::
 
 # See #658110
 binary-install/guile-gnutls::
+	if [ "" != `ls debian/guile-gnutls/usr/lib/*/guile` ] ; then \
 	mv -v debian/guile-gnutls/usr/lib/*/guile debian/guile-gnutls/usr/lib \
 		&&\
 		rmdir -v --ignore-fail-on-non-empty \
-			debian/guile-gnutls/usr/lib/*-*
+			debian/guile-gnutls/usr/lib/*-* ; \
 	sed -i -e 's_usr/lib/[^/]*/guile/_usr/lib/guile/_' \
-		debian/guile-gnutls/usr/share/guile/site/gnutls.scm
+		debian/guile-gnutls/usr/share/guile/site/gnutls.scm ;\
+	else echo "Debian build DEBUG: no guile files found" ;\
+	fi
 
 common-install-arch::
 	find debian/*/usr/lib/* -name '*.so.*.*' -type f -exec \

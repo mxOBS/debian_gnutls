@@ -8,7 +8,7 @@ Uploaders: Andreas Metzler <ametzler@debian.org>,
  Simon Josefsson <simon@josefsson.org>
 Build-Depends: debhelper (>= 9), nettle-dev (>= 2.7), zlib1g-dev,
  cdbs (>= 0.4.93), gtk-doc-tools, texinfo (>= 4.8),
- libtasn1-6-dev (>= 3.1), autotools-dev, guile-1.8-dev, datefudge,
+ libtasn1-6-dev (>= 3.1), autotools-dev, guile-2.0-dev [!ia64], datefudge,
  libp11-kit-dev (>= 0.11), pkg-config, chrpath, libidn11-dev,
  autogen (>= 1:5.16-0)
 Build-Conflicts: libgnutls-dev
@@ -142,9 +142,11 @@ Description: GNU TLS library - documentation and examples
  This package contains all the GnuTLS documentation.
 
 Package: guile-gnutls
-Architecture: any
+# everything except ia64
+Architecture: amd64 armel armhf i386 kfreebsd-amd64 kfreebsd-i386 mips
+ mipsel powerpc s390 s390x sparc hurd-i386
 Section: lisp
-Depends: ${misc:Depends},${shlibs:Depends}, guile-1.8
+Depends: ${misc:Depends},${shlibs:Depends}, guile-2.0
 Description: GNU TLS library - GNU Guile bindings
  GnuTLS is a portable library which implements the Transport Layer
  Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 and Datagram
@@ -162,7 +164,7 @@ Description: GNU TLS library - GNU Guile bindings
   - all the strong encryption algorithms (including SHA-256/384/512 and
     Camellia (RFC 4132)).
  .
- This package contains the GNU Guile 1.8 modules.
+ This package contains the GNU Guile 2.0 modules.
 
 Package: libgnutlsxx28
 Priority: extra
