@@ -2,7 +2,7 @@ gnutls28 (3.2.3-3) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
   * Switch to dh, to easily allow us to move gtk-doc-tools to
-    Build-Depends-Indep.
+    Build-Depends-Indep. Closes: #682596
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 04 Aug 2013 14:09:53 +0200
 
