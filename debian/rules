@@ -5,7 +5,8 @@ export DEB_CFLAGS_MAINT_APPEND := -Wall
 export DEB_CXXFLAGS_MAINT_APPEND := -Wall
 
 AMCONFBUILDINDEP := $(shell if dh_listpackages | grep -q gnutls-doc ; \
-	then echo "--enable-gtk-doc" ; else echo "--disable-gtk-doc"; fi)
+	then echo "--enable-gtk-doc" ; \
+	else echo "--disable-gtk-doc --disable-doc"; fi)
 AMCONFBUILDGUILE := $(shell if dh_listpackages | grep -q guile-gnutls ; \
 	then \
 	echo " --enable-guile --with-guile-site-dir=/usr/share/guile/site" ;\
@@ -45,7 +46,9 @@ override_dh_auto_clean:
 		t=`basename $$i .c` ;\
 		rm -v $$i src/$$t.h;\
 		done
-	rm -fv `grep -l 'has been AutoGen-ed ' doc/manpages/*.?` 
+	rm -fv `grep -l 'has been AutoGen-ed ' doc/manpages/*.?`
+	rm -f config.h config.log config.status lib/includes/gnutls/gnutls.h \
+		lib/gnutls.pc libdane/gnutls-dane.pc libtool stamp*
 
 override_dh_auto_build-indep:
 	$(MAKE) html
@@ -66,6 +69,7 @@ override_dh_install:
 				usr/share/info/ ; \
 		done ; \
 	fi
+	# See #658110
 	if [ "" != `ls debian/guile-gnutls/usr/lib/*/guile` ] ; then \
 	mv -v debian/guile-gnutls/usr/lib/*/guile debian/guile-gnutls/usr/lib \
 		&&\
