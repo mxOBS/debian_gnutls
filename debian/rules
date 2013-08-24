@@ -48,7 +48,8 @@ override_dh_auto_clean:
 		done
 	rm -fv `grep -l 'has been AutoGen-ed ' doc/manpages/*.?`
 	rm -f config.h config.log config.status lib/includes/gnutls/gnutls.h \
-		lib/gnutls.pc libdane/gnutls-dane.pc libtool stamp*
+		lib/gnutls.pc libdane/gnutls-dane.pc libtool stamp* \
+		guile/pre-inst-guile tests/sha2/out
 
 override_dh_auto_build-indep:
 	$(MAKE) html
