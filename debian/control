@@ -7,10 +7,10 @@ Uploaders: Andreas Metzler <ametzler@debian.org>,
  James Westby <jw+debian@jameswestby.net>,
  Simon Josefsson <simon@josefsson.org>
 Build-Depends: debhelper (>= 9), nettle-dev (>= 2.7), zlib1g-dev,
- cdbs (>= 0.4.93), gtk-doc-tools, texinfo (>= 4.8),
  libtasn1-6-dev (>= 3.1), autotools-dev, guile-2.0-dev [!ia64], datefudge,
  libp11-kit-dev (>= 0.11), pkg-config, chrpath, libidn11-dev,
  autogen (>= 1:5.16-0)
+Build-Depends-Indep: gtk-doc-tools, texinfo (>= 4.8)
 Build-Conflicts: libgnutls-dev
 Standards-Version: 3.9.4
 Vcs-Svn: svn://anonscm.debian.org/pkg-gnutls/packages/gnutls28/trunk
