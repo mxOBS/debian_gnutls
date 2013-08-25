@@ -1,3 +1,10 @@
+gnutls28 (3.2.3-3.1) UNRELEASED; urgency=low
+
+  * Non-maintainer upload.
+  * NOT RELEASED YET
+
+ -- Andreas Metzler <ametzler@downhill.g.la>  Sun, 25 Aug 2013 10:40:58 +0200
+
 gnutls28 (3.2.3-3) experimental; urgency=low
 
   * Switch to dh, to easily allow us to move gtk-doc-tools to
