@@ -1,0 +1,24 @@
+From 9b3fccf68d34a96585bb4311e7b2d7dd86864e91 Mon Sep 17 00:00:00 2001
+From: Andreas Metzler <ametzler@downhill.at.eu.org>
+Date: Sat, 24 Aug 2013 16:14:03 +0200
+Subject: [PATCH 1/5] Clean up after test.
+
+---
+ tests/sha2/sha2 |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/tests/sha2/sha2 b/tests/sha2/sha2
+index 7dcd36a..c8e3b71 100755
+--- a/tests/sha2/sha2
++++ b/tests/sha2/sha2
+@@ -89,6 +89,6 @@ if test "$num" != "4"; then
+     exit 1
+ fi
+ 
+-rm -f verify-sha2 new-user.pem new-subsubca.pem new-subca.pem new-ca.pem template-sha2
++rm -f verify-sha2 new-user.pem new-subsubca.pem new-subca.pem new-ca.pem template-sha2 out
+ 
+ exit 0
+-- 
+1.7.10.4
+

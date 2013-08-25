@@ -37,7 +37,8 @@ override_dh_makeshlibs:
 override_dh_auto_clean:
 	if [ -e doc/gnutls.pdf ] ; then \
 		mv -v doc/gnutls.pdf doc/gnutls.pdf.debbackup ; fi
-	dh_auto_clean --verbose
+	if test -e Makefile ; then $(MAKE) distclean ; fi
+	#dh_auto_clean --verbose
 	# restore gnutls.pdf
 	if [ -e doc/gnutls.pdf.debbackup ] && [ ! -e doc/gnutls.pdf ] ; \
 		then mv -v doc/gnutls.pdf.debbackup doc/gnutls.pdf ; fi
@@ -47,12 +48,12 @@ override_dh_auto_clean:
 		rm -v $$i src/$$t.h;\
 		done
 	rm -fv `grep -l 'has been AutoGen-ed ' doc/manpages/*.?`
-	rm -f config.h config.log config.status lib/includes/gnutls/gnutls.h \
-		lib/gnutls.pc libdane/gnutls-dane.pc libtool stamp* \
-		guile/pre-inst-guile tests/sha2/out
 
-override_dh_auto_build-indep:
+override_dh_auto_build:
+	dh_auto_build --verbose --parallel
+ifeq ($(filter --disable-doc,$(AMCONFBUILDINDEP)),)
 	$(MAKE) html
+endif
 
 override_dh_auto_install:
 	dh_auto_install --verbose
