@@ -1,12 +1,11 @@
-gnutls28 (3.2.4-1) UNRELEASED; urgency=low
+gnutls28 (3.2.4-1) experimental; urgency=low
 
-  * NOT RELEASED YET
   * New upstream release.
     + Drop 40_Clean-up-after-test.patch.
   * Fix path to png files in info files with sed instead of symlinking images.
   * Bump shlibs.
 
- -- Andreas Metzler <ametzler@downhill.g.la>  Sun, 25 Aug 2013 10:40:58 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 31 Aug 2013 19:02:33 +0200
 
 gnutls28 (3.2.3-3) experimental; urgency=low
 
