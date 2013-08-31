@@ -3,6 +3,7 @@ gnutls28 (3.2.4-1) UNRELEASED; urgency=low
   * NOT RELEASED YET
   * New upstream release.
     + Drop 40_Clean-up-after-test.patch.
+  * Fix path to png files in info files with sed instead of symlinking images.
 
  -- Andreas Metzler <ametzler@downhill.g.la>  Sun, 25 Aug 2013 10:40:58 +0200
 

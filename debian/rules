@@ -61,16 +61,16 @@ override_dh_auto_install:
 		chrpath -d {} +
 	rm -vf debian/*/usr/lib/*/libgnutls-openssl*
 
+
+override_dh_installinfo:
+	dh_installinfo
+	if test -e debian/gnutls-doc ; then \
+		cd debian/gnutls-doc/usr/share/info && \
+		sed -i -e 's:image src="\([^"]*.png"\):image src="/usr/share/doc/gnutls-doc/html/\1:g' *.info* ; \
+	fi
+
 override_dh_install:
 	dh_install
-	if test -e debian/gnutls-doc ; then \
-		cd debian/gnutls-doc && \
-		for i in usr/share/doc/gnutls-doc/html/gnutls*.png ; do \
-			i=`basename "$$i"` ; \
-			ln -s "/usr/share/doc/gnutls-doc/html/$$i" \
-				usr/share/info/ ; \
-		done ; \
-	fi
 	# See #658110
 	if [ "" != `ls debian/guile-gnutls/usr/lib/*/guile` ] ; then \
 	mv -v debian/guile-gnutls/usr/lib/*/guile debian/guile-gnutls/usr/lib \
