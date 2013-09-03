@@ -53,10 +53,15 @@ override_dh_auto_build:
 	dh_auto_build --verbose --parallel
 ifeq ($(filter --disable-doc,$(AMCONFBUILDINDEP)),)
 	$(MAKE) html
+else
+	$(MAKE) -C doc/manpages
 endif
 
 override_dh_auto_install:
 	dh_auto_install --verbose
+ifneq ($(filter --disable-doc,$(AMCONFBUILDINDEP)),)
+	$(MAKE) -C doc/manpages DESTDIR=`pwd`/debian/tmp install
+endif
 	find debian/*/usr/lib/* -name '*.so.*.*' -type f -exec \
 		chrpath -d {} +
 	rm -vf debian/*/usr/lib/*/libgnutls-openssl*

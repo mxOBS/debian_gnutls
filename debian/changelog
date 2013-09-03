@@ -1,6 +1,6 @@
 gnutls28 (3.2.4-2) UNRELEASED; urgency=low
 
-  * 
+  * Manpages were missing on binary-only builds. Closes: #721726
 
  -- Andreas Metzler <ametzler@debian.org>  Sat, 31 Aug 2013 19:23:53 +0200
 
