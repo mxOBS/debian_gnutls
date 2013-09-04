@@ -19,6 +19,7 @@ override_dh_auto_configure:
 	--disable-libdane --without-tpm \
 	--disable-heartbeat-support \
 	-disable-silent-rules \
+	--with-default-trust-store-file=/etc/ssl/certs/ca-certificates.crt \
 	--with-packager=Debian \
 	--with-packager-bug-reports=http://bugs.debian.org/ \
 	--with-packager-version=$(shell dpkg-parsechangelog | sed -n '/^Version: /s/^Version: //p') \
