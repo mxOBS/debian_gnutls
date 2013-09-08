@@ -1,8 +1,9 @@
-gnutls28 (3.2.4-3) UNRELEASED; urgency=low
+gnutls28 (3.2.4-3) unstable; urgency=low
 
-  * 
+  * Looks like "Architecture" in debian/control cannot be folded, unfold the
+    respective entry for guile-gnutls.
 
- -- Andreas Metzler <ametzler@debian.org>  Sat, 07 Sep 2013 08:48:39 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Sun, 08 Sep 2013 08:03:27 +0200
 
 gnutls28 (3.2.4-2) unstable; urgency=low
 
