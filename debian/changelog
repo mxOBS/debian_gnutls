@@ -1,3 +1,9 @@
+gnutls28 (3.2.4-5) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Andreas Metzler <ametzler@debian.org>  Mon, 09 Sep 2013 20:08:35 +0200
+
 gnutls28 (3.2.4-4) unstable; urgency=low
 
   * 40_guilenoparallel.diff: Disable parallel build in
