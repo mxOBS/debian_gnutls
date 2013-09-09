@@ -1,10 +1,9 @@
-gnutls28 (3.2.4-4) UNRELEASED; urgency=low
+gnutls28 (3.2.4-4) unstable; urgency=low
 
-  * NOT RELEASED YET
   * 40_guilenoparallel.diff: Disable parallel build in
     guile/modules/.
 
- -- Andreas Metzler <ametzler@debian.org>  Sun, 08 Sep 2013 08:21:10 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Mon, 09 Sep 2013 19:48:04 +0200
 
 gnutls28 (3.2.4-3) unstable; urgency=low
 
