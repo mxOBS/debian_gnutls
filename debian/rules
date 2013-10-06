@@ -65,8 +65,6 @@ ifneq ($(filter --disable-doc,$(AMCONFBUILDINDEP)),)
 endif
 	find debian/*/usr/lib/* -name '*.so.*.*' -type f -exec \
 		chrpath -d {} +
-	rm -vf debian/*/usr/lib/*/libgnutls-openssl*
-
 
 override_dh_installinfo:
 	dh_installinfo
