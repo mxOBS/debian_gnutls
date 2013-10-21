@@ -1,6 +1,9 @@
 gnutls28 (3.2.4-6) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * Ship examples/examples.h which is needed for building examples/*.c. Also
+    add ex-cxx.cpp, while we are at it. (Thanks, Daniel Kahn Gillmor)
+    Closes: #726971
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 06 Oct 2013 19:29:21 +0200
 
