@@ -1,11 +1,12 @@
-gnutls28 (3.2.4-6) UNRELEASED; urgency=low
+gnutls28 (3.2.5-1) experimental; urgency=low
 
-  * NOT RELEASED YET
+  * New upstream version.
+    + Bump shlibs.
   * Ship examples/examples.h which is needed for building examples/*.c. Also
     add ex-cxx.cpp, while we are at it. (Thanks, Daniel Kahn Gillmor)
     Closes: #726971
 
- -- Andreas Metzler <ametzler@debian.org>  Sun, 06 Oct 2013 19:29:21 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 26 Oct 2013 14:40:05 +0200
 
 gnutls28 (3.2.4-5) experimental; urgency=low
 
