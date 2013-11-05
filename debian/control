@@ -12,7 +12,7 @@ Build-Depends: debhelper (>= 9), nettle-dev (>= 2.7), zlib1g-dev,
  autogen (>= 1:5.16-0)
 Build-Depends-Indep: gtk-doc-tools, texinfo (>= 4.8)
 Build-Conflicts: libgnutls-dev
-Standards-Version: 3.9.4
+Standards-Version: 3.9.5
 Vcs-Svn: svn://anonscm.debian.org/pkg-gnutls/packages/gnutls28/trunk
 Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-gnutls/packages/gnutls28/trunk/
 Homepage: http://www.gnutls.org/
