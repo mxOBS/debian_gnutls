@@ -1,0 +1,18 @@
+Description: Ignore SIGPIPE.
+ Diagnosed by Petr Salinger and Steven Chamberlain. Reported by Andreas
+ Metzler.
+ Pulled from upstream git 2dd6fde2d61a0ea5d019b76188cea4589db9fd5b, manually
+ unfuzzed.
+Author: Nikos Mavrogiannopoulos <nmav@gnutls.org>
+Origin: upstream
+
+--- gnutls28-3.2.6.orig/tests/mini-handshake-timeout.c
++++ gnutls28-3.2.6/tests/mini-handshake-timeout.c
+@@ -242,6 +242,7 @@ void
+ doit (void)
+ {
+   signal(SIGCHLD, ch_handler);
++  signal(SIGPIPE, SIG_IGN);
+ 
+   /* make sure that normal handshake occurs */
+   start(0);
