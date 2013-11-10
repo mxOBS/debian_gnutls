@@ -1,6 +1,8 @@
 gnutls28 (3.2.6-2) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * Print out test-suite.log on test-suite-error. (Thanks, Steven Chamberlain
+    for the hint.)
 
  -- Andreas Metzler <ametzler@debian.org>  Tue, 05 Nov 2013 19:54:36 +0100
 

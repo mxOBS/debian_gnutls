@@ -101,5 +101,13 @@ override_dh_compress:
 override_dh_strip:
 	dh_strip --dbg-package=libgnutls28-dbg
 
+override_dh_auto_test:
+	dh_auto_test || touch dh_auto_test.fail
+	@if test -e dh_auto_test.fail ; then \
+		find -name test-suite.log | \
+		while read i ; do \
+		echo "----dh_auto_test.fail" ; echo $i ; echo ---- ; \
+		cat $i ; echo ; done ; rm -f dh_auto_test.fail; false; fi
+
 %:
 	dh $@ --parallel --with autotools_dev
