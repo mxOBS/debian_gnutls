@@ -1,4 +1,2 @@
 14_version_gettextcat.diff
-30_forcesystemlibopts.diff
 40_guilenoparallel.diff
-50_Ignore-SIGPIPE.patch

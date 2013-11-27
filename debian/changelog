@@ -1,6 +1,11 @@
-gnutls28 (3.2.6-3) UNRELEASED; urgency=low
+gnutls28 (3.2.7-1) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * New upstream version.
+    + Add b-d on bison.
+    + Bump shlibs.
+    + Drop 30_forcesystemlibopts.diff 50_Ignore-SIGPIPE.patch.
+    + Simplify debian/rules, stop removing autogened files.
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 10 Nov 2013 14:07:50 +0100
 

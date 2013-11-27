@@ -28,8 +28,8 @@ override_dh_auto_configure:
 
 
 override_dh_makeshlibs:
-	dh_makeshlibs -p libgnutlsxx28 -V 'libgnutlsxx28 (>= 3.2.6-0)'
-	dh_makeshlibs -p libgnutls28  -V 'libgnutls28 (>= 3.2.6-0)'
+	dh_makeshlibs -p libgnutlsxx28 -V 'libgnutlsxx28 (>= 3.2.7-0)'
+	dh_makeshlibs -p libgnutls28  -V 'libgnutls28 (>= 3.2.7-0)'
 	dh_makeshlibs --remaining-packages -Xguile/2.0/guile-gnutls-v-2.so
 
 
@@ -43,11 +43,6 @@ override_dh_auto_clean:
 	# restore gnutls.pdf
 	if [ -e doc/gnutls.pdf.debbackup ] && [ ! -e doc/gnutls.pdf ] ; \
 		then mv -v doc/gnutls.pdf.debbackup doc/gnutls.pdf ; fi
-	# force regeneration of autogen-ed files.
-	for i in `grep -l AutoGen-ed src/*.c` ; do \
-		t=`basename $$i .c` ;\
-		rm -v $$i src/$$t.h;\
-		done
 	rm -fv `grep -l 'has been AutoGen-ed ' doc/manpages/*.?`
 
 override_dh_auto_build:
