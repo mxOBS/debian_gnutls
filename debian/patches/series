@@ -1,2 +1,3 @@
 14_version_gettextcat.diff
 40_guilenoparallel.diff
+45_add_strerror-module.patch
