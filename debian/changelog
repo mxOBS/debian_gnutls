@@ -1,6 +1,7 @@
 gnutls28 (3.2.7-3) UNRELEASED; urgency=low
 
   * Point vcs* to git.
+  * Version libgnutls-openssl27 shlibs. (Mainly to identify rebuilt packages.)
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 01 Dec 2013 19:02:37 +0100
 
