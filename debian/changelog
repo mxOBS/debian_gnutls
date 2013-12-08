@@ -1,3 +1,10 @@
+gnutls28 (3.2.7-4) experimental; urgency=low
+
+  * Upload to experimental, with libgnutls-openssl27.
+  * Version libgnutls-openssl27 shlibs. (Mainly to identify rebuilt packages.)
+
+ -- Andreas Metzler <ametzler@debian.org>  Sun, 08 Dec 2013 18:43:16 +0100
+
 gnutls28 (3.2.7-3) unstable; urgency=low
 
   * Point vcs* to git.
