@@ -1,6 +1,9 @@
 gnutls28 (3.2.8.1-1) UNRELEASED; urgency=low
 
   * New upstream version.
+  * Add debian/upstream-signing-key.pgp (listed in
+    debian/source/include-binaries) and update watchfile to check
+    upstream signature.
 
  -- Andreas Metzler <ametzler@debian.org>  Sat, 21 Dec 2013 15:50:19 +0100
 
