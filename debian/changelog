@@ -1,4 +1,4 @@
-gnutls28 (3.2.8.1-1) UNRELEASED; urgency=low
+gnutls28 (3.2.8.1-1) experimental; urgency=low
 
   * New upstream version.
     + Drop debian/patches/45_add_strerror-module.patch, which was pulled from
@@ -8,7 +8,7 @@ gnutls28 (3.2.8.1-1) UNRELEASED; urgency=low
     debian/source/include-binaries) and update watchfile to check
     upstream signature.
 
- -- Andreas Metzler <ametzler@debian.org>  Sat, 21 Dec 2013 15:50:19 +0100
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 21 Dec 2013 16:59:19 +0100
 
 gnutls28 (3.2.7-4) experimental; urgency=low
 
