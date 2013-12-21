@@ -260,12 +260,12 @@ Copyright:
 
 ============================================
 
-lib/accelerated/x86 contains code by Andy Polyakov <appro@fy.chalmers.se>,
+lib/accelerated/x86 contains code by Andy Polyakov <appro@openssl.org>,
 copyright is not assigned to the FSF. The code is licensed under the
 CRYPTOGAMS license.
 
 --------------------
-# Copyright (c) 2011, Andy Polyakov by <appro@openssl.org>
+# Copyright (c) 2011-2013, Andy Polyakov by <appro@openssl.org>
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -334,3 +334,15 @@ License:
  * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
  * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+============================================
+
+lib/accelerated/x86/elf/aes-ssse3-x86.s
+lib/accelerated/x86/macosx/aes-ssse3-x86.s
+
+Upstream Authors: Mike Hamburg (Stanford University)
+
+Copyright: 
+ * Mike Hamburg (Stanford University), 2009.
+License:
+ Public domain.
