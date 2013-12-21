@@ -1,6 +1,8 @@
 gnutls28 (3.2.8.1-1) UNRELEASED; urgency=low
 
   * New upstream version.
+    + Drop debian/patches/45_add_strerror-module.patch, which was pulled from
+      upstream.
   * Add debian/upstream-signing-key.pgp (listed in
     debian/source/include-binaries) and update watchfile to check
     upstream signature.
