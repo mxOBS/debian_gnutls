@@ -1,8 +1,8 @@
-gnutls28 (3.2.8.1-2) UNRELEASED; urgency=low
+gnutls28 (3.2.8.1-2) unstable; urgency=low
 
   * Upload to unstable, without libgnutls-openssl27.
 
- -- Andreas Metzler <ametzler@debian.org>  Fri, 27 Dec 2013 14:17:13 +0100
+ -- Andreas Metzler <ametzler@debian.org>  Fri, 27 Dec 2013 15:45:39 +0100
 
 gnutls28 (3.2.8.1-1) experimental; urgency=low
 
