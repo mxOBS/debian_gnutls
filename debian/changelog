@@ -1,3 +1,9 @@
+gnutls28 (3.2.8.1-3) UNRELEASED; urgency=medium
+
+  * Correct c'n'p error on Vcs-Git field.
+
+ -- Andreas Metzler <ametzler@debian.org>  Sun, 05 Jan 2014 14:26:36 +0100
+
 gnutls28 (3.2.8.1-2) unstable; urgency=low
 
   * Upload to unstable, without libgnutls-openssl27.
