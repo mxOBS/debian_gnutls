@@ -1,8 +1,9 @@
-gnutls28 (3.2.8.1-3) UNRELEASED; urgency=medium
+gnutls28 (3.2.8.1-3) unstable; urgency=medium
 
   * Correct c'n'p error in Vcs-Git field.
+  * Update debian/copyright from upstream's README. (Thanks, Kurt Roeckx)
 
- -- Andreas Metzler <ametzler@debian.org>  Sun, 05 Jan 2014 14:26:36 +0100
+ -- Andreas Metzler <ametzler@debian.org>  Sun, 19 Jan 2014 13:23:46 +0100
 
 gnutls28 (3.2.8.1-2) unstable; urgency=low
 
