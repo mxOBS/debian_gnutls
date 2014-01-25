@@ -4,6 +4,8 @@ gnutls28 (3.2.9-1) UNRELEASED; urgency=medium
     + %COMPAT implies %DUMBFW. (See #733039)
   * Drop 40_guilenoparallel.diff, which did not have any effect after enabling
     dh_autoreconf.
+  * Stop dh_clean from removing *.bak, upstream tarballl actually contains
+    files named such in src/ subdirectory.
 
  -- Andreas Metzler <ametzler@debian.org>  Sat, 25 Jan 2014 18:34:23 +0100
 

@@ -106,5 +106,8 @@ override_dh_auto_test:
 		echo "----dh_auto_test.fail" ; echo $$i ; echo ---- ; \
 		cat $$i ; echo ; done ; rm -f dh_auto_test.fail; false; fi
 
+override_dh_clean:
+	dh_clean -X.bak
+
 %:
 	dh $@ --parallel --with autoreconf
