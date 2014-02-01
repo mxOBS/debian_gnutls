@@ -1,3 +1,10 @@
+gnutls28 (3.2.10-1) experimental; urgency=high
+
+  * New upstream version.
+  * New symbols exported, bump shlibs.
+
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 01 Feb 2014 09:22:36 +0100
+
 gnutls28 (3.2.9-2) unstable; urgency=medium
 
   * Upload to unstable.

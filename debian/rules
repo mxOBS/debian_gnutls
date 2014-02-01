@@ -28,8 +28,8 @@ override_dh_auto_configure:
 
 
 override_dh_makeshlibs:
-	dh_makeshlibs -p libgnutlsxx28 -V 'libgnutlsxx28 (>= 3.2.8-0)'
-	dh_makeshlibs -p libgnutls28  -V 'libgnutls28 (>= 3.2.8-0)'
+	dh_makeshlibs -p libgnutlsxx28 -V 'libgnutlsxx28 (>= 3.2.10-0)'
+	dh_makeshlibs -p libgnutls28  -V 'libgnutls28 (>= 3.2.10-0)'
 #	dh_makeshlibs -p libgnutls-openssl27 -V 'libgnutls-openssl27 (>= 3.0-0)'
 	dh_makeshlibs --remaining-packages -Xguile/2.0/guile-gnutls-v-2.so
 
