@@ -1,3 +1,9 @@
+gnutls28 (3.2.10-2) unstable; urgency=high
+
+  * Upload to unstable.
+
+ -- Andreas Metzler <ametzler@debian.org>  Sun, 02 Feb 2014 12:10:16 +0100
+
 gnutls28 (3.2.10-1) experimental; urgency=high
 
   * New upstream version.
