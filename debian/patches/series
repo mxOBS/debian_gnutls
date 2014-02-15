@@ -1,1 +1,2 @@
 14_version_gettextcat.diff
+20_bug-in-gnutls_pcert_list_import_x509_raw.patch

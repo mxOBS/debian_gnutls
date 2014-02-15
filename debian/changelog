@@ -1,3 +1,10 @@
+gnutls28 (3.2.11-1) unstable; urgency=high
+
+  * New upstream version. (Closes CVE-2014-1959 / GNUTLS-SA-2014-1)
+  * Pull 20_bug-in-gnutls_pcert_list_import_x509_raw.patch from upstream git.
+
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 15 Feb 2014 14:38:52 +0100
+
 gnutls28 (3.2.10-2) unstable; urgency=high
 
   * Upload to unstable.
