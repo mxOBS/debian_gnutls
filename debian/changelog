@@ -1,11 +1,11 @@
-gnutls28 (3.2.12-1) UNRELEASED; urgency=medium
+gnutls28 (3.2.12.1-1) experimental; urgency=medium
 
   * New upstream version.
     + Drop superfluous patches: 
       20_bug-in-gnutls_pcert_list_import_x509_raw.patch
       20_CVE-2014-0092.diff
 
- -- Andreas Metzler <ametzler@debian.org>  Tue, 04 Mar 2014 18:41:17 +0100
+ -- Andreas Metzler <ametzler@debian.org>  Wed, 05 Mar 2014 19:40:42 +0100
 
 gnutls28 (3.2.11-2) unstable; urgency=high
 
