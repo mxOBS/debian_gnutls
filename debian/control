@@ -143,7 +143,7 @@ Description: GNU TLS library - documentation and examples
 
 Package: guile-gnutls
 # everything except ia64 - Field must be single line, unfolded!
-Architecture: amd64 armel armhf i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 s390x sparc hurd-i386
+Architecture: amd64 arm64 armel armhf i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc ppc64el s390 s390x sparc hurd-i386
 Section: lisp
 Depends: ${misc:Depends},${shlibs:Depends}, guile-2.0
 Description: GNU TLS library - GNU Guile bindings

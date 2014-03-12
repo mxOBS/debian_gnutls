@@ -1,3 +1,12 @@
+gnutls28 (3.2.12.1-2) unstable; urgency=medium
+
+  * Upload to unstable.
+  * Sync from Ubuntu (Colin Watson):
+    + Add arm64 and ppc64el to the list of non-ia64 architectures on which
+      guile-gnutls is built.
+
+ -- Andreas Metzler <ametzler@debian.org>  Wed, 12 Mar 2014 17:50:43 +0100
+
 gnutls28 (3.2.12.1-1) experimental; urgency=medium
 
   * New upstream version.
