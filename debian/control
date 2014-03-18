@@ -24,7 +24,7 @@ Provides: gnutls-dev
 Depends: libgnutls28 (= ${binary:Version}), 
  libgnutlsxx28 (= ${binary:Version}), libgnutls-xssl0 (= ${binary:Version}),
  nettle-dev (>= 2.5), libc6-dev | libc-dev, zlib1g-dev,
- libtasn1-6-dev (>= 3.1), libp11-kit-dev (>= 0.11), ${misc:Depends}
+ libtasn1-6-dev (>= 3.1), libp11-kit-dev (>= 0.20), ${misc:Depends}
 # libgnutls-openssl27 (= ${binary:Version}),
 Suggests: gnutls-doc, gnutls-bin, guile-gnutls
 Conflicts: gnutls-dev
