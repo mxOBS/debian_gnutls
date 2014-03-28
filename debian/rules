@@ -15,6 +15,7 @@ AMCONFBUILDGUILE := $(shell if dh_listpackages | grep -q guile-gnutls ; \
 override_dh_auto_configure:
 	dh_auto_configure --verbose -- \
 	--enable-ld-version-script --enable-cxx \
+	--enable-static \
 	--without-lzo \
 	--disable-libdane --without-tpm \
 	--disable-heartbeat-support \
