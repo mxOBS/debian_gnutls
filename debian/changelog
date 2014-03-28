@@ -3,6 +3,7 @@ gnutls28 (3.3.0~pre0-1) UNRELEASED; urgency=medium
   * Also version the p11-kit dependency.
   * New upstream version.
     + Set --enable-static, as only shared libs are built by default.
+    + libgnutls-xssl is no more.
   * Upload to experimental.
 
  -- Andreas Metzler <ametzler@debian.org>  Tue, 18 Mar 2014 19:09:18 +0100
