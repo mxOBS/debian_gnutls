@@ -98,9 +98,9 @@ Guile bindings use the same license as the respective underlying library,
 i.e. LGPLv2.1+ for the main library and GPLv3+ for Gnutls extra.
 
 However to be able to use and link against libgnutls a program needs to be
-available under a license compatible with LGPLv3+ since GnuTLS
-requires nettle which requires GMP. GMP was re-licensed to LGPLv3+ a couple
-of years ago.
+available under a license compatible with LGPLv3+ or GPLv2.1+ since GnuTLS
+requires nettle which requires GMP. GMP (>= 6.0.0) is dual licensed 
+LGPLv3+ or GPLv2.1+.
 
 Copyright:
 --------------------
@@ -163,7 +163,7 @@ Copyright (C) 2001-2012 Free Software Foundation, Inc.
 --------------------
 From December 2012 onwards FSF is not the sole copyright holder of GnuTLS
 anymore (See <http://article.gmane.org/gmane.network.gnutls.general/3026>),
-the headers currently also list these authors::
+the headers currently also list these authors/copyright holders::
 * Nikos Mavrogiannopoulos
 * KU Leuven
 * INRIA Paris-Rocquencourt
@@ -173,6 +173,9 @@ the headers currently also list these authors::
 * Bardenheuer GmbH, Munich and Bundesdruckerei GmbH, Berlin
 * Adam Sampson
 * Christian Grothoff
+* Andrew McDonald <andrew@mcdonald.org.uk
+* Red Hat
+* Paul Sheer
 --------------------
 
 
