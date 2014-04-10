@@ -1,8 +1,9 @@
-gnutls28 (3.2.12.1-3) UNRELEASED; urgency=medium
+gnutls28 (3.2.13-1) unstable; urgency=medium
 
   * Also version the p11-kit dependency.
+  * New upstream version.
 
- -- Andreas Metzler <ametzler@debian.org>  Tue, 18 Mar 2014 19:09:18 +0100
+ -- Andreas Metzler <ametzler@debian.org>  Thu, 10 Apr 2014 19:08:40 +0200
 
 gnutls28 (3.2.12.1-2) unstable; urgency=medium
 
