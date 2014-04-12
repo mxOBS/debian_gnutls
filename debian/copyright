@@ -90,7 +90,7 @@ Upstream Authors:
        DTLS-SRTP support.
 
 
-License: The main library and gnutls-xssl are licensed under GNU Lesser
+License: The main library is licensed under GNU Lesser
 General Public License (LGPL) version 2.1+, Gnutls Extra (which is currently
 just the openssl wrapper library), build system, testsuite and commandline
 utilities are licenced under the GNU General Public License version 3+.  The
