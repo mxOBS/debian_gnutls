@@ -5,6 +5,8 @@ gnutls28 (3.3.0-2) experimental; urgency=medium
   * 20_sparc_chainverify_buserror.diff from upstream GIT: In chainverify test
     increase the space available for certificates to fix sparc testsuite
     error.
+  * Build OpenSSL wrapper from gnutls28, provide libgnutls-openssl-dev from
+    libgnutls28-dev.
 
  -- Andreas Metzler <ametzler@debian.org>  Thu, 17 Apr 2014 19:53:30 +0200
 
@@ -25,6 +27,20 @@ gnutls28 (3.3.0~pre0-1) experimental; urgency=medium
   * Upload to experimental.
 
  -- Andreas Metzler <ametzler@debian.org>  Sat, 29 Mar 2014 19:19:37 +0100
+
+gnutls28 (3.2.13-2) unstable; urgency=medium
+
+  * Build OpenSSL wrapper from gnutls28, provide libgnutls-openssl-dev from
+    libgnutls28-dev.
+
+ -- Andreas Metzler <ametzler@debian.org>  Wed, 16 Apr 2014 19:24:25 +0200
+
+gnutls28 (3.2.13-1) unstable; urgency=medium
+
+  * Also version the p11-kit dependency.
+  * New upstream version.
+
+ -- Andreas Metzler <ametzler@debian.org>  Thu, 10 Apr 2014 19:08:40 +0200
 
 gnutls28 (3.2.12.1-2) unstable; urgency=medium
 
