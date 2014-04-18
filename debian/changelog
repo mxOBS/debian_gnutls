@@ -1,3 +1,10 @@
+gnutls28 (3.3.0-3) UNRELEASED; urgency=medium
+
+  * 21_longerwaitforstartup.diff: Increase time for testserver startup by 2s,
+    fixing another error on sparc.
+
+ -- Andreas Metzler <ametzler@debian.org>  Fri, 18 Apr 2014 19:42:23 +0200
+
 gnutls28 (3.3.0-2) experimental; urgency=medium
 
   * Drop last remains of -xssl from debian/.

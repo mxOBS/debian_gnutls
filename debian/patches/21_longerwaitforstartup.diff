@@ -1,0 +1,21 @@
+Description: Increase time for testserver startup by 2s
+ Starting up gnutls-serv for DSA-3072 with TLS 1.2 takes longer than the
+ generic two seconds used by wait_server() on sparc. Add another two seconds
+ waiting time for this specific test.
+Author: Andreas Metzler <ametzler@debian.org>
+Origin: vendor
+Forwarded: http://lists.gnupg.org/pipermail/gnutls-devel/2014-April/006892.html
+Last-Update: 2014-04-18
+
+--- gnutls28-3.3.0.orig/tests/dsa/testdsa
++++ gnutls28-3.3.0/tests/dsa/testdsa
+@@ -143,7 +143,8 @@ echo "Checking DSA-3072 with TLS 1.2"
+ 
+ launch_server $$  --priority "NORMAL:-VERS-TLS-ALL:+VERS-TLS1.2" --x509certfile $srcdir/cert.dsa.3072.pem --x509keyfile $srcdir/dsa.3072.pem >/dev/null 2>&1 & PID=$!
+ wait_server $PID
+-
++# startup takes longer here ...
++sleep 2
+ $CLI $DEBUG -p $PORT 127.0.0.1 --insecure </dev/null >/dev/null || \
+   fail $PID "Failed connection to a server with DSA 3072 key and TLS 1.2!"
+ 
