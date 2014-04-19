@@ -7,7 +7,7 @@ libgnutls.so.28 libgnutls28 #MINVER#
  GNUTLS_3_0_0@GNUTLS_3_0_0 3.3.0
  GNUTLS_3_1_0@GNUTLS_3_1_0 3.3.0
  GNUTLS_FIPS140@GNUTLS_FIPS140 3.3.0
- (regex|optional)"@GNUTLS_PRIVATE$" 3.3.0-~0
+ (regex|optional)"@GNUTLS_PRIVATE$" 3.3.1-~0
  _gnutls_encode_ber_rs_raw@GNUTLS_FIPS140 3.3.0
  gnutls_alert_get@GNUTLS_1_4 3.3.0
  gnutls_alert_get_name@GNUTLS_1_4 3.3.0
