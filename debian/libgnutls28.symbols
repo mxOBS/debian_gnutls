@@ -567,7 +567,6 @@ libgnutls.so.28 libgnutls28 #MINVER#
  gnutls_sec_param_get_name@GNUTLS_2_12 3.3.0
  gnutls_sec_param_to_pk_bits@GNUTLS_2_12 3.3.0
  gnutls_sec_param_to_symmetric_bits@GNUTLS_3_1_0 3.3.0
- gnutls_secure_calloc@GNUTLS_1_4 3.3.0
  gnutls_secure_malloc@GNUTLS_1_4 3.3.0
  gnutls_server_name_get@GNUTLS_1_4 3.3.0
  gnutls_server_name_set@GNUTLS_1_4 3.3.0

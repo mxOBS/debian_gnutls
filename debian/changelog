@@ -4,6 +4,9 @@ gnutls28 (3.3.1-1) UNRELEASED; urgency=medium
     + Drop 20_sparc_chainverify_buserror.diff.
     + Pull 20_guile_no_override_allocation.diff and
       21_Treat-othername-as-printable.diff from upstream GIT.
+    + Drop gnutls_secure_calloc@GNUTLS_1_4 from symbol file. It was dropped
+      upstream since it was never exported in a public header and is not
+      used according to codesearch.d.o.
 
  -- Andreas Metzler <ametzler@debian.org>  Fri, 18 Apr 2014 19:42:23 +0200
 
