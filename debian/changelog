@@ -2,6 +2,8 @@ gnutls28 (3.3.1-1) UNRELEASED; urgency=medium
 
   * New upstream version.
     + Drop 20_sparc_chainverify_buserror.diff.
+    + Pull 20_guile_no_override_allocation.diff and
+      21_Treat-othername-as-printable.diff from upstream GIT.
 
  -- Andreas Metzler <ametzler@debian.org>  Fri, 18 Apr 2014 19:42:23 +0200
 
