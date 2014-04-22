@@ -1,3 +1,9 @@
+gnutls28 (3.2.13-3) UNRELEASED; urgency=medium
+
+  * Do not build-depend on guile-2.0 on m68k. Closes: #745461
+
+ -- Andreas Metzler <ametzler@debian.org>  Tue, 22 Apr 2014 19:01:01 +0200
+
 gnutls28 (3.2.13-2) unstable; urgency=medium
 
   * Build OpenSSL wrapper from gnutls28, provide libgnutls-openssl-dev from
