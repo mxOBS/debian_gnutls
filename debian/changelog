@@ -40,6 +40,17 @@ gnutls28 (3.3.0~pre0-1) experimental; urgency=medium
 
  -- Andreas Metzler <ametzler@debian.org>  Sat, 29 Mar 2014 19:19:37 +0100
 
+gnutls28 (3.2.14-1) unstable; urgency=medium
+
+  * Do not build-depend on guile-2.0 on m68k. Closes: #745461
+  * New upstream version.
+  * Manually version libgnutls28's dependency on libgmp10 as (>= 2:6), to
+    enforce a dual-licensed (GPLv2+/LGPLv2.1+) version of GMP. Also add a
+    corresponding versioned build-dependency, to prevent building of
+    uninstallable packages.
+
+ -- Andreas Metzler <ametzler@debian.org>  Wed, 07 May 2014 19:29:26 +0200
+
 gnutls28 (3.2.13-2) unstable; urgency=medium
 
   * Build OpenSSL wrapper from gnutls28, provide libgnutls-openssl-dev from
