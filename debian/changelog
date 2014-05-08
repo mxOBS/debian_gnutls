@@ -1,3 +1,13 @@
+gnutls28 (3.3.1-2) UNRELEASED; urgency=medium
+
+  * Do not build-depend on guile-2.0 on m68k. Closes: #745461
+  * Manually version libgnutls28's dependency on libgmp10 as (>= 2:6), to
+    enforce a dual-licensed (GPLv2+/LGPLv2.1+) version of GMP. Also add a
+    corresponding versioned build-dependency, to prevent building of
+    uninstallable packages.
+
+ -- Andreas Metzler <ametzler@debian.org>  Thu, 08 May 2014 19:21:37 +0200
+
 gnutls28 (3.3.1-1) experimental; urgency=medium
 
   * New upstream version.
