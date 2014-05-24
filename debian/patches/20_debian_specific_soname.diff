@@ -1,0 +1,142 @@
+Description: Bump soname and symbol-versioning.
+ Fix the symbol versioning to use a different version than in gnutls26,
+ since this breaks the ABI also bump the soname.
+ Use a Debian specific soname and symbol-versioning tag, to make sure 
+ that there is no conflict with future upstream versions.
+Author: Andreas Metzler <ametzler@debian.org>
+Bug-Debian: http://bugs.debian.org/7748742
+Origin: vendor
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Last-Update: <YYYY-MM-DD>
+
+Description: <short summary of the patch>
+ TODO: Put a short summary on the line above and replace this paragraph
+ with a longer explanation of this change. Complete the meta-information
+ with other relevant fields (see below for details). To make it easier, the
+ information below has been extracted from the changelog. Adjust it or drop
+ it.
+ .
+ gnutls28 (3.3.2-2) UNRELEASED; urgency=medium
+ .
+   * Fix crashes due to symbol clashes when a binary ends up being linked
+     against GnuTLS v2 and v3 by bumping library symbol-versioning (and
+     therefore also the soname) in a Debian specific way, to make sure there is
+     no conflict with future:
+     + 20_debian_specific_soname.diff
+       - Symbol versions: GNUTLS_N_M -> GNUTLS_DEBIAN_0_N_M
+       - Add "-release deb0" to libtool link command.
+     + Rename libgnutls28 to libgnutls-deb0-28, matching the new soname.
+Author: Andreas Metzler <ametzler@debian.org>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: http://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: <YYYY-MM-DD>
+
+--- gnutls28-3.3.2.orig/lib/Makefile.am
++++ gnutls28-3.3.2/lib/Makefile.am
+@@ -123,6 +123,7 @@ libgnutls_la_SOURCES = $(HFILES) $(COBJE
+ 	gnutls.asn pkix.asn libgnutls.map
+ 
+ libgnutls_la_LDFLAGS = -no-undefined \
++		       -release deb0 \
+ 	-version-info $(LT_CURRENT):$(LT_REVISION):$(LT_AGE)
+ 
+ libgnutls_la_LIBADD = ../gl/libgnu.la x509/libgnutls_x509.la \
+--- gnutls28-3.3.2.orig/lib/libgnutls.map
++++ gnutls28-3.3.2/lib/libgnutls.map
+@@ -18,7 +18,7 @@
+ # You should have received a copy of the GNU Lesser General Public License
+ # along with this program.  If not, see <http://www.gnu.org/licenses/>
+ 
+-GNUTLS_1_4
++GNUTLS_DEBIAN_0_1_4
+ {
+   global:
+     gnutls_alert_get;
+@@ -501,7 +501,7 @@ GNUTLS_1_4
+     *;
+ };
+ 
+-GNUTLS_2_8
++GNUTLS_DEBIAN_0_2_8
+ {
+   global:
+     gnutls_certificate_set_x509_simple_pkcs12_mem;
+@@ -535,9 +535,9 @@ GNUTLS_2_8
+     gnutls_session_ticket_key_generate;
+     gnutls_session_ticket_enable_client;
+     gnutls_session_ticket_enable_server;
+-} GNUTLS_1_4;
++} GNUTLS_DEBIAN_0_1_4;
+ 
+-GNUTLS_2_10
++GNUTLS_DEBIAN_0_2_10
+ {
+   global:
+     gnutls_x509_crt_get_issuer_alt_name2;
+@@ -563,9 +563,9 @@ GNUTLS_2_10
+     gnutls_hmac_output;
+     gnutls_certificate_set_verify_function;
+     gnutls_safe_renegotiation_status;
+-} GNUTLS_2_8;
++} GNUTLS_DEBIAN_0_2_8;
+ 
+-GNUTLS_2_12
++GNUTLS_DEBIAN_0_2_12
+ {
+   global:
+ 	gnutls_certificate_set_retrieve_function;
+@@ -653,9 +653,9 @@ GNUTLS_2_12
+ 	gnutls_certificate_get_issuer;
+ 	gnutls_x509_crq_verify;
+ 	gnutls_global_set_time_function;
+-} GNUTLS_2_10;
++} GNUTLS_DEBIAN_0_2_10;
+ 
+-GNUTLS_3_0_0 {
++GNUTLS_DEBIAN_0_3_0_0 {
+   global:
+ 	gnutls_x509_trust_list_verify_crt;
+ 	gnutls_x509_trust_list_add_crls;
+@@ -776,9 +776,9 @@ GNUTLS_3_0_0 {
+ 	gnutls_certificate_set_x509_system_trust;
+ 	gnutls_session_set_premaster;
+ 	gnutls_ocsp_resp_check_crt;
+-} GNUTLS_2_12;
++} GNUTLS_DEBIAN_0_2_12;
+ 
+-GNUTLS_3_1_0 {
++GNUTLS_DEBIAN_0_3_1_0 {
+   global:
+         gnutls_pkcs11_get_pin_function;
+ 	gnutls_pkcs11_obj_list_import_url2;
+@@ -1006,9 +1006,9 @@ GNUTLS_3_1_0 {
+ 	gnutls_x509_crt_check_hostname2;
+ 	gnutls_openpgp_crt_check_hostname2;
+ 	gnutls_certificate_verify_peers;
+-} GNUTLS_3_0_0;
++} GNUTLS_DEBIAN_0_3_0_0;
+ 
+-GNUTLS_FIPS140 {
++GNUTLS_DEBIAN_0_FIPS140 {
+ 	gnutls_cipher_self_test;
+ 	gnutls_pk_self_test;
+ 	gnutls_mac_self_test;
+@@ -1026,7 +1026,7 @@ GNUTLS_FIPS140 {
+ 	_rsa_generate_fips186_4_keypair;
+ };
+ 
+-GNUTLS_PRIVATE {
++GNUTLS_DEBIAN_0_PRIVATE {
+   global:
+     # Internal symbols needed by libgnutls-extra:
+     _gnutls_log_level;

@@ -25,7 +25,7 @@ Package: libgnutls28-dev
 Section: libdevel
 Architecture: any
 Provides: gnutls-dev, libgnutls-openssl-dev
-Depends: libgnutls28 (= ${binary:Version}), 
+Depends: libgnutls28-deb0-28 (= ${binary:Version}), 
  libgnutlsxx28 (= ${binary:Version}), nettle-dev (>= 2.5), 
  libc6-dev | libc-dev, zlib1g-dev,
  libtasn1-6-dev (>= 3.1), libp11-kit-dev (>= 0.20), ${misc:Depends},
@@ -53,7 +53,7 @@ Description: GNU TLS library - development files
  .
  This package contains the GnuTLS development files.
 
-Package: libgnutls28
+Package: libgnutls-deb0-28
 Priority: standard
 Architecture: any
 # GMP >= 6 is dual-licensed GPLv2+/LGPLv2.1+. Be nice to rdeps and
@@ -87,7 +87,7 @@ Package: libgnutls28-dbg
 Priority: extra
 Architecture: any
 Section: debug
-Depends: libgnutls28 (= ${binary:Version}), ${misc:Depends}
+Depends: libgnutls-deb0-28 (= ${binary:Version}), ${misc:Depends}
 Conflicts: libgnutls13-dbg, libgnutls26-dbg
 Multi-Arch: same
 Description: GNU TLS library - debugger symbols
@@ -174,7 +174,7 @@ Description: GNU TLS library - GNU Guile bindings
 Package: libgnutlsxx28
 Priority: extra
 Architecture: any
-Depends: libgnutls28 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Depends: libgnutls-deb0-28 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
 Pre-Depends: ${misc:Pre-Depends}
 Multi-Arch: same
 Description: GNU TLS library - C++ runtime library
@@ -199,7 +199,7 @@ Description: GNU TLS library - C++ runtime library
 Package: libgnutls-openssl27
 Priority: standard
 Architecture: any
-Depends: libgnutls28 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Depends: libgnutls-deb0-28 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
 Pre-Depends: ${misc:Pre-Depends}
 Multi-Arch: same
 Description: GNU TLS library - OpenSSL wrapper
