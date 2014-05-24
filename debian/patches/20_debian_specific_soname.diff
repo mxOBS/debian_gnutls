@@ -1,0 +1,98 @@
+Description: Bump soname and symbol-versioning.
+ Fix the symbol versioning to use a different version than in gnutls26,
+ since this breaks the ABI also bump the soname.
+ Use a Debian specific soname and symbol-versioning tag, to make sure 
+ that there is no conflict with future upstream versions.
+Author: Andreas Metzler <ametzler@debian.org>
+Bug-Debian: http://bugs.debian.org/7748742
+Origin: vendor
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Last-Update: <YYYY-MM-DD>
+
+--- gnutls28-3.2.14.orig/lib/Makefile.am
++++ gnutls28-3.2.14/lib/Makefile.am
+@@ -115,6 +115,7 @@ libgnutls_la_SOURCES = $(HFILES) $(COBJE
+ 	gnutls.asn pkix.asn libgnutls.map
+ 
+ libgnutls_la_LDFLAGS = -no-undefined \
++		       -release deb0 \
+ 	-version-info $(LT_CURRENT):$(LT_REVISION):$(LT_AGE)
+ 
+ libgnutls_la_LIBADD = ../gl/libgnu.la x509/libgnutls_x509.la \
+--- gnutls28-3.2.14.orig/lib/libgnutls.map
++++ gnutls28-3.2.14/lib/libgnutls.map
+@@ -18,7 +18,7 @@
+ # You should have received a copy of the GNU Lesser General Public License
+ # along with this program.  If not, see <http://www.gnu.org/licenses/>
+ 
+-GNUTLS_1_4
++GNUTLS_DEBIAN_0_1_4
+ {
+   global:
+     gnutls_alert_get;
+@@ -502,7 +502,7 @@ GNUTLS_1_4
+     *;
+ };
+ 
+-GNUTLS_2_8
++GNUTLS_DEBIAN_0_2_8
+ {
+   global:
+     gnutls_certificate_set_x509_simple_pkcs12_mem;
+@@ -536,9 +536,9 @@ GNUTLS_2_8
+     gnutls_session_ticket_key_generate;
+     gnutls_session_ticket_enable_client;
+     gnutls_session_ticket_enable_server;
+-} GNUTLS_1_4;
++} GNUTLS_DEBIAN_0_1_4;
+ 
+-GNUTLS_2_10
++GNUTLS_DEBIAN_0_2_10
+ {
+   global:
+     gnutls_x509_crt_get_issuer_alt_name2;
+@@ -564,9 +564,9 @@ GNUTLS_2_10
+     gnutls_hmac_output;
+     gnutls_certificate_set_verify_function;
+     gnutls_safe_renegotiation_status;
+-} GNUTLS_2_8;
++} GNUTLS_DEBIAN_0_2_8;
+ 
+-GNUTLS_2_12
++GNUTLS_DEBIAN_0_2_12
+ {
+   global:
+ 	gnutls_certificate_set_retrieve_function;
+@@ -654,9 +654,9 @@ GNUTLS_2_12
+ 	gnutls_certificate_get_issuer;
+ 	gnutls_x509_crq_verify;
+ 	gnutls_global_set_time_function;
+-} GNUTLS_2_10;
++} GNUTLS_DEBIAN_0_2_10;
+ 
+-GNUTLS_3_0_0 {
++GNUTLS_DEBIAN_0_3_0_0 {
+   global:
+ 	gnutls_x509_trust_list_verify_crt;
+ 	gnutls_x509_trust_list_add_crls;
+@@ -777,9 +777,9 @@ GNUTLS_3_0_0 {
+ 	gnutls_certificate_set_x509_system_trust;
+ 	gnutls_session_set_premaster;
+ 	gnutls_ocsp_resp_check_crt;
+-} GNUTLS_2_12;
++} GNUTLS_DEBIAN_0_2_12;
+ 
+-GNUTLS_3_1_0 {
++GNUTLS_DEBIAN_0_3_1_0 {
+   global:
+         gnutls_pkcs11_get_pin_function;
+ 	gnutls_pkcs11_obj_list_import_url2;
+@@ -923,7 +923,7 @@ GNUTLS_3_1_0 {
+         gnutls_certificate_get_crt_raw;
+ 	gnutls_record_check_corked;
+ 	gnutls_db_get_default_cache_expiration;
+-} GNUTLS_3_0_0;
++} GNUTLS_DEBIAN_0_3_0_0;
+ 
+ GNUTLS_PRIVATE {
+   global:
