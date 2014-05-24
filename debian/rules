@@ -86,7 +86,7 @@ override_dh_install:
 override_dh_installchangelogs:
 	dh_installchangelogs
 	rm -vrf debian/libgnutlsxx28/usr/share/doc/libgnutlsxx28
-	dh_link -plibgnutlsxx28 usr/share/doc/libgnutls28-deb0-28 \
+	dh_link -plibgnutlsxx28 usr/share/doc/libgnutls-deb0-28 \
 		usr/share/doc/libgnutlsxx28
 
 override_dh_compress:

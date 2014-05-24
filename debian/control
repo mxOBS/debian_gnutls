@@ -25,7 +25,7 @@ Package: libgnutls28-dev
 Section: libdevel
 Architecture: any
 Provides: gnutls-dev, libgnutls-openssl-dev
-Depends: libgnutls28-deb0-28 (= ${binary:Version}), 
+Depends: libgnutls-deb0-28 (= ${binary:Version}), 
  libgnutlsxx28 (= ${binary:Version}), nettle-dev (>= 2.5), 
  libc6-dev | libc-dev, zlib1g-dev,
  libtasn1-6-dev (>= 3.1), libp11-kit-dev (>= 0.20), ${misc:Depends},
