@@ -9,6 +9,7 @@ gnutls28 (3.2.14-2) UNRELEASED; urgency=medium
       - Add "-release deb0" to libtool link command.
     + Rename libgnutls28 to libgnutls-deb0-28, matching the new soname.
     + Change 14_version_gettextcat.diff, too.
+    Closes: #74874
   * Drop libgnutls28-dbg Conflicts with libgnutls13-dbg, libgnutls26-dbg.
     These have been unnecessary since we started using dh compat v9, where
     debugging symbols are installed to /usr/lib/debug/.build-id.
