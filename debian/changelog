@@ -1,4 +1,4 @@
-gnutls28 (3.2.14-2) UNRELEASED; urgency=medium
+gnutls28 (3.2.14-2) UNRELEASED; urgency=high
 
   * Fix crashes due to symbol clashes when a binary ends up being linked
     against GnuTLS v2 and v3 by bumping library symbol-versioning (and
