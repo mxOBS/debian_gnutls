@@ -3,6 +3,7 @@ gnutls28 (3.3.3-1) UNRELEASED; urgency=medium
   * New upstream version.
   * Refresh 20_debian_specific_soname.diff.
   * 30_Updated-asm-sources.patch: Updated asm code pulled from upstream git.
+  * New symbol gnutls_credentials_get, update symbol file and bump shlibs.
 
  -- Andreas Metzler <ametzler@debian.org>  Fri, 30 May 2014 18:06:41 +0200
 
