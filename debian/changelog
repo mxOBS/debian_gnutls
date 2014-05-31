@@ -1,3 +1,10 @@
+gnutls28 (3.3.3-1) UNRELEASED; urgency=medium
+
+  * New upstream version.
+  * Refresh 20_debian_specific_soname.diff.
+
+ -- Andreas Metzler <ametzler@debian.org>  Fri, 30 May 2014 18:06:41 +0200
+
 gnutls28 (3.3.2-2) experimental; urgency=high
 
   * Fix crashes due to symbol clashes when a binary ends up being linked
