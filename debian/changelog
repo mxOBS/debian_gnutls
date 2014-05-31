@@ -1,11 +1,12 @@
-gnutls28 (3.3.3-1) UNRELEASED; urgency=medium
+gnutls28 (3.3.3-1) experimental; urgency=medium
 
-  * New upstream version.
+  * New upstream version, including a fix for GNUTLS-SA-2014-3
+    CVE-2014-3466.
   * Refresh 20_debian_specific_soname.diff.
   * 30_Updated-asm-sources.patch: Updated asm code pulled from upstream git.
   * New symbol gnutls_credentials_get, update symbol file and bump shlibs.
 
- -- Andreas Metzler <ametzler@debian.org>  Fri, 30 May 2014 18:06:41 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 31 May 2014 07:58:37 +0200
 
 gnutls28 (3.3.2-2) experimental; urgency=high
 
