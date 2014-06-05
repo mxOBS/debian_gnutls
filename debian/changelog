@@ -1,4 +1,4 @@
-gnutls28 (3.2.15-2) UNRELEASED; urgency=high
+gnutls28 (3.2.15-2) unstable; urgency=high
 
   * Fix crashes due to symbol clashes when a binary ends up being linked
     against GnuTLS v2 and v3 by bumping library symbol-versioning (and
@@ -15,7 +15,7 @@ gnutls28 (3.2.15-2) UNRELEASED; urgency=high
     debugging symbols are installed to /usr/lib/debug/.build-id.
   * debian/copyright: Add info about GPLv2 compatibility.
 
- -- Andreas Metzler <ametzler@debian.org>  Sat, 24 May 2014 14:04:11 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Thu, 05 Jun 2014 18:56:03 +0200
 
 gnutls28 (3.2.15-1) unstable; urgency=high
 
