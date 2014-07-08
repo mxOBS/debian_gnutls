@@ -98,9 +98,9 @@ Guile bindings use the same license as the respective underlying library,
 i.e. LGPLv2.1+ for the main library and GPLv3+ for Gnutls extra.
 
 However to be able to use and link against libgnutls a program needs to be
-available under a license compatible with LGPLv3+ or GPLv2.1+ since GnuTLS
+available under a license compatible with LGPLv3+ or GPLv2+ since GnuTLS
 requires nettle which requires GMP. GMP (>= 6.0.0) is dual licensed 
-LGPLv3+ or GPLv2.1+.
+LGPLv3+ or GPLv2+.
 
 Copyright:
 --------------------

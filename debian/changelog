@@ -1,3 +1,10 @@
+gnutls28 (3.2.15-3) UNRELEASED; urgency=medium
+
+  * [debian/copright]: Replace reference to GPLv2.1 (which does not exist)
+    with one to GPLv2. (Thanks, Jakub Wilk) Closes: #754160
+
+ -- Andreas Metzler <ametzler@debian.org>  Tue, 08 Jul 2014 19:24:11 +0200
+
 gnutls28 (3.2.15-2) unstable; urgency=high
 
   * Fix crashes due to symbol clashes when a binary ends up being linked
