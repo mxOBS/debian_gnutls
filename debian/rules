@@ -61,6 +61,7 @@ ifneq ($(filter --disable-doc,$(AMCONFBUILDINDEP)),)
 endif
 	find debian/*/usr/lib/* -name '*.so.*.*' -type f -exec \
 		chrpath -d {} +
+	find debian/tmp -name '*xssl.*' -exec rm -v {} +
 
 override_dh_installinfo:
 	dh_installinfo
@@ -87,9 +88,6 @@ override_dh_installchangelogs:
 	rm -vrf debian/libgnutlsxx28/usr/share/doc/libgnutlsxx28
 	dh_link -plibgnutlsxx28 usr/share/doc/libgnutls-deb0-28 \
 		usr/share/doc/libgnutlsxx28
-	rm -vrf debian/libgnutls-xssl0/usr/share/doc/libgnutls-xssl0
-	dh_link -plibgnutls-xssl0 usr/share/doc/libgnutls-deb0-28 \
-		usr/share/doc/libgnutls-xssl0
 
 override_dh_compress:
 	dh_compress -X.pdf

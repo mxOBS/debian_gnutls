@@ -26,7 +26,7 @@ Section: libdevel
 Architecture: any
 Provides: gnutls-dev, libgnutls-openssl-dev
 Depends: libgnutls-deb0-28 (= ${binary:Version}), 
- libgnutlsxx28 (= ${binary:Version}), libgnutls-xssl0 (= ${binary:Version}),
+ libgnutlsxx28 (= ${binary:Version}), 
  nettle-dev (>= 2.5), libc6-dev | libc-dev, zlib1g-dev,
  libtasn1-6-dev (>= 3.1), libp11-kit-dev (>= 0.20), ${misc:Depends},
  libgnutls-openssl27 (= ${binary:Version}),
@@ -194,20 +194,6 @@ Description: GNU TLS library - C++ runtime library
     Camellia (RFC 4132)).
  .
  This package contains the C++ runtime libraries.
-
-Package: libgnutls-xssl0
-Priority: extra
-Architecture: any
-Depends: libgnutls-deb0-28 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
-Pre-Depends: ${misc:Pre-Depends}
-Multi-Arch: same
-Description: GNU TLS library - XSSL API runtime library
- GnuTLS is a portable library which implements the Transport Layer
- Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 and Datagram
- Transport Layer Security (DTLS 1.0, 1.2) protocols.
- .
- GnuTLS offers a simplified high-level API to GnuTLS. This API is currently
- marked experimental.
 
 Package: libgnutls-openssl27
 Priority: standard
