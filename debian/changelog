@@ -1,3 +1,9 @@
+gnutls28 (3.2.16-1) unstable; urgency=medium
+
+  * New upstream version.
+
+ -- Andreas Metzler <ametzler@debian.org>  Wed, 23 Jul 2014 12:36:32 +0200
+
 gnutls28 (3.2.15-3) unstable; urgency=medium
 
   * [debian/copright]: Replace reference to GPLv2.1 (which does not exist)
