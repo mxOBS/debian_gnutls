@@ -1,9 +1,13 @@
-gnutls28 (3.3.5-2) UNRELEASED; urgency=medium
+gnutls28 (3.3.6-1) experimental; urgency=medium
 
   * [debian/copright]: Replace reference to GPLv2.1 (which does not exist)
     with one to GPLv2. (Thanks, Jakub Wilk) Closes: #754160
+  * New upstream release.
+    + Refresh 20_debian_specific_soname.diff.
+    + Add newly added symbols to libgnutls-deb0-28.symbols and bump private
+      symbol dependency info.
 
- -- Andreas Metzler <ametzler@debian.org>  Tue, 08 Jul 2014 19:24:11 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Thu, 24 Jul 2014 08:50:01 +0200
 
 gnutls28 (3.3.5-1) experimental; urgency=medium
 

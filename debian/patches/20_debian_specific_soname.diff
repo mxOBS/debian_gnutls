@@ -7,10 +7,10 @@ Author: Andreas Metzler <ametzler@debian.org>
 Bug-Debian: http://bugs.debian.org/7748742
 Origin: vendor
 Forwarded: http://lists.gnutls.org/pipermail/gnutls-devel/2014-May/006938.html
-Last-Update: 2014-06-28
+Last-Update: 2014-07-24
 
---- gnutls28-3.3.5.orig/lib/Makefile.am
-+++ gnutls28-3.3.5/lib/Makefile.am
+--- a/lib/Makefile.am
++++ b/lib/Makefile.am
 @@ -123,6 +123,7 @@ libgnutls_la_SOURCES = $(HFILES) $(COBJE
  	gnutls.asn pkix.asn libgnutls.map
  
@@ -19,8 +19,8 @@ Last-Update: 2014-06-28
  	-version-info $(LT_CURRENT):$(LT_REVISION):$(LT_AGE)
  
  libgnutls_la_LIBADD = ../gl/libgnu.la x509/libgnutls_x509.la \
---- gnutls28-3.3.5.orig/lib/libgnutls.map
-+++ gnutls28-3.3.5/lib/libgnutls.map
+--- a/lib/libgnutls.map
++++ b/lib/libgnutls.map
 @@ -18,7 +18,7 @@
  # You should have received a copy of the GNU Lesser General Public License
  # along with this program.  If not, see <http://www.gnu.org/licenses/>
@@ -87,10 +87,10 @@ Last-Update: 2014-06-28
    global:
          gnutls_pkcs11_get_pin_function;
  	gnutls_pkcs11_obj_list_import_url2;
-@@ -1012,9 +1012,9 @@ GNUTLS_3_1_0 {
- 	gnutls_packet_deinit;
- 	gnutls_record_recv_packet;
+@@ -1014,9 +1014,9 @@ GNUTLS_3_1_0 {
  	gnutls_packet_get;
+ 	gnutls_x509_trust_list_add_trust_dir;
+ 	gnutls_certificate_set_x509_trust_dir;
 -} GNUTLS_3_0_0;
 +} GNUTLS_DEBIAN_0_3_0_0;
  
@@ -99,7 +99,7 @@ Last-Update: 2014-06-28
  	gnutls_cipher_self_test;
  	gnutls_pk_self_test;
  	gnutls_mac_self_test;
-@@ -1032,7 +1032,7 @@ GNUTLS_FIPS140 {
+@@ -1035,7 +1035,7 @@ GNUTLS_FIPS140 {
  	_rsa_generate_fips186_4_keypair;
  };
  
