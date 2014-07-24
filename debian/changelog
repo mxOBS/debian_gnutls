@@ -97,6 +97,21 @@ gnutls28 (3.3.0~pre0-1) experimental; urgency=medium
 
  -- Andreas Metzler <ametzler@debian.org>  Sat, 29 Mar 2014 19:19:37 +0100
 
+gnutls28 (3.2.16-1) unstable; urgency=medium
+
+  * New upstream version.
+
+ -- Andreas Metzler <ametzler@debian.org>  Wed, 23 Jul 2014 12:36:32 +0200
+
+gnutls28 (3.2.15-3) unstable; urgency=medium
+
+  * [debian/copright]: Replace reference to GPLv2.1 (which does not exist)
+    with one to GPLv2. (Thanks, Jakub Wilk) Closes: #754160
+  * Stop shipping libgnutls-xssl0, it has been removed in upstream's 3.3
+    series.
+
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 12 Jul 2014 13:55:48 +0200
+
 gnutls28 (3.2.15-2) unstable; urgency=high
 
   * Fix crashes due to symbol clashes when a binary ends up being linked
