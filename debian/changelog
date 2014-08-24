@@ -1,4 +1,4 @@
-gnutls28 (3.3.7-1) UNRELEASED; urgency=medium
+gnutls28 (3.3.7-1) experimental; urgency=medium
 
   * New upstream release.
     + Refresh 20_debian_specific_soname.diff.
@@ -7,7 +7,7 @@ gnutls28 (3.3.7-1) UNRELEASED; urgency=medium
     + New member in gnutls_pkcs11_obj_attr_t, bump version of
       gnutls_pkcs11_obj_list_import_url*.
 
- -- Andreas Metzler <ametzler@debian.org>  Sun, 24 Aug 2014 12:22:32 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Sun, 24 Aug 2014 13:35:44 +0200
 
 gnutls28 (3.3.6-2) unstable; urgency=medium
 
