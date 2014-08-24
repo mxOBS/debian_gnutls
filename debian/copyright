@@ -188,8 +188,29 @@ be found in `/usr/share/common-licenses/GPL' (version 3 in
 /usr/share/common-licenses/GPL-3) The GNU Free Documentation
 License is available under /usr/share/common-licenses/GFDL-1.3.
 
+============================================
+
+src/certtool-common.c src/certtool-extras.c src/common.c src/danetool.c
+ src/socket.c
+
+are licensed GPLv3+ with the following additional exception:
+
+ * In addition, as a special exception, the copyright holders give
+ * permission to link the code of portions of this program with the
+ * OpenSSL library under certain conditions as described in each
+ * individual source file, and distribute linked combinations including
+ * the two.
+ * 
+ * You must obey the GNU General Public License in all respects for all
+ * of the code used other than OpenSSL. If you modify file(s) with this
+ * exception, you may extend this exception to your version of the
+ * file(s), but you are not obligated to do so. If you do not wish to do
+ * so, delete this exception statement from your version. If you delete
+ * this exception statement from all source files in the program, then
+ * also delete it here.
 
 ============================================
+
 Excerpt from upstream's README:
 
 LICENSING
@@ -355,3 +376,27 @@ Copyright:
  * Mike Hamburg (Stanford University), 2009.
 License:
  Public domain.
+
+============================================
+
+lib/inet_pton.c
+
+Upstream Authors: Internet Software Consortium
+
+Copyright/License: 
+ * Copyright (c) 1996,1999 by Internet Software Consortium.
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND INTERNET SOFTWARE CONSORTIUM DISCLAIMS
+ * ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES
+ * OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL INTERNET SOFTWARE
+ * CONSORTIUM BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+ * DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+ * PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS
+ * ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS
+ * SOFTWARE.
+
+
