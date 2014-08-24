@@ -1,9 +1,11 @@
 gnutls28 (3.3.6-2) unstable; urgency=medium
 
+  * Upload to unstable. We want 3.3 in jessie, as it is (going to be) GnuTLS
+    lastest stable at freeze time.
   * 30_guile-snarf.diff: Work around #759096 (guile-snarf hard-codes the
     at-build-time-default-compiler) by exporting @CPP@.
 
- -- Andreas Metzler <ametzler@debian.org>  Sun, 24 Aug 2014 08:38:49 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Sun, 24 Aug 2014 09:32:36 +0200
 
 gnutls28 (3.3.6-1) experimental; urgency=medium
 
