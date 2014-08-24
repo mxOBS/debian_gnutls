@@ -1,3 +1,10 @@
+gnutls28 (3.3.6-2) unstable; urgency=medium
+
+  * 30_guile-snarf.diff: Work around #759096 (guile-snarf hard-codes the
+    at-build-time-default-compiler) by exporting @CPP@.
+
+ -- Andreas Metzler <ametzler@debian.org>  Sun, 24 Aug 2014 08:38:49 +0200
+
 gnutls28 (3.3.6-1) experimental; urgency=medium
 
   * [debian/copright]: Replace reference to GPLv2.1 (which does not exist)
