@@ -2,8 +2,8 @@ gnutls28 (3.3.7-1) UNRELEASED; urgency=medium
 
   * New upstream release.
     + Refresh 20_debian_specific_soname.diff.
-    + Add newly added symbols to libgnutls-deb0-28.symbols and bump private
-      symbol dependency info.
+    + Add newly added symbols to libgnutls-deb0-28.symbols, bump private
+      symbol dependency info, and bump shlibs.
     + New member in gnutls_pkcs11_obj_attr_t, bump version of
       gnutls_pkcs11_obj_list_import_url*.
 
