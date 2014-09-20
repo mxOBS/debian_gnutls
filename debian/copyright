@@ -399,4 +399,11 @@ Copyright/License:
  * ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS
  * SOFTWARE.
 
+============================================
 
+lib/vasprintf.c
+Upstream Authors: David Woodhouse <dwmw2@infradead.org>
+Copyright: 2008-2014 Intel Corporation
+License: LGPL2.1
+Comment: This code is not used on Debian/*, since we have a working
+ vasprintf() in glibc.
