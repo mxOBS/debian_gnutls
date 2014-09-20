@@ -347,12 +347,12 @@ libgnutls-deb0.so.28 libgnutls-deb0-28 #MINVER#
  gnutls_pk_list@GNUTLS_DEBIAN_0_1_4 3.3.0
  gnutls_pk_to_sign@GNUTLS_DEBIAN_0_3_0_0 3.3.0
  gnutls_pkcs11_add_provider@GNUTLS_DEBIAN_0_2_12 3.3.0
- gnutls_pkcs11_copy_secret_key@GNUTLS_DEBIAN_0_2_12 3.3.0
- gnutls_pkcs11_copy_x509_crt@GNUTLS_DEBIAN_0_2_12 3.3.0
- gnutls_pkcs11_copy_x509_privkey@GNUTLS_DEBIAN_0_2_12 3.3.0
+ gnutls_pkcs11_copy_secret_key@GNUTLS_DEBIAN_0_2_12 3.3.8
+ gnutls_pkcs11_copy_x509_crt@GNUTLS_DEBIAN_0_2_12 3.3.8
+ gnutls_pkcs11_copy_x509_privkey@GNUTLS_DEBIAN_0_2_12 3.3.8
  gnutls_pkcs11_crt_is_known@GNUTLS_DEBIAN_0_3_1_0 3.3.0
  gnutls_pkcs11_deinit@GNUTLS_DEBIAN_0_2_12 3.3.0
- gnutls_pkcs11_delete_url@GNUTLS_DEBIAN_0_2_12 3.3.0
+ gnutls_pkcs11_delete_url@GNUTLS_DEBIAN_0_2_12 3.3.8
  gnutls_pkcs11_get_pin_function@GNUTLS_DEBIAN_0_3_1_0 3.3.0
  gnutls_pkcs11_get_raw_issuer@GNUTLS_DEBIAN_0_3_1_0 3.3.0
  gnutls_pkcs11_init@GNUTLS_DEBIAN_0_2_12 3.3.0
@@ -365,20 +365,20 @@ libgnutls-deb0.so.28 libgnutls-deb0-28 #MINVER#
  gnutls_pkcs11_obj_get_exts@GNUTLS_DEBIAN_0_3_1_0 3.3.8
  gnutls_pkcs11_obj_get_flags@GNUTLS_DEBIAN_0_3_1_0 3.3.7
  gnutls_pkcs11_obj_get_info@GNUTLS_DEBIAN_0_2_12 3.3.0
- gnutls_pkcs11_obj_get_type@GNUTLS_DEBIAN_0_2_12 3.3.0
- gnutls_pkcs11_obj_import_url@GNUTLS_DEBIAN_0_2_12 3.3.0
+ gnutls_pkcs11_obj_get_type@GNUTLS_DEBIAN_0_2_12 3.3.8
+ gnutls_pkcs11_obj_import_url@GNUTLS_DEBIAN_0_2_12 3.3.8
  gnutls_pkcs11_obj_init@GNUTLS_DEBIAN_0_2_12 3.3.0
- gnutls_pkcs11_obj_list_import_url2@GNUTLS_DEBIAN_0_3_1_0 3.3.7
- gnutls_pkcs11_obj_list_import_url@GNUTLS_DEBIAN_0_2_12 3.3.7
+ gnutls_pkcs11_obj_list_import_url2@GNUTLS_DEBIAN_0_3_1_0 3.3.8
+ gnutls_pkcs11_obj_list_import_url@GNUTLS_DEBIAN_0_2_12 3.3.8
  gnutls_pkcs11_obj_set_pin_function@GNUTLS_DEBIAN_0_3_1_0 3.3.0
  gnutls_pkcs11_privkey_deinit@GNUTLS_DEBIAN_0_2_12 3.3.0
  gnutls_pkcs11_privkey_export_pubkey@GNUTLS_DEBIAN_0_3_1_0 3.3.7
  gnutls_pkcs11_privkey_export_url@GNUTLS_DEBIAN_0_2_12 3.3.0
- gnutls_pkcs11_privkey_generate2@GNUTLS_DEBIAN_0_3_1_0 3.3.0
+ gnutls_pkcs11_privkey_generate2@GNUTLS_DEBIAN_0_3_1_0 3.3.8
  gnutls_pkcs11_privkey_generate@GNUTLS_DEBIAN_0_3_0_0 3.3.0
  gnutls_pkcs11_privkey_get_info@GNUTLS_DEBIAN_0_2_12 3.3.0
  gnutls_pkcs11_privkey_get_pk_algorithm@GNUTLS_DEBIAN_0_2_12 3.3.0
- gnutls_pkcs11_privkey_import_url@GNUTLS_DEBIAN_0_2_12 3.3.0
+ gnutls_pkcs11_privkey_import_url@GNUTLS_DEBIAN_0_2_12 3.3.8
  gnutls_pkcs11_privkey_init@GNUTLS_DEBIAN_0_2_12 3.3.0
  gnutls_pkcs11_privkey_set_pin_function@GNUTLS_DEBIAN_0_3_1_0 3.3.0
  gnutls_pkcs11_privkey_status@GNUTLS_DEBIAN_0_3_1_0 3.3.0
@@ -392,7 +392,7 @@ libgnutls-deb0.so.28 libgnutls-deb0-28 #MINVER#
  gnutls_pkcs11_token_get_url@GNUTLS_DEBIAN_0_2_12 3.3.0
  gnutls_pkcs11_token_init@GNUTLS_DEBIAN_0_2_12 3.3.0
  gnutls_pkcs11_token_set_pin@GNUTLS_DEBIAN_0_2_12 3.3.0
- gnutls_pkcs11_type_get_name@GNUTLS_DEBIAN_0_2_12 3.3.0
+ gnutls_pkcs11_type_get_name@GNUTLS_DEBIAN_0_2_12 3.3.8
  gnutls_pkcs12_bag_decrypt@GNUTLS_DEBIAN_0_1_4 3.3.0
  gnutls_pkcs12_bag_deinit@GNUTLS_DEBIAN_0_1_4 3.3.0
  gnutls_pkcs12_bag_encrypt@GNUTLS_DEBIAN_0_1_4 3.3.0
@@ -842,8 +842,8 @@ libgnutls-deb0.so.28 libgnutls-deb0-28 #MINVER#
  gnutls_x509_crt_get_verify_algorithm@GNUTLS_DEBIAN_0_2_8 3.3.0
  gnutls_x509_crt_get_version@GNUTLS_DEBIAN_0_1_4 3.3.0
  gnutls_x509_crt_import@GNUTLS_DEBIAN_0_1_4 3.3.0
- gnutls_x509_crt_import_pkcs11@GNUTLS_DEBIAN_0_2_12 3.3.0
- gnutls_x509_crt_import_pkcs11_url@GNUTLS_DEBIAN_0_2_12 3.3.0
+ gnutls_x509_crt_import_pkcs11@GNUTLS_DEBIAN_0_2_12 3.3.8
+ gnutls_x509_crt_import_pkcs11_url@GNUTLS_DEBIAN_0_2_12 3.3.8
  gnutls_x509_crt_init@GNUTLS_DEBIAN_0_1_4 3.3.0
  gnutls_x509_crt_list_import2@GNUTLS_DEBIAN_0_3_0_0 3.3.0
  gnutls_x509_crt_list_import@GNUTLS_DEBIAN_0_1_4 3.3.0

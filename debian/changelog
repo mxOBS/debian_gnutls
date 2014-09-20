@@ -4,7 +4,9 @@ gnutls28 (3.3.8-1) UNRELEASED; urgency=medium
     + Refresh 20_debian_specific_soname.diff.
     + Bump libp11-kit-dev b-d to >= 0.20.7, add (temporary) build-conflicts
       with old experimental upload 0.21.2-1
-    + Add newly added symbols to libgnutls-deb0-28.symbols, bump private
+    + Add newly added symbols to libgnutls-deb0-28.symbols, bump version of
+      some functions in the gnutls_pkcs11_* family due to new members in enums
+      gnutls_pkcs11_obj_type_t and gnutls_pkcs11_obj_flags, bump private
       symbol dependency info, and bump shlibs.
 
  -- Andreas Metzler <ametzler@debian.org>  Thu, 18 Sep 2014 19:29:56 +0200
