@@ -7,7 +7,7 @@ Author: Andreas Metzler <ametzler@debian.org>
 Bug-Debian: http://bugs.debian.org/7748742
 Origin: vendor
 Forwarded: http://lists.gnutls.org/pipermail/gnutls-devel/2014-May/006938.html
-Last-Update: 2014-08-24
+Last-Update: 2014-09-18
 
 --- a/lib/Makefile.am
 +++ b/lib/Makefile.am
@@ -87,10 +87,10 @@ Last-Update: 2014-08-24
    global:
          gnutls_pkcs11_get_pin_function;
  	gnutls_pkcs11_obj_list_import_url2;
-@@ -1017,9 +1017,9 @@ GNUTLS_3_1_0 {
- 	gnutls_pkcs11_privkey_export_pubkey;
- 	gnutls_pkcs11_obj_flags_get_str;
- 	gnutls_pkcs11_obj_get_flags;
+@@ -1024,9 +1024,9 @@ GNUTLS_3_1_0 {
+ 	gnutls_x509_ext_deinit;
+ 	gnutls_x509_ext_print;
+ 	gnutls_x509_othername_to_virtual;
 -} GNUTLS_3_0_0;
 +} GNUTLS_DEBIAN_0_3_0_0;
  
@@ -99,7 +99,7 @@ Last-Update: 2014-08-24
  	gnutls_cipher_self_test;
  	gnutls_pk_self_test;
  	gnutls_mac_self_test;
-@@ -1038,7 +1038,7 @@ GNUTLS_FIPS140 {
+@@ -1045,7 +1045,7 @@ GNUTLS_FIPS140 {
  	_rsa_generate_fips186_4_keypair;
  };
  

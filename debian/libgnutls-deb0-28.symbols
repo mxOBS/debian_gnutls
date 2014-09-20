@@ -7,7 +7,7 @@ libgnutls-deb0.so.28 libgnutls-deb0-28 #MINVER#
  GNUTLS_DEBIAN_0_3_0_0@GNUTLS_DEBIAN_0_3_0_0 3.3.0
  GNUTLS_DEBIAN_0_3_1_0@GNUTLS_DEBIAN_0_3_1_0 3.3.0
  GNUTLS_DEBIAN_0_FIPS140@GNUTLS_DEBIAN_0_FIPS140 3.3.0
- (regex|optional)"@GNUTLS_DEBIAN_0_PRIVATE$" 3.3.7-~0
+ (regex|optional)"@GNUTLS_DEBIAN_0_PRIVATE$" 3.3.8-~0
  _gnutls_encode_ber_rs_raw@GNUTLS_DEBIAN_0_FIPS140 3.3.0
  gnutls_alert_get@GNUTLS_DEBIAN_0_1_4 3.3.0
  gnutls_alert_get_name@GNUTLS_DEBIAN_0_1_4 3.3.0
@@ -362,6 +362,7 @@ libgnutls-deb0.so.28 libgnutls-deb0-28 #MINVER#
  gnutls_pkcs11_obj_export@GNUTLS_DEBIAN_0_2_12 3.3.0
  gnutls_pkcs11_obj_export_url@GNUTLS_DEBIAN_0_2_12 3.3.0
  gnutls_pkcs11_obj_flags_get_str@GNUTLS_DEBIAN_0_3_1_0 3.3.7
+ gnutls_pkcs11_obj_get_exts@GNUTLS_DEBIAN_0_3_1_0 3.3.8
  gnutls_pkcs11_obj_get_flags@GNUTLS_DEBIAN_0_3_1_0 3.3.7
  gnutls_pkcs11_obj_get_info@GNUTLS_DEBIAN_0_2_12 3.3.0
  gnutls_pkcs11_obj_get_type@GNUTLS_DEBIAN_0_2_12 3.3.0
@@ -746,6 +747,7 @@ libgnutls-deb0.so.28 libgnutls-deb0-28 #MINVER#
  gnutls_x509_crq_get_dn@GNUTLS_DEBIAN_0_1_4 3.3.0
  gnutls_x509_crq_get_dn_by_oid@GNUTLS_DEBIAN_0_1_4 3.3.0
  gnutls_x509_crq_get_dn_oid@GNUTLS_DEBIAN_0_1_4 3.3.0
+ gnutls_x509_crq_get_extension_by_oid2@GNUTLS_DEBIAN_0_3_1_0 3.3.8
  gnutls_x509_crq_get_extension_by_oid@GNUTLS_DEBIAN_0_2_8 3.3.0
  gnutls_x509_crq_get_extension_data2@GNUTLS_DEBIAN_0_3_1_0 3.3.0
  gnutls_x509_crq_get_extension_data@GNUTLS_DEBIAN_0_2_8 3.3.0
@@ -799,6 +801,7 @@ libgnutls-deb0.so.28 libgnutls-deb0-28 #MINVER#
  gnutls_x509_crt_get_dn_by_oid@GNUTLS_DEBIAN_0_1_4 3.3.0
  gnutls_x509_crt_get_dn_oid@GNUTLS_DEBIAN_0_1_4 3.3.0
  gnutls_x509_crt_get_expiration_time@GNUTLS_DEBIAN_0_1_4 3.3.0
+ gnutls_x509_crt_get_extension_by_oid2@GNUTLS_DEBIAN_0_3_1_0 3.3.8
  gnutls_x509_crt_get_extension_by_oid@GNUTLS_DEBIAN_0_1_4 3.3.0
  gnutls_x509_crt_get_extension_data2@GNUTLS_DEBIAN_0_3_1_0 3.3.0
  gnutls_x509_crt_get_extension_data@GNUTLS_DEBIAN_0_1_4 3.3.0
@@ -892,6 +895,7 @@ libgnutls-deb0.so.28 libgnutls-deb0-28 #MINVER#
  gnutls_x509_dn_init@GNUTLS_DEBIAN_0_1_4 3.3.0
  gnutls_x509_dn_oid_known@GNUTLS_DEBIAN_0_1_4 3.3.0
  gnutls_x509_dn_oid_name@GNUTLS_DEBIAN_0_3_0_0 3.3.0
+ gnutls_x509_ext_deinit@GNUTLS_DEBIAN_0_3_1_0 3.3.8
  gnutls_x509_ext_export_aia@GNUTLS_DEBIAN_0_3_1_0 3.3.0
  gnutls_x509_ext_export_authority_key_id@GNUTLS_DEBIAN_0_3_1_0 3.3.0
  gnutls_x509_ext_export_basic_constraints@GNUTLS_DEBIAN_0_3_1_0 3.3.0
@@ -916,6 +920,7 @@ libgnutls-deb0.so.28 libgnutls-deb0-28 #MINVER#
  gnutls_x509_ext_import_proxy@GNUTLS_DEBIAN_0_3_1_0 3.3.0
  gnutls_x509_ext_import_subject_alt_names@GNUTLS_DEBIAN_0_3_1_0 3.3.0
  gnutls_x509_ext_import_subject_key_id@GNUTLS_DEBIAN_0_3_1_0 3.3.0
+ gnutls_x509_ext_print@GNUTLS_DEBIAN_0_3_1_0 3.3.8
  gnutls_x509_key_purpose_deinit@GNUTLS_DEBIAN_0_3_1_0 3.3.0
  gnutls_x509_key_purpose_get@GNUTLS_DEBIAN_0_3_1_0 3.3.0
  gnutls_x509_key_purpose_init@GNUTLS_DEBIAN_0_3_1_0 3.3.0
@@ -928,6 +933,7 @@ libgnutls-deb0.so.28 libgnutls-deb0-28 #MINVER#
  gnutls_x509_name_constraints_get_excluded@GNUTLS_DEBIAN_0_3_1_0 3.3.0
  gnutls_x509_name_constraints_get_permitted@GNUTLS_DEBIAN_0_3_1_0 3.3.0
  gnutls_x509_name_constraints_init@GNUTLS_DEBIAN_0_3_1_0 3.3.0
+ gnutls_x509_othername_to_virtual@GNUTLS_DEBIAN_0_3_1_0 3.3.8
  gnutls_x509_policies_deinit@GNUTLS_DEBIAN_0_3_1_0 3.3.0
  gnutls_x509_policies_get@GNUTLS_DEBIAN_0_3_1_0 3.3.0
  gnutls_x509_policies_init@GNUTLS_DEBIAN_0_3_1_0 3.3.0
@@ -977,5 +983,6 @@ libgnutls-deb0.so.28 libgnutls-deb0-28 #MINVER#
  gnutls_x509_trust_list_remove_cas@GNUTLS_DEBIAN_0_3_1_0 3.3.0
  gnutls_x509_trust_list_remove_trust_file@GNUTLS_DEBIAN_0_3_1_0 3.3.0
  gnutls_x509_trust_list_remove_trust_mem@GNUTLS_DEBIAN_0_3_1_0 3.3.0
+ gnutls_x509_trust_list_verify_crt2@GNUTLS_DEBIAN_0_3_1_0 3.3.8
  gnutls_x509_trust_list_verify_crt@GNUTLS_DEBIAN_0_3_0_0 3.3.0
  gnutls_x509_trust_list_verify_named_crt@GNUTLS_DEBIAN_0_3_0_0 3.3.0
