@@ -1,9 +1,10 @@
-gnutls28 (3.3.8-2) UNRELEASED; urgency=medium
+gnutls28 (3.3.8-2) unstable; urgency=medium
 
   * Correct libtasn1-6-dev (build-)dependency version requirement, GnuTLS
     3.3.8 requires libtasn1 >= 3.9.
+  * Upload to unstable.
 
- -- Andreas Metzler <ametzler@debian.org>  Sun, 21 Sep 2014 07:46:16 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Sun, 21 Sep 2014 11:52:40 +0200
 
 gnutls28 (3.3.8-1) experimental; urgency=medium
 
