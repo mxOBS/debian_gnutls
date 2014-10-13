@@ -1,4 +1,4 @@
-gnutls28 (3.3.9-1) UNRELEASED; urgency=medium
+gnutls28 (3.3.9-1) experimental; urgency=medium
 
   * New upstream version.
     + Unfuzz 20_debian_specific_soname.diff.
@@ -8,7 +8,7 @@ gnutls28 (3.3.9-1) UNRELEASED; urgency=medium
       gnutls_x509_trust_list_get_issuer() because of newly added
       GNUTLS_TL_GET_COPY flag.
 
- -- Andreas Metzler <ametzler@debian.org>  Mon, 13 Oct 2014 19:37:46 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Mon, 13 Oct 2014 20:08:58 +0200
 
 gnutls28 (3.3.8-3) unstable; urgency=high
 
