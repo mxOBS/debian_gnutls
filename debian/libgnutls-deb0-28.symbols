@@ -7,7 +7,7 @@ libgnutls-deb0.so.28 libgnutls-deb0-28 #MINVER#
  GNUTLS_DEBIAN_0_3_0_0@GNUTLS_DEBIAN_0_3_0_0 3.3.0
  GNUTLS_DEBIAN_0_3_1_0@GNUTLS_DEBIAN_0_3_1_0 3.3.0
  GNUTLS_DEBIAN_0_FIPS140@GNUTLS_DEBIAN_0_FIPS140 3.3.0
- (regex|optional)"@GNUTLS_DEBIAN_0_PRIVATE$" 3.3.8-~0
+ (regex|optional)"@GNUTLS_DEBIAN_0_PRIVATE$" 3.3.9-~0
  _gnutls_encode_ber_rs_raw@GNUTLS_DEBIAN_0_FIPS140 3.3.0
  gnutls_alert_get@GNUTLS_DEBIAN_0_1_4 3.3.0
  gnutls_alert_get_name@GNUTLS_DEBIAN_0_1_4 3.3.0
@@ -39,7 +39,7 @@ libgnutls-deb0.so.28 libgnutls-deb0-28 #MINVER#
  gnutls_certificate_free_crls@GNUTLS_DEBIAN_0_1_4 3.3.0
  gnutls_certificate_free_keys@GNUTLS_DEBIAN_0_1_4 3.3.0
  gnutls_certificate_get_crt_raw@GNUTLS_DEBIAN_0_3_1_0 3.3.0
- gnutls_certificate_get_issuer@GNUTLS_DEBIAN_0_2_12 3.3.0
+ gnutls_certificate_get_issuer@GNUTLS_DEBIAN_0_2_12 3.3.9
  gnutls_certificate_get_ours@GNUTLS_DEBIAN_0_1_4 3.3.0
  gnutls_certificate_get_peers@GNUTLS_DEBIAN_0_1_4 3.3.0
  gnutls_certificate_get_peers_subkey_id@GNUTLS_DEBIAN_0_3_1_0 3.3.0
@@ -978,7 +978,7 @@ libgnutls-deb0.so.28 libgnutls-deb0-28 #MINVER#
  gnutls_x509_trust_list_add_trust_file@GNUTLS_DEBIAN_0_3_1_0 3.3.0
  gnutls_x509_trust_list_add_trust_mem@GNUTLS_DEBIAN_0_3_1_0 3.3.0
  gnutls_x509_trust_list_deinit@GNUTLS_DEBIAN_0_3_0_0 3.3.0
- gnutls_x509_trust_list_get_issuer@GNUTLS_DEBIAN_0_3_0_0 3.3.0
+ gnutls_x509_trust_list_get_issuer@GNUTLS_DEBIAN_0_3_0_0 3.3.9
  gnutls_x509_trust_list_init@GNUTLS_DEBIAN_0_3_0_0 3.3.0
  gnutls_x509_trust_list_remove_cas@GNUTLS_DEBIAN_0_3_1_0 3.3.0
  gnutls_x509_trust_list_remove_trust_file@GNUTLS_DEBIAN_0_3_1_0 3.3.0

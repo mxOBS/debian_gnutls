@@ -1,3 +1,15 @@
+gnutls28 (3.3.9-1) UNRELEASED; urgency=medium
+
+  * New upstream version.
+    + Unfuzz 20_debian_specific_soname.diff.
+    + Drop 31_fallback_to_RUSAGE_SELF.diff.
+    + Bump private symbol dependency info.
+    + Bump dependency version of gnutls_certificate_get_issuer() and
+      gnutls_x509_trust_list_get_issuer() because of newly added
+      GNUTLS_TL_GET_COPY flag.
+
+ -- Andreas Metzler <ametzler@debian.org>  Mon, 13 Oct 2014 19:37:46 +0200
+
 gnutls28 (3.3.8-3) unstable; urgency=high
 
   [ Daniel Kahn Gillmor ]
