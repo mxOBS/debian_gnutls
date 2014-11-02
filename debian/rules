@@ -45,7 +45,7 @@ override_dh_auto_clean:
 	# restore gnutls.pdf
 	if [ -e doc/gnutls.pdf.debbackup ] && [ ! -e doc/gnutls.pdf ] ; \
 		then mv -v doc/gnutls.pdf.debbackup doc/gnutls.pdf ; fi
-	rm -fv `grep -l 'has been AutoGen-ed ' doc/manpages/*.?`
+	rm -fv `grep -El 'has been AutoGen-ed |has been AutoGen-ed *$$' doc/manpages/*.?`
 
 override_dh_auto_build:
 	dh_auto_build --verbose --parallel
