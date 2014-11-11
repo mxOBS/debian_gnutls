@@ -1,3 +1,9 @@
+gnutls28 (3.3.8-4) UNRELEASED; urgency=medium
+
+  * Drop 31_fallback_to_RUSAGE_SELF.diff.
+
+ -- Andreas Metzler <ametzler@debian.org>  Tue, 11 Nov 2014 19:40:14 +0100
+
 gnutls28 (3.3.8-3) unstable; urgency=high
 
   [ Daniel Kahn Gillmor ]
