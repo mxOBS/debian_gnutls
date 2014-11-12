@@ -46,6 +46,7 @@ override_dh_auto_clean:
 	if [ -e doc/gnutls.pdf.debbackup ] && [ ! -e doc/gnutls.pdf ] ; \
 		then mv -v doc/gnutls.pdf.debbackup doc/gnutls.pdf ; fi
 	rm -fv `grep -l 'has been AutoGen-ed ' doc/manpages/*.?`
+	rm -f tests/cert-tests/csr-invalid.der
 
 override_dh_auto_build:
 	dh_auto_build --verbose --parallel
@@ -96,6 +97,8 @@ override_dh_strip:
 	dh_strip --dbg-package=libgnutls28-dbg
 
 override_dh_auto_test:
+	cp -v debian/csr-invalid.der tests/cert-tests/
+	chmod +x tests/cert-tests/crq
 	dh_auto_test -O--parallel || touch dh_auto_test.fail
 	@if test -e dh_auto_test.fail ; then \
 		find -name test-suite.log | \

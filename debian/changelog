@@ -1,15 +1,20 @@
-gnutls28 (3.3.8-4) UNRELEASED; urgency=medium
+gnutls28 (3.3.8-4) unstable; urgency=high
 
   * Drop 31_fallback_to_RUSAGE_SELF.diff.
   * 35_recheck_urandom_fd.diff:  When gnutls_global_init() is called manually
     from the application check the urandom fd for validity. Closes: #768841
+    and takes care of #760476.
   * 36_less_refresh-rnd-state.diff: do not explicitly refresh rnd state on
     session deinit. It is already being refreshed during the session lifetime.
   * 37_X9.63_sanity_check.diff: when exporting curve coordinates to X9.63
     format, perform additional sanity checks on input.
     CVE-2014-8564 / GNUTLS-SA-2014-5. Closes: #769154
+  * 38_testforsanitycheck.diff adds a test for CVE-2014-8564. (As the test
+    uses a cert in binary der-format which is not representable in a quilt
+    patches and we want to limit debian.tar.xz to modify stuff in debian/ we
+    have some special handling in debian/rules.)
 
- -- Andreas Metzler <ametzler@debian.org>  Tue, 11 Nov 2014 19:40:14 +0100
+ -- Andreas Metzler <ametzler@debian.org>  Wed, 12 Nov 2014 19:31:07 +0100
 
 gnutls28 (3.3.8-3) unstable; urgency=high
 
