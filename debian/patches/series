@@ -2,3 +2,4 @@
 20_debian_specific_soname.diff
 30_guile-snarf.diff
 35_recheck_urandom_fd.diff
+36_less_refresh-rnd-state.diff
