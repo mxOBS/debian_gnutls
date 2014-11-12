@@ -5,6 +5,9 @@ gnutls28 (3.3.8-4) UNRELEASED; urgency=medium
     from the application check the urandom fd for validity. Closes: #768841
   * 36_less_refresh-rnd-state.diff: do not explicitly refresh rnd state on
     session deinit. It is already being refreshed during the session lifetime.
+  * 37_X9.63_sanity_check.diff: when exporting curve coordinates to X9.63
+    format, perform additional sanity checks on input.
+    CVE-2014-8564 / GNUTLS-SA-2014-5. Closes: #769154
 
  -- Andreas Metzler <ametzler@debian.org>  Tue, 11 Nov 2014 19:40:14 +0100
 
