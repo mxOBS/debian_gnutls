@@ -1,6 +1,8 @@
 gnutls28 (3.3.8-4) UNRELEASED; urgency=medium
 
   * Drop 31_fallback_to_RUSAGE_SELF.diff.
+  * 35_recheck_urandom_fd.diff:  When gnutls_global_init() is called manually
+    from the application check the urandom fd for validity. Closes: #768841
 
  -- Andreas Metzler <ametzler@debian.org>  Tue, 11 Nov 2014 19:40:14 +0100
 
