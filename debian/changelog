@@ -1,3 +1,10 @@
+gnutls28 (3.3.10-2) experimental; urgency=medium
+
+  * Remove SSL 3.0 from default priorities list.
+    Closes: #769904
+
+ -- Andreas Metzler <ametzler@debian.org>  Wed, 19 Nov 2014 19:33:23 +0100
+
 gnutls28 (3.3.10-1) experimental; urgency=medium
 
   * debian/rules: fix pattern for removal (and re-generation) of autogen-ed
