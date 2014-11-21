@@ -1,3 +1,10 @@
+gnutls28 (3.3.8-5) unstable; urgency=medium
+
+  * Remove SSL 3.0 from default priorities list.
+    Closes: #769904
+
+ -- Andreas Metzler <ametzler@debian.org>  Thu, 20 Nov 2014 19:25:20 +0100
+
 gnutls28 (3.3.8-4) unstable; urgency=high
 
   * Drop 31_fallback_to_RUSAGE_SELF.diff.
