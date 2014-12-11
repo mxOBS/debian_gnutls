@@ -1,3 +1,10 @@
+gnutls28 (3.3.11-1) experimental; urgency=medium
+
+  * New upstream version.
+    + Includes fix for OCSP response parsing issue. Closes: #772055
+
+ -- Andreas Metzler <ametzler@debian.org>  Thu, 11 Dec 2014 19:07:23 +0100
+
 gnutls28 (3.3.10-2) experimental; urgency=medium
 
   * Remove SSL 3.0 from default priorities list.
