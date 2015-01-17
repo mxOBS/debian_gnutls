@@ -1,3 +1,10 @@
+gnutls28 (3.3.12-1) experimental; urgency=medium
+
+  * New upstream version.
+    + gnutls-cli-debug SRTARTTLS is working. Closes: #467022
+
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 17 Jan 2015 12:42:06 +0100
+
 gnutls28 (3.3.11-1) experimental; urgency=medium
 
   * New upstream version.
