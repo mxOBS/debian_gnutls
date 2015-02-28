@@ -1,3 +1,9 @@
+gnutls28 (3.3.13-1) experimental; urgency=medium
+
+  * New upstream version.
+
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 28 Feb 2015 08:27:10 +0100
+
 gnutls28 (3.3.12-1) experimental; urgency=medium
 
   * New upstream version.
