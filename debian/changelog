@@ -1,3 +1,12 @@
+gnutls28 (3.3.8-6) unstable; urgency=medium
+
+  * 39_check-whether-the-two-signatur.patch: Pull and unfuzz
+    6e76e9b9fa845b76b0b9a45f05f4b54a052578ff from upstream GIT: On
+    certificate import check whether the two signature algorithms match.
+    CVE-2015-0294. Closes: #779428
+
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 28 Feb 2015 14:17:21 +0100
+
 gnutls28 (3.3.8-5) unstable; urgency=medium
 
   * Remove SSL 3.0 from default priorities list.
