@@ -1,3 +1,10 @@
+gnutls28 (3.3.14-1) experimental; urgency=medium
+
+  * New upstream version.
+    + Bump libtasn b-d to >= 4.3.
+
+ -- Andreas Metzler <ametzler@debian.org>  Tue, 31 Mar 2015 18:29:42 +0200
+
 gnutls28 (3.3.13-1) experimental; urgency=medium
 
   * New upstream version.
