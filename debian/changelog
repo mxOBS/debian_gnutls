@@ -9,6 +9,7 @@ gnutls28 (3.4.1-1) UNRELEASED; urgency=medium
       libgnutls30.
     + OpenSSL compat layer is not built by default anymore, pass
       --enable-openssl-compatibility to ./configure.
+    + Update symbol file.
   * Fix typo in debian/rules
     (s/-disable-silent-rules/--disable-silent-rules).
 
