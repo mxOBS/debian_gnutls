@@ -7,6 +7,8 @@ gnutls28 (3.4.1-1) UNRELEASED; urgency=medium
     + Update 14_version_gettextcat.diff.
     + Soname bump, library package renamed from libgnutls-deb0-28 to
       libgnutls30.
+    + OpenSSL compat layer is not built by default anymore, pass
+      --enable-openssl-compatibility to ./configure.
   * Fix typo in debian/rules
     (s/-disable-silent-rules/--disable-silent-rules).
 

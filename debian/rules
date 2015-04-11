@@ -19,6 +19,7 @@ override_dh_auto_configure:
 	--without-lzo \
 	--disable-libdane --without-tpm \
 	--disable-heartbeat-support \
+	--enable-openssl-compatibility \
 	--disable-silent-rules \
 	--with-default-trust-store-file=/etc/ssl/certs/ca-certificates.crt \
 	--with-packager=Debian \
