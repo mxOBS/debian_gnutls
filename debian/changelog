@@ -5,6 +5,8 @@ gnutls28 (3.4.1-1) UNRELEASED; urgency=medium
     + Drop 20_debian_specific_soname.diff, 40_no_more_ssl3.diff and
       55_nettle3.patch.
     + Update 14_version_gettextcat.diff.
+    + Soname bump, library package renamed from libgnutls-deb0-28 to
+      libgnutls30.
 
  -- Andreas Metzler <ametzler@debian.org>  Thu, 04 Jun 2015 14:11:46 +0200
 
