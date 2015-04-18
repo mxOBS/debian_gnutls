@@ -2,8 +2,8 @@ libgnutls.so.30 libgnutls30 #MINVER#
 * Build-Depends-Package: libgnutls28-dev
  GNUTLS_3_4@GNUTLS_3_4 3.4.0
  GNUTLS_FIPS140_3_4@GNUTLS_FIPS140_3_4 3.4.0
- (regex|optional)"@GNUTLS_PRIVATE$" 3.4.0-~0
- _gnutls_encode_ber_rs_raw@GNUTLS_FIPS140_3_4 3.4.0-~0
+ (regex|optional)"@GNUTLS_PRIVATE$" 3.4.1-0+private+1
+ _gnutls_encode_ber_rs_raw@GNUTLS_FIPS140_3_4 3.4.1-0+private+1
  gnutls_aead_cipher_decrypt@GNUTLS_3_4 3.4.0
  gnutls_aead_cipher_deinit@GNUTLS_3_4 3.4.0
  gnutls_aead_cipher_encrypt@GNUTLS_3_4 3.4.0
