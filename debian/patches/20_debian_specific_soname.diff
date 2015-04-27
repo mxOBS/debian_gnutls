@@ -99,8 +99,8 @@ Last-Update: 2014-09-18
  	gnutls_cipher_self_test;
  	gnutls_pk_self_test;
  	gnutls_mac_self_test;
-@@ -1045,7 +1045,7 @@ GNUTLS_FIPS140 {
- 	_rsa_generate_fips186_4_keypair;
+@@ -1049,7 +1049,7 @@ GNUTLS_FIPS140 {
+ 	_gnutls_ecdh_compute_key;
  };
  
 -GNUTLS_PRIVATE {
