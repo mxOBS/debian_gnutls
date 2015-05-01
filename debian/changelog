@@ -1,8 +1,9 @@
-gnutls28 (3.3.14-3) UNRELEASED; urgency=medium
+gnutls28 (3.3.14-3) experimental; urgency=medium
 
   * 50_nettle3_*.patch: Update to head of upstream gnutls_3_3_x branch.
+  * (Build-)depend on nettle-dev >= 3.0.
 
- -- Andreas Metzler <ametzler@debian.org>  Fri, 01 May 2015 11:25:42 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Fri, 01 May 2015 11:49:04 +0200
 
 gnutls28 (3.3.14-2) unstable; urgency=medium
 

@@ -6,7 +6,7 @@ Uploaders: Andreas Metzler <ametzler@debian.org>,
  Eric Dorland <eric@debian.org>,
  James Westby <jw+debian@jameswestby.net>,
  Simon Josefsson <simon@josefsson.org>
-Build-Depends: debhelper (>= 9), nettle-dev (>= 2.7), zlib1g-dev,
+Build-Depends: debhelper (>= 9), nettle-dev (>= 3.0), zlib1g-dev,
  libtasn1-6-dev (>= 4.3), autotools-dev, guile-2.0-dev [!ia64 !m68k], datefudge,
  libp11-kit-dev (>= 0.20.7), pkg-config, chrpath, libidn11-dev,
  autogen (>= 1:5.16-0), bison, dh-autoreconf, libgmp-dev (>= 2:6),
@@ -28,7 +28,7 @@ Architecture: any
 Provides: gnutls-dev, libgnutls-openssl-dev
 Depends: libgnutls-deb0-28 (= ${binary:Version}), 
  libgnutlsxx28 (= ${binary:Version}), 
- nettle-dev (>= 2.5), libc6-dev | libc-dev, zlib1g-dev,
+ nettle-dev (>= 3.0), libc6-dev | libc-dev, zlib1g-dev,
  libtasn1-6-dev (>= 4.3), libp11-kit-dev, ${misc:Depends},
  libgnutls-openssl27 (= ${binary:Version}),
 Suggests: gnutls-doc, gnutls-bin, guile-gnutls
