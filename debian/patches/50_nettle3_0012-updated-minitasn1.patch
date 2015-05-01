@@ -1,0 +1,54 @@
+From d0148e33b291002f313e811fece0e276002164d7 Mon Sep 17 00:00:00 2001
+From: Nikos Mavrogiannopoulos <nmav@redhat.com>
+Date: Tue, 28 Apr 2015 14:31:08 +0200
+Subject: [PATCH 12/19] updated minitasn1
+
+---
+ lib/minitasn1/decoding.c | 3 ++-
+ lib/minitasn1/libtasn1.h | 2 +-
+ 2 files changed, 3 insertions(+), 2 deletions(-)
+
+diff --git a/lib/minitasn1/decoding.c b/lib/minitasn1/decoding.c
+index 7fbd931..42ddc6b 100644
+--- a/lib/minitasn1/decoding.c
++++ b/lib/minitasn1/decoding.c
+@@ -732,6 +732,7 @@ _asn1_extract_der_octet (asn1_node node, const unsigned char *der,
+     return ASN1_DER_ERROR;
+ 
+   counter = len3 + 1;
++  DECR_LEN(der_len, len3);
+ 
+   if (len2 == -1)
+     counter_end = der_len - 2;
+@@ -740,6 +741,7 @@ _asn1_extract_der_octet (asn1_node node, const unsigned char *der,
+ 
+   while (counter < counter_end)
+     {
++      DECR_LEN(der_len, 1);
+       len2 = asn1_get_length_der (der + counter, der_len, &len3);
+ 
+       if (IS_ERR(len2, flags))
+@@ -764,7 +766,6 @@ _asn1_extract_der_octet (asn1_node node, const unsigned char *der,
+ 	  len2 = 0;
+ 	}
+ 
+-      DECR_LEN(der_len, 1);
+       counter += len2 + len3 + 1;
+     }
+ 
+diff --git a/lib/minitasn1/libtasn1.h b/lib/minitasn1/libtasn1.h
+index c0632c3..53cec5e 100644
+--- a/lib/minitasn1/libtasn1.h
++++ b/lib/minitasn1/libtasn1.h
+@@ -44,7 +44,7 @@ extern "C"
+ {
+ #endif
+ 
+-#define ASN1_VERSION "4.3"
++#define ASN1_VERSION "4.4"
+ 
+ #if defined(__GNUC__) && !defined(ASN1_INTERNAL_BUILD)
+ # define _ASN1_GCC_VERSION (__GNUC__ * 10000 + __GNUC_MINOR__ * 100 + __GNUC_PATCHLEVEL__)
+-- 
+2.1.4
+

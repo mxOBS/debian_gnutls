@@ -1,0 +1,46 @@
+From 1f3f0b5fe56b6b59c531d81b4790c32fdb880410 Mon Sep 17 00:00:00 2001
+From: Nikos Mavrogiannopoulos <nmav@redhat.com>
+Date: Mon, 20 Apr 2015 14:04:37 +0200
+Subject: [PATCH 02/19] Check for invalid length in the X.509 version field
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+If such an invalid length is detected, reject the certificate.
+Reported by Hanno Böck.
+---
+ lib/x509/x509.c | 11 ++++++++++-
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+
+diff --git a/lib/x509/x509.c b/lib/x509/x509.c
+index 4416be0..eb59e19 100644
+--- a/lib/x509/x509.c
++++ b/lib/x509/x509.c
+@@ -344,7 +344,13 @@ gnutls_x509_crt_import(gnutls_x509_crt_t cert,
+ 	}
+ 
+ 	/* enforce the rule that only version 3 certificates carry extensions */
+-	version = gnutls_x509_crt_get_version(cert);
++	result = gnutls_x509_crt_get_version(cert);
++	if (result < 0) {
++		gnutls_assert();
++		goto cleanup;
++	}
++
++	version = result;
+ 	if (version < 3) {
+ 		gnutls_datum_t exts;
+ 		result = _gnutls_x509_get_raw_field2(cert->cert, &cert->der,
+@@ -738,6 +744,9 @@ int gnutls_x509_crt_get_version(gnutls_x509_crt_t cert)
+ 		return _gnutls_asn2err(result);
+ 	}
+ 
++	if (len == 0)
++		return gnutls_assert_val(GNUTLS_E_CERTIFICATE_ERROR);
++
+ 	return (int) version[0] + 1;
+ }
+ 
+-- 
+2.1.4
+

@@ -1,0 +1,26 @@
+From 686a8701aaa6f7508151fc1c8d6cbf121b42decd Mon Sep 17 00:00:00 2001
+From: Nikos Mavrogiannopoulos <nmav@redhat.com>
+Date: Thu, 30 Apr 2015 16:40:24 +0200
+Subject: [PATCH 17/19] doc: fixed example with DTLS timeouts
+
+---
+ doc/examples/ex-client-dtls.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+diff --git a/doc/examples/ex-client-dtls.c b/doc/examples/ex-client-dtls.c
+index c417c0d..dea3b68 100644
+--- a/doc/examples/ex-client-dtls.c
++++ b/doc/examples/ex-client-dtls.c
+@@ -75,8 +75,7 @@ int main(void)
+ 
+         /* set the connection MTU */
+         gnutls_dtls_set_mtu(session, 1000);
+-        gnutls_handshake_set_timeout(session,
+-                                     GNUTLS_DEFAULT_HANDSHAKE_TIMEOUT);
++        /* gnutls_dtls_set_timeouts(session, 1000, 60000); */
+ 
+         /* Perform the TLS handshake */
+         do {
+-- 
+2.1.4
+

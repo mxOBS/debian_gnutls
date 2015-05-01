@@ -1,0 +1,43 @@
+From 6ef0d5dd3cbd5dfc1bdc05f1d5ce918d04d23752 Mon Sep 17 00:00:00 2001
+From: Nikos Mavrogiannopoulos <nmav@gnutls.org>
+Date: Sat, 25 Apr 2015 09:12:04 +0200
+Subject: [PATCH 07/19] set the value used by
+ gnutls_certificate_client_get_request_status prior to selecting certificate
+
+That allows gnutls_certificate_client_get_request_status() to be properly operating
+from the callback. Reported by Anton Lavrentiev.
+---
+ lib/auth/cert.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+diff --git a/lib/auth/cert.c b/lib/auth/cert.c
+index 28d640a..1b5e199 100644
+--- a/lib/auth/cert.c
++++ b/lib/auth/cert.c
+@@ -1483,6 +1483,11 @@ _gnutls_proc_cert_cert_req(gnutls_session_t session, uint8_t * data,
+ 
+ 	DECR_LEN_FINAL(dsize, size);
+ 
++	/* We should reply with a certificate message, 
++	 * even if we have no certificate to send.
++	 */
++	session->key.crt_requested = 1;
++
+ 	/* now we ask the user to tell which one
+ 	 * he wants to use.
+ 	 */
+@@ -1493,11 +1498,6 @@ _gnutls_proc_cert_cert_req(gnutls_session_t session, uint8_t * data,
+ 		return ret;
+ 	}
+ 
+-	/* We should reply with a certificate message, 
+-	 * even if we have no certificate to send.
+-	 */
+-	session->key.crt_requested = 1;
+-
+ 	return 0;
+ }
+ 
+-- 
+2.1.4
+
