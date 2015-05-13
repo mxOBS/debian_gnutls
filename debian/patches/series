@@ -3,3 +3,4 @@
 30_guile-snarf.diff
 40_no_more_ssl3.diff
 50_updated-sign-md5-rep-to-reduce-false-failures.patch
+55_nettle3.patch

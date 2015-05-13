@@ -1,3 +1,11 @@
+gnutls28 (3.3.15-3) experimental; urgency=medium
+
+  * Add 55_nettle3.patch from
+    http://pkgs.fedoraproject.org/cgit/compat-gnutls28.git/ to allow building
+    against nettle3.
+
+ -- Andreas Metzler <ametzler@debian.org>  Wed, 13 May 2015 19:20:07 +0200
+
 gnutls28 (3.3.15-2) unstable; urgency=medium
 
   * 50_updated-sign-md5-rep-to-reduce-false-failures.patch from upstream GIT,
