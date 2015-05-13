@@ -1,3 +1,17 @@
+gnutls28 (3.3.15-2) unstable; urgency=medium
+
+  * 50_updated-sign-md5-rep-to-reduce-false-failures.patch from upstream GIT,
+    fixing a testsuite error on kfreebsd-*.
+
+ -- Andreas Metzler <ametzler@debian.org>  Wed, 06 May 2015 19:06:03 +0200
+
+gnutls28 (3.3.15-1) unstable; urgency=medium
+
+  * New upstream stable release.
+    + Fix for MD5 downgrade in TLS 1.2 signatures. [GNUTLS-SA-2015-2].
+
+ -- Andreas Metzler <ametzler@debian.org>  Mon, 04 May 2015 19:24:42 +0200
+
 gnutls28 (3.3.14-3) experimental; urgency=medium
 
   * 50_nettle3_*.patch: Update to head of upstream gnutls_3_3_x branch.
