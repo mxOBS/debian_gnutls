@@ -1,3 +1,10 @@
+gnutls28 (3.3.15-4) UNRELEASED; urgency=medium
+
+  * 55_nettle3.patch: Use version from GnuTLS GIT gnutls_3_3_x branch, it
+    allows compilation against both nettle 2.7 and 3.x.
+
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 16 May 2015 11:26:48 +0200
+
 gnutls28 (3.3.15-3) experimental; urgency=medium
 
   * Add 55_nettle3.patch from
