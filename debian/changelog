@@ -10,6 +10,9 @@ gnutls28 (3.4.1-1) UNRELEASED; urgency=medium
     + OpenSSL compat layer is not built by default anymore, pass
       --enable-openssl-compatibility to ./configure.
     + Update symbol file.
+    + libgnutls: priority strings VERS-TLS-ALL and VERS-DTLS-ALL are
+      restricted to the corresponding protocols only, and the VERS-ALL
+      string is introduced to catch all possible protocols. Closes: #773145
   * Fix typo in debian/rules
     (s/-disable-silent-rules/--disable-silent-rules).
 
