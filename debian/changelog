@@ -1,3 +1,10 @@
+gnutls28 (3.4.1-1) UNRELEASED; urgency=medium
+
+  * New upstream version.
+    + Bump (build)-depends on nettle and p11-kit.
+
+ -- Andreas Metzler <ametzler@debian.org>  Thu, 04 Jun 2015 14:11:46 +0200
+
 gnutls28 (3.3.15-5) unstable; urgency=medium
 
   * Upload to unstable.
