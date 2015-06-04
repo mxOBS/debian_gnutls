@@ -13,6 +13,9 @@ gnutls28 (3.4.1-1) UNRELEASED; urgency=medium
     + libgnutls: priority strings VERS-TLS-ALL and VERS-DTLS-ALL are
       restricted to the corresponding protocols only, and the VERS-ALL
       string is introduced to catch all possible protocols. Closes: #773145
+    + Since the pkg-config file gnutls.pc now lists libidn in Requires.private
+      "pkg-config --exists gnutls" will fail if libidn.pc is not present. Add
+      dependency on libidn11-dev to libgnutls28-dev.
   * Fix typo in debian/rules
     (s/-disable-silent-rules/--disable-silent-rules).
 
