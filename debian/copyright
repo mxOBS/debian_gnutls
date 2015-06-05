@@ -105,7 +105,7 @@ LGPLv3+ or GPLv2+.
 Copyright:
 --------------------
 /* -*- c -*-
- * Copyright (C) 2000-2012 Free Software Foundation, Inc.
+ * Copyright (C) 2000-2015 Free Software Foundation, Inc.
  *
  * Author: Nikos Mavrogiannopoulos
  *
@@ -127,7 +127,7 @@ Copyright:
  */
 --------------------
 /*
- * Copyright (C) 2004-2012 Free Software Foundation, Inc.
+ * Copyright (C) 2004-2015 Free Software Foundation, Inc.
  * Copyright (c) 2002 Andrew McDonald <andrew@mcdonald.org.uk>
  *
  * This file is part of GnuTLS-EXTRA.
@@ -150,7 +150,8 @@ Copyright:
 The documentation is distributed under the terms of the GNU Free
 Documentation License (FDL):
 --------------------
-Copyright (C) 2001-2012 Free Software Foundation, Inc.
+Copyright (C) 2001-2015 Free Software Foundation, Inc.
+Copyright (C) 2001-2015 Nikos Mavrogiannopoulos
 
      Permission is granted to copy, distribute and/or modify this
      document under the terms of the GNU Free Documentation License,
@@ -190,45 +191,27 @@ License is available under /usr/share/common-licenses/GFDL-1.3.
 
 ============================================
 
-src/certtool-common.c src/certtool-extras.c src/common.c src/danetool.c
- src/socket.c
-
-are licensed GPLv3+ with the following additional exception:
-
- * In addition, as a special exception, the copyright holders give
- * permission to link the code of portions of this program with the
- * OpenSSL library under certain conditions as described in each
- * individual source file, and distribute linked combinations including
- * the two.
- * 
- * You must obey the GNU General Public License in all respects for all
- * of the code used other than OpenSSL. If you modify file(s) with this
- * exception, you may extend this exception to your version of the
- * file(s), but you are not obligated to do so. If you do not wish to do
- * so, delete this exception statement from your version. If you delete
- * this exception statement from all source files in the program, then
- * also delete it here.
-
-============================================
-
 Excerpt from upstream's README:
 
 LICENSING
----------
+=========
+
 Since GnuTLS version 3.1.10, the core library has been released under
 the GNU Lesser General Public License (LGPL) version 2.1 or later.
 
-Note, however, that new versions of the gmplib library used by GnuTLS
-are distributed under LGPLv3, and as such binaries of this library
-need to be distributed under LGPLv3. If this is undesirable older
-versions of the gmplib which are under LGPLv2.1 (e.g., version 4.2.1)
-may be used instead.
+Note, however, that version 6.0.0 and later of the gmplib library used
+by GnuTLS are distributed under a LGPLv3+ or GPLv2+ dual license, and
+as such binaries of this library need to adhere to either LGPLv3+ or
+GPLv2+ license.
+
+
+
 
 The GNU LGPL applies to the main GnuTLS library, while the
 included applications as well as gnutls-openssl 
 library are under the GNU GPL version 3.  The gnutls library is 
-located in the lib/ directory, while the applications in src/ and
-gnutls-openssl library is at extra/.
+located in the lib/ and libdane/ directories, while the applications
+in src/ and, the gnutls-openssl library is at extra/.
 
 For any copyright year range specified as YYYY-ZZZZ in this package
 note that the range specifies every single year in that closed interval.
