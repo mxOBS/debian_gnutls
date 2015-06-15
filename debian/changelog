@@ -1,3 +1,11 @@
+gnutls28 (3.3.15-7) UNRELEASED; urgency=medium
+
+  * libgnutls-deb0-28 temporarily Conflicts with libnettle4, libhogweed2. This
+    is a kludge and technically wrong, but will prevent partial upgrades from
+    stable. Closes: #788735
+
+ -- Andreas Metzler <ametzler@debian.org>  Mon, 15 Jun 2015 19:23:58 +0200
+
 gnutls28 (3.3.15-6) unstable; urgency=high
 
   * Pull 56_Corrected-camellia256-set-key-in-nettle3-compat-mode.patch

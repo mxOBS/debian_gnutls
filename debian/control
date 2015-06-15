@@ -62,6 +62,7 @@ Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, libgmp10 (>= 2:6)
 Replaces: gnutls0, gnutls3, gnutls0.4
 Conflicts: gnutls0, gnutls0.4
+Conflicts: libnettle4, libhogweed2
 Pre-Depends: ${misc:Pre-Depends}
 Suggests: gnutls-bin
 Multi-Arch: same
