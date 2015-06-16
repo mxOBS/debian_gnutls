@@ -1,10 +1,11 @@
-gnutls28 (3.3.15-7) UNRELEASED; urgency=medium
+gnutls28 (3.3.15-7) unstable; urgency=medium
 
   * libgnutls-deb0-28 temporarily Conflicts with libnettle4, libhogweed2. This
     is a kludge and technically wrong, but will prevent partial upgrades from
     stable. Closes: #788735
+  * Drop ancient Conflicts/Replaces: gnutls0, gnutls0.4.
 
- -- Andreas Metzler <ametzler@debian.org>  Mon, 15 Jun 2015 19:23:58 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Tue, 16 Jun 2015 19:06:09 +0200
 
 gnutls28 (3.3.15-6) unstable; urgency=high
 
