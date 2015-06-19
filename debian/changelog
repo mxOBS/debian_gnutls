@@ -1,3 +1,11 @@
+gnutls28 (3.3.8-6+deb8u2) UNRELEASED; urgency=medium
+
+  * Pull 50_Handle-zero-length-plaintext-for-VIA-PadLock-functio.patch from
+    upstream version 3.3.12 to fix a crash in VIA PadLock asm. (Thanks, Peter
+    Lebbing). Closes: #788704
+
+ -- Andreas Metzler <ametzler@debian.org>  Fri, 19 Jun 2015 18:59:43 +0200
+
 gnutls28 (3.3.8-6+deb8u1) jessie; urgency=medium
 
   * Reupload 3.3.8-7 unchanged for first point release:
