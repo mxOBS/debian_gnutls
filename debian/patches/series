@@ -10,3 +10,4 @@
 45_eliminated-double-free.diff
 46_Better-fix-for-the-double-free.diff
 47_GNUTLS-SA-2015-3.patch
+50_Handle-zero-length-plaintext-for-VIA-PadLock-functio.patch
