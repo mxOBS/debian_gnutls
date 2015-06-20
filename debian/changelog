@@ -1,3 +1,10 @@
+gnutls28 (3.4.2-1) UNRELEASED; urgency=medium
+
+  * New upstream version.
+    + Drop 50_updated-sign-md5-rep-to-reduce-false-failures.patch.
+
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 20 Jun 2015 08:00:26 +0200
+
 gnutls28 (3.4.1-1) experimental; urgency=medium
 
   * New upstream version.
