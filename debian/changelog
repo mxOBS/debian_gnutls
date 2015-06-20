@@ -2,6 +2,8 @@ gnutls28 (3.4.2-1) UNRELEASED; urgency=medium
 
   * New upstream version.
     + Drop 50_updated-sign-md5-rep-to-reduce-false-failures.patch.
+    + Update libgnutls30.symbols. (Add new fuctions, bump private symbol
+      version, bump gnutls_init() due to newly added GNUTLS_NO_SIGNAL flag.)
 
  -- Andreas Metzler <ametzler@debian.org>  Sat, 20 Jun 2015 08:00:26 +0200
 

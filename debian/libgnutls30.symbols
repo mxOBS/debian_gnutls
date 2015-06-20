@@ -2,8 +2,8 @@ libgnutls.so.30 libgnutls30 #MINVER#
 * Build-Depends-Package: libgnutls28-dev
  GNUTLS_3_4@GNUTLS_3_4 3.4.0
  GNUTLS_FIPS140_3_4@GNUTLS_FIPS140_3_4 3.4.0
- (regex|optional)"@GNUTLS_PRIVATE$" 3.4.1-0+private+1
- _gnutls_encode_ber_rs_raw@GNUTLS_FIPS140_3_4 3.4.1-0+private+1
+ (regex|optional)"@GNUTLS_PRIVATE$" 3.4.2-0+private+1
+ _gnutls_encode_ber_rs_raw@GNUTLS_FIPS140_3_4 3.4.2-0+private+1
  gnutls_aead_cipher_decrypt@GNUTLS_3_4 3.4.0
  gnutls_aead_cipher_deinit@GNUTLS_3_4 3.4.0
  gnutls_aead_cipher_encrypt@GNUTLS_3_4 3.4.0
@@ -215,7 +215,7 @@ libgnutls.so.30 libgnutls30 #MINVER#
  gnutls_hmac_init@GNUTLS_3_4 3.4.0
  gnutls_hmac_output@GNUTLS_3_4 3.4.0
  gnutls_hmac_set_nonce@GNUTLS_3_4 3.4.0
- gnutls_init@GNUTLS_3_4 3.4.0
+ gnutls_init@GNUTLS_3_4 3.4.2
  gnutls_key_generate@GNUTLS_3_4 3.4.0
  gnutls_kx_get@GNUTLS_3_4 3.4.0
  gnutls_kx_get_id@GNUTLS_3_4 3.4.0
@@ -370,6 +370,7 @@ libgnutls.so.30 libgnutls30 #MINVER#
  gnutls_pkcs11_get_pin_function@GNUTLS_3_4 3.4.0
  gnutls_pkcs11_get_raw_issuer@GNUTLS_3_4 3.4.0
  gnutls_pkcs11_get_raw_issuer_by_dn@GNUTLS_3_4 3.4.0
+ gnutls_pkcs11_get_raw_issuer_by_subject_key_id@GNUTLS_3_4 3.4.2
  gnutls_pkcs11_init@GNUTLS_3_4 3.4.0
  gnutls_pkcs11_obj_deinit@GNUTLS_3_4 3.4.0
  gnutls_pkcs11_obj_export2@GNUTLS_3_4 3.4.0
@@ -437,21 +438,32 @@ libgnutls.so.30 libgnutls30 #MINVER#
  gnutls_pkcs12_set_bag@GNUTLS_3_4 3.4.0
  gnutls_pkcs12_simple_parse@GNUTLS_3_4 3.4.0
  gnutls_pkcs12_verify_mac@GNUTLS_3_4 3.4.0
+ gnutls_pkcs7_add_attr@GNUTLS_3_4 3.4.2
+ gnutls_pkcs7_attrs_deinit@GNUTLS_3_4 3.4.2
  gnutls_pkcs7_deinit@GNUTLS_3_4 3.4.0
  gnutls_pkcs7_delete_crl@GNUTLS_3_4 3.4.0
  gnutls_pkcs7_delete_crt@GNUTLS_3_4 3.4.0
  gnutls_pkcs7_export2@GNUTLS_3_4 3.4.0
  gnutls_pkcs7_export@GNUTLS_3_4 3.4.0
+ gnutls_pkcs7_get_attr@GNUTLS_3_4 3.4.2
  gnutls_pkcs7_get_crl_count@GNUTLS_3_4 3.4.0
+ gnutls_pkcs7_get_crl_raw2@GNUTLS_3_4 3.4.2
  gnutls_pkcs7_get_crl_raw@GNUTLS_3_4 3.4.0
  gnutls_pkcs7_get_crt_count@GNUTLS_3_4 3.4.0
+ gnutls_pkcs7_get_crt_raw2@GNUTLS_3_4 3.4.2
  gnutls_pkcs7_get_crt_raw@GNUTLS_3_4 3.4.0
+ gnutls_pkcs7_get_signature_info@GNUTLS_3_4 3.4.2
  gnutls_pkcs7_import@GNUTLS_3_4 3.4.0
  gnutls_pkcs7_init@GNUTLS_3_4 3.4.0
+ gnutls_pkcs7_print@GNUTLS_3_4 3.4.2
  gnutls_pkcs7_set_crl@GNUTLS_3_4 3.4.0
  gnutls_pkcs7_set_crl_raw@GNUTLS_3_4 3.4.0
  gnutls_pkcs7_set_crt@GNUTLS_3_4 3.4.0
  gnutls_pkcs7_set_crt_raw@GNUTLS_3_4 3.4.0
+ gnutls_pkcs7_sign@GNUTLS_3_4 3.4.2
+ gnutls_pkcs7_signature_info_deinit@GNUTLS_3_4 3.4.2
+ gnutls_pkcs7_verify@GNUTLS_3_4 3.4.2
+ gnutls_pkcs7_verify_direct@GNUTLS_3_4 3.4.2
  gnutls_pkcs8_info@GNUTLS_3_4 3.4.0
  gnutls_pkcs_schema_get_name@GNUTLS_3_4 3.4.0
  gnutls_pkcs_schema_get_oid@GNUTLS_3_4 3.4.0
@@ -904,10 +916,12 @@ libgnutls.so.30 libgnutls30 #MINVER#
  gnutls_x509_crt_sign2@GNUTLS_3_4 3.4.0
  gnutls_x509_crt_sign@GNUTLS_3_4 3.4.0
  gnutls_x509_crt_verify@GNUTLS_3_4 3.4.0
+ gnutls_x509_crt_verify_data2@GNUTLS_3_4 3.4.2
  gnutls_x509_dn_deinit@GNUTLS_3_4 3.4.0
  gnutls_x509_dn_export2@GNUTLS_3_4 3.4.0
  gnutls_x509_dn_export@GNUTLS_3_4 3.4.0
  gnutls_x509_dn_get_rdn_ava@GNUTLS_3_4 3.4.0
+ gnutls_x509_dn_get_str@GNUTLS_3_4 3.4.2
  gnutls_x509_dn_import@GNUTLS_3_4 3.4.0
  gnutls_x509_dn_init@GNUTLS_3_4 3.4.0
  gnutls_x509_dn_oid_known@GNUTLS_3_4 3.4.0
@@ -998,6 +1012,7 @@ libgnutls.so.30 libgnutls30 #MINVER#
  gnutls_x509_trust_list_deinit@GNUTLS_3_4 3.4.0
  gnutls_x509_trust_list_get_issuer@GNUTLS_3_4 3.4.0
  gnutls_x509_trust_list_get_issuer_by_dn@GNUTLS_3_4 3.4.0
+ gnutls_x509_trust_list_get_issuer_by_subject_key_id@GNUTLS_3_4 3.4.2
  gnutls_x509_trust_list_init@GNUTLS_3_4 3.4.0
  gnutls_x509_trust_list_iter_deinit@GNUTLS_3_4 3.4.0
  gnutls_x509_trust_list_iter_get_ca@GNUTLS_3_4 3.4.0
