@@ -1,4 +1,4 @@
-gnutls28 (3.3.16-1) UNRELEASED; urgency=medium
+gnutls28 (3.3.16-1) unstable; urgency=medium
 
   * Limit watchfile to 3.3.x versions.
   * New upstream version.
@@ -8,7 +8,7 @@ gnutls28 (3.3.16-1) UNRELEASED; urgency=medium
       56_Corrected-camellia256-set-key-in-nettle3-compat-mode.patch)
     + Bump private symbol versioning.
 
- -- Andreas Metzler <ametzler@debian.org>  Sun, 12 Jul 2015 18:34:20 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Sun, 12 Jul 2015 19:00:04 +0200
 
 gnutls28 (3.3.15-7) unstable; urgency=medium
 
