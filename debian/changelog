@@ -1,11 +1,12 @@
-gnutls28 (3.4.3-1) UNRELEASED; urgency=medium
+gnutls28 (3.4.3-1) experimental; urgency=medium
 
   * Re-enable libidn-support, use versioned b-d on libidn11-dev >= 1.31.
   * New upstream version.
     + Bump dependency info on gnutls_pkcs11_token_get_info due to changed enum
       gnutls_pkcs11_token_info_t.
+    + Add dependency info for new symbols, bump private symbol dependency.
 
- -- Andreas Metzler <ametzler@debian.org>  Sun, 12 Jul 2015 13:32:04 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Sun, 12 Jul 2015 20:01:09 +0200
 
 gnutls28 (3.4.2-2) experimental; urgency=medium
 
