@@ -6,6 +6,7 @@ gnutls28 (3.3.16-1) UNRELEASED; urgency=medium
       (50_updated-sign-md5-rep-to-reduce-false-failures.patch,
       55_nettle3.patch,
       56_Corrected-camellia256-set-key-in-nettle3-compat-mode.patch)
+    + Bump private symbol versioning.
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 12 Jul 2015 18:34:20 +0200
 
