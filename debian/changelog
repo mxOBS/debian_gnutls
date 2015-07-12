@@ -1,3 +1,9 @@
+gnutls28 (3.3.15-8) UNRELEASED; urgency=medium
+
+  * Limit watchfile to 3.3.x versions.
+
+ -- Andreas Metzler <ametzler@debian.org>  Sun, 12 Jul 2015 18:34:20 +0200
+
 gnutls28 (3.3.15-7) unstable; urgency=medium
 
   * libgnutls-deb0-28 temporarily Conflicts with libnettle4, libhogweed2. This
