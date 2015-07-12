@@ -403,7 +403,7 @@ libgnutls.so.30 libgnutls30 #MINVER#
  gnutls_pkcs11_set_pin_function@GNUTLS_3_4 3.4.0
  gnutls_pkcs11_set_token_function@GNUTLS_3_4 3.4.0
  gnutls_pkcs11_token_get_flags@GNUTLS_3_4 3.4.0
- gnutls_pkcs11_token_get_info@GNUTLS_3_4 3.4.0
+ gnutls_pkcs11_token_get_info@GNUTLS_3_4 3.4.3
  gnutls_pkcs11_token_get_mechanism@GNUTLS_3_4 3.4.0
  gnutls_pkcs11_token_get_random@GNUTLS_3_4 3.4.0
  gnutls_pkcs11_token_get_url@GNUTLS_3_4 3.4.0
