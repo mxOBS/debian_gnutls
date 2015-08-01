@@ -1,0 +1,143 @@
+From 89d63b22e1ec7468cc24015df5cb73c7ab158d4f Mon Sep 17 00:00:00 2001
+From: Nikos Mavrogiannopoulos <nmav@redhat.com>
+Date: Fri, 31 Jul 2015 14:57:33 +0200
+Subject: [PATCH 1/4] As server don't try to send extensions we didn't receive.
+
+---
+ lib/gnutls_extensions.c | 58 +++++++++++++++++++++++++++----------------------
+ lib/gnutls_handshake.c  |  3 ++-
+ lib/gnutls_int.h        |  4 ++--
+ 3 files changed, 36 insertions(+), 29 deletions(-)
+
+diff --git a/lib/gnutls_extensions.c b/lib/gnutls_extensions.c
+index 36ac43e..565734f 100644
+--- a/lib/gnutls_extensions.c
++++ b/lib/gnutls_extensions.c
+@@ -118,19 +118,14 @@ static const char *_gnutls_extension_get_name(uint16_t type)
+ static int
+ _gnutls_extension_list_check(gnutls_session_t session, uint16_t type)
+ {
+-	if (session->security_parameters.entity == GNUTLS_CLIENT) {
+-		int i;
+-
+-		for (i = 0; i < session->internals.extensions_sent_size;
+-		     i++) {
+-			if (type == session->internals.extensions_sent[i])
+-				return 0;	/* ok found */
+-		}
++	int i;
+ 
+-		return GNUTLS_E_RECEIVED_ILLEGAL_EXTENSION;
++	for (i = 0; i < session->internals.extensions_sent_size; i++) {
++		if (type == session->internals.extensions_sent[i])
++			return 0;	/* ok found */
+ 	}
+ 
+-	return 0;
++	return GNUTLS_E_RECEIVED_ILLEGAL_EXTENSION;
+ }
+ 
+ int
+@@ -171,10 +166,14 @@ _gnutls_parse_extensions(gnutls_session_t session,
+ 		type = _gnutls_read_uint16(&data[pos]);
+ 		pos += 2;
+ 
+-		if ((ret =
+-		     _gnutls_extension_list_check(session, type)) < 0) {
+-			gnutls_assert();
+-			return ret;
++		if (session->security_parameters.entity == GNUTLS_CLIENT) {
++			if ((ret =
++			     _gnutls_extension_list_check(session, type)) < 0) {
++				gnutls_assert();
++				return ret;
++			}
++		} else {
++			_gnutls_extension_list_add(session, type);
+ 		}
+ 
+ 		DECR_LENGTH_RET(next, 2, 0);
+@@ -218,17 +217,15 @@ _gnutls_parse_extensions(gnutls_session_t session,
+ void _gnutls_extension_list_add(gnutls_session_t session, uint16_t type)
+ {
+ 
+-	if (session->security_parameters.entity == GNUTLS_CLIENT) {
+-		if (session->internals.extensions_sent_size <
+-		    MAX_EXT_TYPES) {
+-			session->internals.extensions_sent[session->
+-							   internals.extensions_sent_size]
+-			    = type;
+-			session->internals.extensions_sent_size++;
+-		} else {
+-			_gnutls_handshake_log
+-			    ("extensions: Increase MAX_EXT_TYPES\n");
+-		}
++	if (session->internals.extensions_sent_size <
++	    MAX_EXT_TYPES) {
++		session->internals.extensions_sent[session->
++						   internals.extensions_sent_size]
++		    = type;
++		session->internals.extensions_sent_size++;
++	} else {
++		_gnutls_handshake_log
++		    ("extensions: Increase MAX_EXT_TYPES\n");
+ 	}
+ }
+ 
+@@ -257,6 +254,14 @@ _gnutls_gen_extensions(gnutls_session_t session,
+ 		    && p->parse_type != parse_type)
+ 			continue;
+ 
++		/* ensure we are sending only what we received */
++		if (session->security_parameters.entity == GNUTLS_SERVER) {
++			if ((ret =
++			     _gnutls_extension_list_check(session, p->type)) < 0) {
++				continue;
++			}
++		}
++
+ 		ret = _gnutls_buffer_append_prefix(extdata, 16, p->type);
+ 		if (ret < 0)
+ 			return gnutls_assert_val(ret);
+@@ -280,7 +285,8 @@ _gnutls_gen_extensions(gnutls_session_t session,
+ 
+ 			/* add this extension to the extension list
+ 			 */
+-			_gnutls_extension_list_add(session, p->type);
++			if (session->security_parameters.entity == GNUTLS_CLIENT)
++				_gnutls_extension_list_add(session, p->type);
+ 
+ 			_gnutls_handshake_log
+ 			    ("EXT[%p]: Sending extension %s (%d bytes)\n",
+diff --git a/lib/gnutls_handshake.c b/lib/gnutls_handshake.c
+index 500d252..415b3bb 100644
+--- a/lib/gnutls_handshake.c
++++ b/lib/gnutls_handshake.c
+@@ -2053,7 +2053,8 @@ static int send_client_hello(gnutls_session_t session, int again)
+ 			ret =
+ 			    copy_ciphersuites(session, &extdata,
+ 					      TRUE);
+-			_gnutls_extension_list_add(session,
++			if (session->security_parameters.entity == GNUTLS_CLIENT)
++				_gnutls_extension_list_add(session,
+ 						   GNUTLS_EXTENSION_SAFE_RENEGOTIATION);
+ 		} else
+ 			ret =
+diff --git a/lib/gnutls_int.h b/lib/gnutls_int.h
+index 09f319f..fd52e1e 100644
+--- a/lib/gnutls_int.h
++++ b/lib/gnutls_int.h
+@@ -874,8 +874,8 @@ typedef struct {
+ 	struct gnutls_privkey_st *selected_key;
+ 	bool selected_need_free;
+ 
+-	/* holds the extensions we sent to the peer
+-	 * (in case of a client)
++	/* In case of a client holds the extensions we sent to the peer;
++	 * otherwise the extensions we received from the client.
+ 	 */
+ 	uint16_t extensions_sent[MAX_EXT_TYPES];
+ 	uint16_t extensions_sent_size;
+-- 
+2.4.6
+
