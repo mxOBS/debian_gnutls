@@ -8,11 +8,11 @@ Description: Remove SSL 3.0 from default priorities list.
 Author: Nikos Mavrogiannopoulos <nmav@redhat.com>
 Origin: upstream
 Bug-Debian: https://bugs.debian.org/769904
-Last-Update: 2014-11-19
+Last-Update: 2015-08-01
 
---- gnutls28-3.3.10.orig/doc/cha-gtls-app.texi
-+++ gnutls28-3.3.10/doc/cha-gtls-app.texi
-@@ -992,7 +992,7 @@ algorithms to be enabled.
+--- a/doc/cha-gtls-app.texi
++++ b/doc/cha-gtls-app.texi
+@@ -1013,7 +1013,7 @@ algorithms to be enabled.
  @end float
  
  Unless the initial keyword is "NONE" the defaults (in preference
@@ -21,7 +21,7 @@ Last-Update: 2014-11-19
  compression NULL; for certificate types X.509.
  In key exchange algorithms when in NORMAL or SECURE levels the
  perfect forward secrecy algorithms take precedence of the other
-@@ -1054,8 +1054,8 @@ GCM ciphers only). All algorithms from N
+@@ -1075,8 +1075,8 @@ GCM ciphers only). All algorithms from N
  COMP-NULL, COMP-DEFLATE. Catch all is COMP-ALL.
  
  @item TLS versions @tab
@@ -32,7 +32,7 @@ Last-Update: 2014-11-19
  Catch all is VERS-TLS-ALL and VERS-DTLS-ALL.
  
  @item Signature algorithms @tab
-@@ -1199,8 +1199,8 @@ Specifying RSA with AES-128-CBC:
+@@ -1220,8 +1220,8 @@ Specifying RSA with AES-128-CBC:
  Specifying the defaults except ARCFOUR-128:
      "NORMAL:-ARCFOUR-128"
  
@@ -43,7 +43,7 @@ Last-Update: 2014-11-19
  
  Enabling the 128-bit and 192-bit secure ciphers, while disabling all TLS versions 
  except TLS 1.2:
-@@ -1593,7 +1593,7 @@ options that are known to cause compatib
+@@ -1614,7 +1614,7 @@ options that are known to cause compatib
  NORMAL:%COMPAT
  @end verbatim
  
@@ -52,8 +52,8 @@ Last-Update: 2014-11-19
  another priority string is:
  @verbatim
  NORMAL:-VERS-TLS-ALL:+VERS-TLS1.0:+VERS-SSL3.0:%COMPAT
---- gnutls28-3.3.10.orig/lib/gnutls_priority.c
-+++ gnutls28-3.3.10/lib/gnutls_priority.c
+--- a/lib/gnutls_priority.c
++++ b/lib/gnutls_priority.c
 @@ -273,7 +273,6 @@ static const int protocol_priority[] = {
  	GNUTLS_TLS1_2,
  	GNUTLS_TLS1_1,
