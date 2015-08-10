@@ -2,6 +2,3 @@
 20_debian_specific_soname.diff
 30_guile-snarf.diff
 40_no_more_ssl3.diff
-45_As-server-don-t-try-to-send-extensions-we-didn-t-rec.patch
-46_safe-renegotiation-handle-case-where-client-didn-t-s.patch
-47_safe-renegotiation-simulate-receiving-the-extension-.patch
