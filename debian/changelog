@@ -5,6 +5,9 @@ gnutls28 (3.3.17-1) UNRELEASED; urgency=medium
     (45_As-server-don-t-try-to-send-extensions-we-didn-t-rec.patch,
      46_safe-renegotiation-handle-case-where-client-didn-t-s.patch,
      47_safe-renegotiation-simulate-receiving-the-extension-.patch)
+   + GNUTLS_PKCS11_OBJ_FLAG_NO_STORE_PUBKEY added to gnutls_pkcs11_obj_flags,
+     bump dependency info for functions taking it as argument or returning it.
+   + Bump dependency info on private symbols.
 
  -- Andreas Metzler <ametzler@debian.org>  Mon, 10 Aug 2015 19:19:41 +0200
 
