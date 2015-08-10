@@ -1,4 +1,4 @@
-gnutls28 (3.3.17-1) UNRELEASED; urgency=medium
+gnutls28 (3.3.17-1) unstable; urgency=medium
 
   * New upstream version.
    + Drop superfluous patches.
@@ -8,8 +8,9 @@ gnutls28 (3.3.17-1) UNRELEASED; urgency=medium
    + GNUTLS_PKCS11_OBJ_FLAG_NO_STORE_PUBKEY added to gnutls_pkcs11_obj_flags,
      bump dependency info for functions taking it as argument or returning it.
    + Bump dependency info on private symbols.
+   + Fixes double free in DN decoding [GNUTLS-SA-2015-3]. Closes: #795068
 
- -- Andreas Metzler <ametzler@debian.org>  Mon, 10 Aug 2015 19:19:41 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Mon, 10 Aug 2015 19:48:11 +0200
 
 gnutls28 (3.3.16-2) unstable; urgency=medium
 
