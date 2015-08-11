@@ -5,6 +5,7 @@ gnutls28 (3.4.4.1-1) UNRELEASED; urgency=medium
       bump dependency info for functions taking it as argument or returning it.
     + Bump dependency info on private symbols.
     + Update debian/copyright.
+    + Fixes double free in DN decoding [GNUTLS-SA-2015-3]. Closes: #795068
 
  -- Andreas Metzler <ametzler@debian.org>  Tue, 11 Aug 2015 19:01:41 +0200
 
