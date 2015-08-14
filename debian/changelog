@@ -1,4 +1,4 @@
-gnutls28 (3.3.8-6+deb8u3) UNRELEASED; urgency=medium
+gnutls28 (3.3.8-6+deb8u3) jessie; urgency=medium
 
   * Pull 50_Handle-zero-length-plaintext-for-VIA-PadLock-functio.patch from
     upstream version 3.3.12 to fix a crash in VIA PadLock asm. (Thanks, Peter
@@ -12,7 +12,7 @@ gnutls28 (3.3.8-6+deb8u3) UNRELEASED; urgency=medium
     allowing MD5 signatures (which are disabled by default) in the
     ServerKeyExchange message.
 
- -- Andreas Metzler <ametzler@debian.org>  Fri, 19 Jun 2015 18:59:43 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Fri, 14 Aug 2015 18:28:30 +0200
 
 gnutls28 (3.3.8-6+deb8u2) jessie-security; urgency=high
 
