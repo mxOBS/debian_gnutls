@@ -9,6 +9,7 @@ gnutls28 (3.3.17-1) unstable; urgency=medium
      bump dependency info for functions taking it as argument or returning it.
    + Bump dependency info on private symbols.
    + Fixes double free in DN decoding [GNUTLS-SA-2015-3]. Closes: #795068
+     CVE-2015-6251
 
  -- Andreas Metzler <ametzler@debian.org>  Mon, 10 Aug 2015 19:48:11 +0200
 
