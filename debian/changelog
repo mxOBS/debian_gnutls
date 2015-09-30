@@ -1,3 +1,9 @@
+gnutls28 (3.3.18-1) unstable; urgency=medium
+
+  * New upstream version.
+
+ -- Andreas Metzler <ametzler@debian.org>  Wed, 30 Sep 2015 18:49:13 +0200
+
 gnutls28 (3.3.17-1) unstable; urgency=medium
 
   * New upstream version.
