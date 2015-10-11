@@ -4,6 +4,15 @@
 export DEB_CFLAGS_MAINT_APPEND := -Wall
 export DEB_CXXFLAGS_MAINT_APPEND := -Wall
 
+# used by autogen
+ifndef SOURCE_DATE_EPOCH
+	export MAN_PAGE_DATE = $(shell env LC_ALL=C date -u -d \
+		"`dpkg-parsechangelog --show-field Date`" +%Y-%m-%d)
+else
+	export MAN_PAGE_DATE = $(shell env LC_ALL=C date -u -d \
+		"@$(SOURCE_DATE_EPOCH)" +%Y-%m-%d)
+endif
+
 AMCONFBUILDINDEP := $(shell if dh_listpackages | grep -q gnutls-doc ; \
 	then echo "--enable-gtk-doc" ; \
 	else echo "--disable-gtk-doc --disable-doc"; fi)
