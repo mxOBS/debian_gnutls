@@ -1,4 +1,4 @@
-gnutls28 (3.4.6-1) UNRELEASED; urgency=medium
+gnutls28 (3.4.6-1) experimental; urgency=medium
 
   * Make use of autogen's MAN_PAGE_DATE (available in version 5.18.6 and
     later) to improve reproducibility of build.
@@ -8,7 +8,7 @@ gnutls28 (3.4.6-1) UNRELEASED; urgency=medium
     (>= 1.17.14). Both are required for build-profile support added in
     previous upload. (Thanks, lintian.)
 
- -- Andreas Metzler <ametzler@debian.org>  Sun, 11 Oct 2015 19:01:53 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Tue, 20 Oct 2015 20:00:55 +0200
 
 gnutls28 (3.4.5-1) experimental; urgency=medium
 
