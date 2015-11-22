@@ -87,10 +87,10 @@ Last-Update: 2014-09-18
    global:
          gnutls_pkcs11_get_pin_function;
  	gnutls_pkcs11_obj_list_import_url2;
-@@ -1024,9 +1024,9 @@ GNUTLS_3_1_0 {
- 	gnutls_x509_ext_deinit;
+@@ -1025,9 +1025,9 @@ GNUTLS_3_1_0 {
  	gnutls_x509_ext_print;
  	gnutls_x509_othername_to_virtual;
+ 	_gnutls_global_init_skip;
 -} GNUTLS_3_0_0;
 +} GNUTLS_DEBIAN_0_3_0_0;
  
@@ -99,7 +99,7 @@ Last-Update: 2014-09-18
  	gnutls_cipher_self_test;
  	gnutls_pk_self_test;
  	gnutls_mac_self_test;
-@@ -1049,7 +1049,7 @@ GNUTLS_FIPS140 {
+@@ -1050,7 +1050,7 @@ GNUTLS_FIPS140 {
  	_gnutls_ecdh_compute_key;
  };
  
