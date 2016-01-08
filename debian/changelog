@@ -1,9 +1,10 @@
-gnutls28 (3.3.20-1) UNRELEASED; urgency=medium
+gnutls28 (3.3.20-1) unstable; urgency=medium
 
   * autoreconf requires automake 1.12.2, add build-dependency.
   * New upstream version.
+  * Move Vcs-* from git/http to https.
 
- -- Andreas Metzler <ametzler@debian.org>  Mon, 28 Dec 2015 18:48:51 +0100
+ -- Andreas Metzler <ametzler@debian.org>  Fri, 08 Jan 2016 18:57:41 +0100
 
 gnutls28 (3.3.19-1) unstable; urgency=medium
 
