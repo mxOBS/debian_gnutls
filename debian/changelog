@@ -1,6 +1,6 @@
 gnutls28 (3.4.8-1) UNRELEASED; urgency=medium
 
-  * Migrate from libgcrypt20-dbg to ddebs. dh_strip's --ddeb-migration
+  * Migrate from libgnutls30-dbg to ddebs. dh_strip's --ddeb-migration
     option was added to debhelper/unstable with version 9.20150628, bump
     build-dependency accordingly.
   * autoreconf requires automake 1.12.2, add build-dependency.
