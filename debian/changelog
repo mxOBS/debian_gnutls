@@ -1,3 +1,11 @@
+gnutls28 (3.4.9-1) experimental; urgency=medium
+
+  * New upstream version.
+  * Drop 35_Revert-Fix-out-of-bounds-read-in-gnutls_x509_ext_exp.patch and
+    36_Revert-tests-updated-to-account-for-cert-generation.patch.
+
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 06 Feb 2016 15:57:24 +0100
+
 gnutls28 (3.4.8-3) unstable; urgency=medium
 
   * Pull 35_Revert-Fix-out-of-bounds-read-in-gnutls_x509_ext_exp.patch and

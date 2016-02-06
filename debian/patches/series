@@ -1,4 +1,2 @@
 14_version_gettextcat.diff
 30_guile-snarf.diff
-35_Revert-Fix-out-of-bounds-read-in-gnutls_x509_ext_exp.patch
-36_Revert-tests-updated-to-account-for-cert-generation.patch
