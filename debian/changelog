@@ -1,7 +1,8 @@
-gnutls28 (3.4.9-3) UNRELEASED; urgency=medium
+gnutls28 (3.4.10-1) UNRELEASED; urgency=medium
 
   * Pull 40_src-added-systemkey-args-to-BUILT_SOURCES.patch from upstream GIT
     master to fix FTBFS with parallel builds. Closes: #816148
+  * New upstream version.
 
  -- Andreas Metzler <ametzler@debian.org>  Sun, 28 Feb 2016 13:02:32 +0100
 
