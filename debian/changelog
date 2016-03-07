@@ -1,8 +1,10 @@
-gnutls28 (3.4.10-2) UNRELEASED; urgency=medium
+gnutls28 (3.4.10-2) experimental; urgency=medium
 
   * Simplify override_dh_auto_test target. (Thanks, Steven Chamberlain)
+  * Add debian/patches/42_mini-loss-time-improved-timeout-detection.patch,
+    another try for Closes: #813598
 
- -- Andreas Metzler <ametzler@debian.org>  Sun, 06 Mar 2016 11:28:07 +0100
+ -- Andreas Metzler <ametzler@debian.org>  Mon, 07 Mar 2016 19:22:57 +0100
 
 gnutls28 (3.4.10-1) experimental; urgency=medium
 

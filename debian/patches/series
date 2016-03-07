@@ -2,3 +2,4 @@
 30_guile-snarf.diff
 40_src-added-systemkey-args-to-BUILT_SOURCES.patch
 41_tests-mini-loss-time-ensure-client-timeouts.diff
+42_mini-loss-time-improved-timeout-detection.patch
