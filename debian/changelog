@@ -1,3 +1,11 @@
+gnutls28 (3.4.10-4) unstable; urgency=medium
+
+  * 43_fix_cpucapoverride.diff by Nikos Mavrogiannopoulos: Fix
+    GNUTLS_CPUID_OVERRIDE function, stopping it from enabling SSE3 when it is
+    unavailable. Closes: #818341
+
+ -- Andreas Metzler <ametzler@debian.org>  Thu, 17 Mar 2016 19:41:22 +0100
+
 gnutls28 (3.4.10-3) unstable; urgency=medium
 
   * Upload to unstable.
