@@ -1,4 +1,4 @@
-gnutls28 (3.4.11-1) UNRELEASED; urgency=medium
+gnutls28 (3.4.11-1) experimental; urgency=medium
 
   * New upstream version.
     + Drop superflouous patches.
@@ -7,8 +7,9 @@ gnutls28 (3.4.11-1) UNRELEASED; urgency=medium
       43_fix_cpucapoverride.diff)
   * Due to changes in gtk-doc or its dependencies api-reference/index.sgml is
     not installed/built anymore. Update gnutls-doc file list.
+  * Enable hardening=+bindnow.
 
- -- Andreas Metzler <ametzler@debian.org>  Mon, 11 Apr 2016 18:49:02 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Tue, 12 Apr 2016 19:14:07 +0200
 
 gnutls28 (3.4.10-4) unstable; urgency=medium
 

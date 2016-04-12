@@ -1,6 +1,7 @@
 #! /usr/bin/make -f
 # Build the gnutls package for Debian.
 
+export DEB_BUILD_MAINT_OPTIONS := hardening=+bindnow
 export DEB_CFLAGS_MAINT_APPEND := -Wall
 export DEB_CXXFLAGS_MAINT_APPEND := -Wall
 
