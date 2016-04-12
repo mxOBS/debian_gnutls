@@ -1,7 +1,7 @@
 gnutls28 (3.4.11-1) experimental; urgency=medium
 
   * New upstream version.
-    + Drop superflouous patches.
+    + Drop superfluous patches.
       (41_tests-mini-loss-time-ensure-client-timeouts.diff
       42_mini-loss-time-improved-timeout-detection.patch
       43_fix_cpucapoverride.diff)
