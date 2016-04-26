@@ -1,3 +1,10 @@
+gnutls28 (3.4.11-4) unstable; urgency=medium
+
+  * Drop guile-gnutls package, testsuite errors have stayed unfixed too long.
+    Closes: #821457, #805863
+
+ -- Andreas Metzler <ametzler@debian.org>  Tue, 26 Apr 2016 18:45:45 +0200
+
 gnutls28 (3.4.11-3) unstable; urgency=medium
 
   * Upload to unstable.
