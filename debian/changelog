@@ -1,3 +1,14 @@
+gnutls28 (3.4.12-1) UNRELEASED; urgency=medium
+
+  * New upstream version.
+    + Drop superfluous patches.
+      (45_01_gnutls_ocsp_resp_get_single-fail-if-thisUpdate-is-no.patch
+      45_02_gnutls_packet_get-avoid-null-pointer-dereference-on-.patch
+      45_03_configure-corrected-regression-which-prevented-the-b.patch
+      45_04_handshake-do-not-overwrite-the-server-s-signature-al.patch)
+
+ -- Andreas Metzler <ametzler@debian.org>  Fri, 20 May 2016 19:25:42 +0200
+
 gnutls28 (3.4.11-4) unstable; urgency=medium
 
   * Drop guile-gnutls package, testsuite errors have stayed unfixed too long.
