@@ -1,4 +1,4 @@
-gnutls28 (3.4.12-1) UNRELEASED; urgency=medium
+gnutls28 (3.4.12-1) unstable; urgency=medium
 
   * New upstream version.
     + Drop superfluous patches.
@@ -10,7 +10,7 @@ gnutls28 (3.4.12-1) UNRELEASED; urgency=medium
       License v3 in /usr/share/doc/libgnutls30/AGPLv3.license, two files
       of the testsuite use this license.
 
- -- Andreas Metzler <ametzler@debian.org>  Fri, 20 May 2016 19:25:42 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Sat, 21 May 2016 08:15:15 +0200
 
 gnutls28 (3.4.11-4) unstable; urgency=medium
 
