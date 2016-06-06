@@ -1,3 +1,11 @@
+gnutls28 (3.4.13-1) unstable; urgency=high
+
+  * New upstream bugfix release.
+    + Fixes GNUTLS-SA-2016-1 (File overwrite by setuid programs), which was 
+      introduced in 3.4.12.
+
+ -- Andreas Metzler <ametzler@debian.org>  Mon, 06 Jun 2016 20:05:42 +0200
+
 gnutls28 (3.4.12-2) unstable; urgency=medium
 
   * Drop libgnutls30 Conflicts with libnettle4, libhogweed2. - These should
