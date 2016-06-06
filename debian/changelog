@@ -3,6 +3,7 @@ gnutls28 (3.4.13-1) unstable; urgency=high
   * New upstream bugfix release.
     + Fixes GNUTLS-SA-2016-1 (File overwrite by setuid programs), which was 
       introduced in 3.4.12.
+    + Testsuite requires netstat, add b-d.
 
  -- Andreas Metzler <ametzler@debian.org>  Mon, 06 Jun 2016 20:05:42 +0200
 
