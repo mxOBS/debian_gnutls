@@ -1,3 +1,11 @@
+gnutls28 (3.4.13-2) UNRELEASED; urgency=medium
+
+  * Also mark b-d on net-tools/freebsd-net-tools as optional via the
+    <!nocheck> profile. (Thanks, Steven Chamberlain for bug-report and
+    patch). Closes: #826693
+
+ -- Andreas Metzler <ametzler@debian.org>  Wed, 08 Jun 2016 18:56:55 +0200
+
 gnutls28 (3.4.13-1) unstable; urgency=high
 
   * New upstream bugfix release.

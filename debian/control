@@ -12,8 +12,8 @@ Build-Depends: debhelper (>= 9.20150628), nettle-dev (>= 3.1), zlib1g-dev,
  libp11-kit-dev (>= 0.23.1), pkg-config, chrpath, libidn11-dev (>= 1.31),
  autogen (>= 1:5.16-0), bison, dh-autoreconf, libgmp-dev (>= 2:6),
  libopts25-dev, automake (>= 1:1.12.2),
- net-tools [!kfreebsd-i386 !kfreebsd-amd64],
- freebsd-net-tools [kfreebsd-i386 kfreebsd-amd64]
+ net-tools [!kfreebsd-i386 !kfreebsd-amd64] <!nocheck>,
+ freebsd-net-tools [kfreebsd-i386 kfreebsd-amd64] <!nocheck>
 # The b-d on libgmp-dev is not technically necessary, since nettle brings
 # it along. However we want to enforce that gnutls is only built if the
 # dual-licensed GMP is available, otherwise the resulting binary
