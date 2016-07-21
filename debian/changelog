@@ -1,3 +1,9 @@
+gnutls28 (3.3.8-6+deb8u3+cd1) stable; urgency=medium
+
+  * enable cryptodev
+
+ -- Josua Mayer <josua.mayer97@gmail.com>  Thu, 21 Jul 2016 16:17:13 +0200
+
 gnutls28 (3.3.8-6+deb8u3) jessie; urgency=medium
 
   * Pull 50_Handle-zero-length-plaintext-for-VIA-PadLock-functio.patch from

@@ -24,6 +24,7 @@ override_dh_auto_configure:
 	--with-packager=Debian \
 	--with-packager-bug-reports=http://bugs.debian.org/ \
 	--with-packager-version=$(shell dpkg-parsechangelog | sed -n '/^Version: /s/^Version: //p') \
+	--enable-cryptodev \
 	$(AMCONFBUILDINDEP) \
 	$(AMCONFBUILDGUILE)
 
