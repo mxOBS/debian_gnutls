@@ -1,3 +1,9 @@
+gnutls28 (3.3.8-6+deb8u7+cd1) stable; urgency=medium
+
+  * enable cryptodev
+
+ -- Josua Mayer <josua.mayer97@gmail.com>  Sun, 27 Aug 2017 20:53:26 +0200
+
 gnutls28 (3.3.8-6+deb8u7) jessie; urgency=medium
 
   * 57_urandom-use-st_ino-and-st_rdev-to-determine-device-u.patch from
