@@ -9,7 +9,7 @@ gnutls28 (3.3.8-6+deb8u4) jessie; urgency=medium
     from upstream GIT, which should allow gnutls continue to work with
     CVE-2016-6489-patched nettle. See #832983.
 
- -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 09 Oct 2016 14:36:18 +0200
+ -- Andreas Metzler <ametzler@debian.org>  Sun, 30 Oct 2016 07:39:08 +0100
 
 gnutls28 (3.3.8-6+deb8u3) jessie; urgency=medium
 
