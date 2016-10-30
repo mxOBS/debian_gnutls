@@ -1,9 +1,8 @@
 gnutls28 (3.3.8-6+deb8u4) jessie; urgency=medium
 
   [ Salvatore Bonaccorso ]
-  * Non-maintainer upload.
   * CVE-2016-7444: Incorrect certificate validation when using OCSP responses
-    (GNUTLS-SA-2016-3)
+    (GNUTLS-SA-2016-3). See #840191.
 
   [ Andreas Metzler ]
   * Cherry pick 53_nettle-use-rsa_-_key_prepare-on-key-import.patch
