@@ -27,7 +27,8 @@
 55_08_opencdk-cdk_pk_get_keyid-fix-stack-overflow.patch
 55_09_opencdk-added-error-checking-in-the-stream-reading-f.patch
 55_10_opencdk-improved-error-code-checking-in-the-stream-r.patch
-55_11_gnutls_pkcs11_obj_list_import_url2-Always-return-an-.patch
-55_12_cdk_pkt_read-enforce-packet-limits.patch
-55_13__opencdk-read_attribute-account-buffer-size.patch
-55_14_opencdk-do-not-parse-any-secret-keys-in-packet-when-.patch
+55_11_opencdk-read-packet.c-corrected-typo-in-type-cast.patch
+55_12_gnutls_pkcs11_obj_list_import_url2-Always-return-an-.patch
+55_13_cdk_pkt_read-enforce-packet-limits.patch
+55_14_opencdk-read_attribute-account-buffer-size.patch
+55_15_opencdk-do-not-parse-any-secret-keys-in-packet-when-.patch
