@@ -32,3 +32,4 @@
 55_13_cdk_pkt_read-enforce-packet-limits.patch
 55_14_opencdk-read_attribute-account-buffer-size.patch
 55_15_opencdk-do-not-parse-any-secret-keys-in-packet-when-.patch
+55_16_Enforce-the-max-packet-length-for-OpenPGP-subpackets.patch

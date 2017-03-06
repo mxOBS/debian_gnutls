@@ -48,8 +48,14 @@ gnutls28 (3.3.8-6+deb8u5) jessie; urgency=medium
       https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=354
       https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=360
       [GNUTLS-SA-2017-3B]
+    + 55_16_Enforce-the-max-packet-length-for-OpenPGP-subpackets.patch
+      Addressed large allocation in OpenPGP certificate parsing, that could
+      lead in out-of-memory condition. Issue found using oss-fuzz project, and
+      was fixed by Alex Gaynor:
+      https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=392
+      [GNUTLS-SA-2017-3C]
 
- -- Andreas Metzler <ametzler@debian.org>  Sun, 05 Mar 2017 18:18:03 +0100
+ -- Andreas Metzler <ametzler@debian.org>  Mon, 06 Mar 2017 19:13:20 +0100
 
 gnutls28 (3.3.8-6+deb8u4) jessie; urgency=medium
 
