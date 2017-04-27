@@ -35,7 +35,7 @@ gnutls28 (3.3.8-6+deb8u5) jessie; urgency=medium
       overflow resulting to invalid memory write in OpenPGP certificate
       parsing.  Issue found using oss-fuzz project:
       https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=420
-      [GNUTLS-SA-2017-3A]
+      [GNUTLS-SA-2017-3A] CVE-2017-7869
     + 55_14_opencdk-read_attribute-account-buffer-size.patch Addressed read
       of 1 byte past the end of buffer in OpenPGP certificate parsing. Issue
       found using oss-fuzz project:
@@ -55,7 +55,7 @@ gnutls28 (3.3.8-6+deb8u5) jessie; urgency=medium
       https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=392
       [GNUTLS-SA-2017-3C]
 
- -- Andreas Metzler <ametzler@debian.org>  Mon, 06 Mar 2017 19:13:20 +0100
+ -- Andreas Metzler <ametzler@debian.org>  Thu, 27 Apr 2017 18:10:51 +0200
 
 gnutls28 (3.3.8-6+deb8u4) jessie; urgency=medium
 
